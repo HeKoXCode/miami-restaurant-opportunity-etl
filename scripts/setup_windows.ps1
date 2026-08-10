@@ -67,10 +67,10 @@ try {
     }
 
     if (-not (Get-Command $python -ErrorAction SilentlyContinue)) {
-        throw "No encontre Python. Instala Python 3.10 o superior y volve a ejecutar el setup."
+        throw "No encontre Python. Instala Python 3.12, 3.13 o 3.14 y volve a ejecutar el setup."
     }
 
-    Invoke-CheckedCommand "Verificando version de Python" $python ($pythonArgs + @("-c", "import sys; raise SystemExit(0 if sys.version_info >= (3, 10) else 1)"))
+    Invoke-CheckedCommand "Verificando version de Python" $python ($pythonArgs + @("-c", "import sys; raise SystemExit(0 if (3, 12) <= sys.version_info[:2] < (3, 15) else 1)"))
 
     Write-Step "2/5" "Preparando entorno virtual"
     if (-not (Test-Path -LiteralPath ".venv")) {
