@@ -1,0 +1,38 @@
+customer_preference,yelp_category
+Mariscos,Seafood
+Mariscos,Sushi Bars
+Mariscos,Japanese
+Mariscos,Mediterranean
+Mariscos,Cajun/Creole
+Mariscos,Peruvian
+Pescado,Seafood
+Pescado,Sushi Bars
+Pescado,Japanese
+Pescado,Cajun/Creole
+Carnes,Steakhouses
+Carnes,Barbeque
+Carnes,Burgers
+Carnes,Hot Dogs
+Carnes,American
+Carnes,New American
+Carnes,Argentine
+Vegetariano,Vegetarian
+Vegetariano,Salad
+Vegetariano,Mediterranean
+Vegetariano,Greek
+Vegetariano,Indian
+Vegetariano,Thai
+Vegano,Vegan
+Vegano,Vegetarian
+Vegano,Salad
+Vegano,Mediterranean
+Otro,Cuban
+Otro,Latin American
+Otro,Mexican
+Otro,Italian
+Otro,New American
+Otro,French
+Otro,Chinese
+Otro,Thai
+Otro,Indian
+Otro,Bars

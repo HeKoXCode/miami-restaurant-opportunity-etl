@@ -1,0 +1,77 @@
+# Diccionario de datos
+
+## customers_clean.csv y customers_miami.csv
+
+customers_clean.csv contiene todos los clientes limpios. customers_miami.csv aplica el recorte de ciudad usado en el caso de negocio. Ambos outputs excluyen PII.
+
+- id_persona: identificador analítico.
+- edad: edad corregida entre 18 y 90 años.
+- genero: género informado.
+- ciudad_residencia: ciudad del cliente.
+- estrato_socioeconomico: Bajo, Medio, Alto o Muy Alto.
+- frecuencia_visita: cantidad de visitas informada; la unidad temporal no está documentada.
+- promedio_gasto_comida: ticket promedio informado.
+- gasto_periodo_estimado: frecuencia por ticket promedio.
+- preferencias_alimenticias: preferencia declarada o imputada como Otro.
+- membresia_premium: indicador de membresía.
+- tipo_de_pago_mas_usado: método de pago principal.
+- ingresos_mensuales: ingreso informado en la fuente.
+- frecuencia_imputada: identifica corrección de frecuencia.
+- gasto_imputado: identifica imputación de gasto.
+- edad_imputada: identifica imputación de edad.
+- preferencia_original_nula: identifica preferencia faltante en raw.
+
+## customer_value_miami.csv
+
+Resume valor por membresía premium y estrato socioeconómico.
+
+- dimension: variable usada para segmentar.
+- segment: valor del segmento.
+- customer_count: clientes del segmento.
+- customer_share: participación dentro de Miami.
+- avg_visit_frequency: frecuencia promedio.
+- avg_ticket: ticket promedio.
+- avg_estimated_period_spend: gasto estimado promedio por cliente.
+- estimated_period_spend: gasto estimado total del segmento.
+- spend_share: participación del segmento en el gasto estimado.
+
+## yelp_restaurants_clean.csv
+
+- restaurant_id: identificador interno.
+- yelp_id: identificador original de Yelp.
+- name: nombre comercial.
+- rating: rating de Yelp.
+- review_count: cantidad de reseñas.
+- quality_score: rating ajustado por cantidad de reseñas.
+- price y price_level: nivel de precio textual y numérico.
+- price_was_missing: identifica precio imputado.
+- categories y main_category: categorías normalizadas.
+- transactions: servicios informados en orden canónico.
+- has_delivery, has_pickup, has_reservation: flags de servicio.
+- latitude, longitude y address: ubicación.
+- city, state, zip_code y country: componentes geográficos.
+
+## preference_opportunity_miami.csv
+
+- customer_preference: preferencia alimenticia.
+- mapped_yelp_categories: categorías Yelp relacionadas.
+- customer_count y customer_share: tamaño de demanda.
+- imputed_preference_count y imputed_preference_share: trazabilidad de preferencias imputadas.
+- preference_data_quality: Alta, Media o Baja según imputación.
+- avg_estimated_period_spend: gasto promedio del segmento.
+- estimated_period_spend y estimated_period_spend_share: tamaño económico del segmento.
+- restaurant_count: restaurantes de la muestra que cubren la preferencia.
+- observed_restaurant_coverage: restaurant_count dividido por restaurantes limpios.
+- avg_rating, median_review_count y avg_quality_score: contexto de calidad de oferta.
+- demand_coverage_index: customer_share dividido por observed_restaurant_coverage.
+- coverage_signal: lectura descriptiva del índice.
+- recommended_action: siguiente validación sugerida, no decisión automática.
+
+## category_mapping.csv
+
+- customer_preference: preferencia del dataset de clientes.
+- yelp_category: categoría Yelp considerada relacionada.
+
+## data_quality_report.csv
+
+Resume filas, columnas, nulos, duplicados e indicadores específicos en cada etapa del pipeline.

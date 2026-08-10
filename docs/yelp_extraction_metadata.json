@@ -1,0 +1,8 @@
+{
+  "extracted_at_utc": null,
+  "query_city": "Miami",
+  "requested_limit": 240,
+  "raw_rows": 240,
+  "output_file": "data/raw/yelp_restaurants_raw.csv",
+  "note": "El snapshot actual es anterior al registro de metadata; la fecha exacta no esta disponible."
+}

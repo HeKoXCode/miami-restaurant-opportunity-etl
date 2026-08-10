@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos temporales de trabajo
+*.log
+*.tmp
+
+# El raw de clientes contiene campos de contacto y no debe publicarse.
+data/raw/customers_raw.csv
