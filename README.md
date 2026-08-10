@@ -201,6 +201,12 @@ Los outputs `clean` y `final` eliminan nombre, apellido, teléfono y correo de c
 
 Si un raw con PII hubiera sido versionado alguna vez, agregarlo a `.gitignore` no sería suficiente: también tendría que retirarse del historial antes de publicar.
 
+## ⚖️ Licencia y terceros
+
+El **código y la documentación original** de este repositorio se distribuyen bajo la [licencia MIT](LICENSE).
+
+Esta licencia no concede derechos sobre los datasets de origen, sus registros ni las marcas de terceros. La fuente educativa de clientes mantiene su situación de licencia no confirmada y no se publica. Yelp, su nombre y sus marcas pertenecen a sus respectivos titulares; este proyecto es independiente y no está patrocinado ni afiliado con Yelp.
+
 ---
 
 **Percy Ignacio Marzoratti Hill**<br>
