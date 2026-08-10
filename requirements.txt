@@ -1,10 +1,2 @@
-pandas>=2.0
-numpy>=1.24
-requests>=2.31
-matplotlib>=3.8
-seaborn>=0.13
-pytest>=8.0
-ipykernel>=6.0
-jupyterlab>=4.0
-nbclient>=0.10
-nbformat>=5.10
+# Instalación reproducible verificada. Las dependencias directas viven en requirements.in.
+-r requirements.lock

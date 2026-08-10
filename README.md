@@ -88,7 +88,7 @@ ETLGITHUB/
 
 ## ⚙️ Stack
 
-- **Python 3.10+**
+- **Python 3.12–3.14**; validado con **Python 3.14.3**
 - **Pandas / NumPy** para transformación y cálculo
 - **Requests** para extracción opcional desde Yelp Fusion API
 - **Matplotlib / Seaborn** para visualización
@@ -129,15 +129,32 @@ Para ejecutar solamente el pipeline:
 .\run_pipeline.bat
 ```
 
-En otros sistemas:
+En otros sistemas, donde el lock de Windows todavía no fue validado:
 
 ```bash
 python -m venv .venv
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.in
 python -m src.pipeline
 python scripts/render_notebook.py
 python -m pytest -q
 ```
+
+### Dependencias reproducibles
+
+- `requirements.in` declara únicamente las dependencias directas.
+- `requirements.lock` fija todas las versiones transitivas y sus hashes.
+- `requirements.txt` instala el lock verificado y conserva el comando habitual de setup.
+
+El lock versionado fue generado y probado en **Windows 11 con Python 3.14.3**. El rango aceptado por el setup es Python 3.12–3.14; para declarar otra plataforma como reproducible se debe regenerar y validar allí su propio lock.
+
+Para regenerar el lock de forma intencional:
+
+```powershell
+python -m pip install pip-tools
+python -m piptools compile --generate-hashes --strip-extras --resolver=backtracking --output-file requirements.lock requirements.in
+```
+
+Después de actualizarlo deben repetirse el pipeline, las pruebas y el renderizado del notebook antes de aceptar el cambio.
 
 > 🔐 La API key de Yelp sólo es necesaria para una extracción nueva. Debe guardarse en `.env` como `YELP_API_KEY`; el repositorio incluye un snapshot para el análisis y nunca versiona la clave.
 
