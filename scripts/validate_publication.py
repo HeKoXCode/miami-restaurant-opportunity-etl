@@ -80,6 +80,11 @@ def validate_notebook():
     code_cells = [cell for cell in notebook["cells"] if cell["cell_type"] == "code"]
     outputs = [output for cell in code_cells for output in cell.get("outputs", [])]
 
+    require(
+        notebook.get("metadata", {}).get("language_info", {}).get("version") == "3",
+        "El notebook debe normalizar la microversión de Python.",
+    )
+
     require(len(notebook["cells"]) == 27, "El notebook debe conservar 27 celdas.")
     require(len(code_cells) == 10, "El notebook debe conservar 10 celdas de código.")
     require(
