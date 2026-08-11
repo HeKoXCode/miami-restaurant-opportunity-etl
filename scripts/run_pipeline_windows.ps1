@@ -1,6 +1,7 @@
 param(
     [ValidateSet("full", "demo")]
     [string]$Mode = "full",
+    [switch]$Force,
     [switch]$PauseOnExit
 )
 
@@ -31,12 +32,16 @@ try {
     Write-Host "ETLGITHUB - ejecucion del pipeline ($Mode)" -ForegroundColor Green
 
     $venvPython = Join-Path $ProjectRoot ".venv\Scripts\python.exe"
+    $pipelineArgs = @("-m", "src.pipeline", "--mode", $Mode)
+    if ($Force) {
+        $pipelineArgs += "--force"
+    }
 
     if (Test-Path -LiteralPath $venvPython) {
-        & $venvPython -m src.pipeline --mode $Mode
+        & $venvPython @pipelineArgs
     } else {
         Write-Host "No encontre .venv. Uso el Python disponible en el sistema." -ForegroundColor Yellow
-        python -m src.pipeline --mode $Mode
+        python @pipelineArgs
     }
 
     if ($LASTEXITCODE -ne 0) {

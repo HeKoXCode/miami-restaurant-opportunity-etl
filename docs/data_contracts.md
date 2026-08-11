@@ -1,6 +1,6 @@
 # Contratos de datos
 
-Versión vigente: **1.0.0**.
+Versión vigente: **1.1.0**.
 
 Los contratos viven en `src/contracts.py` y se ejecutan en dos límites del pipeline:
 
@@ -23,6 +23,8 @@ Los contratos de input permiten los nulos y valores fuera de rango que las regla
 - restaurantes Yelp limpios;
 - resumen de valor del cliente;
 - oportunidad por preferencia;
+- competencia observable por banda de precio;
+- sensibilidad de señales ante tres juegos de umbrales;
 - reporte de calidad;
 - reporte de filas rechazadas.
 
@@ -46,3 +48,7 @@ Los outputs exigen columnas exactas, claves únicas, rangos válidos, nulabilida
 - **MAJOR:** columna eliminada/renombrada, tipo incompatible o cambio de semántica.
 
 Todo cambio debe actualizar `SCHEMA_VERSION`, contratos, tests, diccionario y outputs versionados en el mismo pull request.
+
+El manifiesto añade una versión independiente del pipeline (`2.0.0`) para distinguir cambios de ejecución que no modifican el esquema tabular. Su `code_sha256` invalida el cache cuando cambia cualquier módulo transformador o el lockfile.
+
+La versión 1.1.0 incorpora de forma compatible los contratos de competencia por precio y sensibilidad de umbrales; los outputs 1.0.0 existentes conservan sus columnas.

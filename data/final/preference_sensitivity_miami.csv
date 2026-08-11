@@ -1,0 +1,19 @@
+city,customer_preference,scenario,gap_threshold,wide_threshold,demand_coverage_index,preference_data_quality,restaurant_count,coverage_signal,stable_across_scenarios
+Miami,Carnes,Conservador,1.5,0.6,0.61,Alta,49,Cobertura observada equilibrada,False
+Miami,Carnes,Base,1.25,0.75,0.61,Alta,49,Oferta observada amplia,False
+Miami,Carnes,Exploratorio,1.1,0.9,0.61,Alta,49,Oferta observada amplia,False
+Miami,Mariscos,Conservador,1.5,0.6,1.26,Alta,38,Cobertura observada equilibrada,False
+Miami,Mariscos,Base,1.25,0.75,1.26,Alta,38,Brecha de cobertura observada,False
+Miami,Mariscos,Exploratorio,1.1,0.9,1.26,Alta,38,Brecha de cobertura observada,False
+Miami,Otro,Conservador,1.5,0.6,0.31,Baja,84,No concluyente,True
+Miami,Otro,Base,1.25,0.75,0.31,Baja,84,No concluyente,True
+Miami,Otro,Exploratorio,1.1,0.9,0.31,Baja,84,No concluyente,True
+Miami,Pescado,Conservador,1.5,0.6,0.94,Alta,19,Cobertura observada equilibrada,True
+Miami,Pescado,Base,1.25,0.75,0.94,Alta,19,Cobertura observada equilibrada,True
+Miami,Pescado,Exploratorio,1.1,0.9,0.94,Alta,19,Cobertura observada equilibrada,True
+Miami,Vegano,Conservador,1.5,0.6,0.97,Alta,23,Cobertura observada equilibrada,True
+Miami,Vegano,Base,1.25,0.75,0.97,Alta,23,Cobertura observada equilibrada,True
+Miami,Vegano,Exploratorio,1.1,0.9,0.97,Alta,23,Cobertura observada equilibrada,True
+Miami,Vegetariano,Conservador,1.5,0.6,1.42,Alta,30,Cobertura observada equilibrada,False
+Miami,Vegetariano,Base,1.25,0.75,1.42,Alta,30,Brecha de cobertura observada,False
+Miami,Vegetariano,Exploratorio,1.1,0.9,1.42,Alta,30,Brecha de cobertura observada,False

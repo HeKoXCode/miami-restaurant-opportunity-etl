@@ -34,13 +34,15 @@ La capa analítica final contiene **3.183 clientes de Miami** y **719.624 unidad
 | Gasto concentrado en estrato Muy Alto | 56,5 % |
 | Preferencia con mayor gasto estimado | Mariscos — 178.967 unidades |
 | Mayor brecha demanda/cobertura observada | Vegetariano |
+| Robustez de la brecha | Sensible: Mariscos y Vegetariano pasan a equilibrada en el escenario conservador |
 
 ### 💡 Recomendación
 
-1. Validar primero propuestas orientadas a **Vegetariano** y **Mariscos**.
+1. Usar **Vegetariano** y **Mariscos** para validaciones exploratorias; la brecha no es robusta al umbral conservador.
 2. Diseñar la investigación alrededor de clientes de alto valor, combinando membresía y estrato.
 3. No usar `Otro` para decidir: una parte relevante proviene de preferencias faltantes imputadas.
 4. En `Carnes`, competir por diferenciación antes que por disponibilidad, porque la oferta observada es amplia.
+5. Investigar primero la banda de precio Yelp nivel 2, aclarando que cerca de 4 de cada 10 precios relacionados fueron imputados.
 
 El análisis **no recomienda abrir un restaurante directamente**. Reduce el espacio de decisión y define qué hipótesis deberían validarse antes de invertir.
 
@@ -48,18 +50,24 @@ El análisis **no recomienda abrir un restaurante directamente**. Reduce el espa
 
 ```mermaid
 flowchart LR
-  A[Clientes raw privados] --> B[Limpieza y privacidad]
-  A2[Clientes demo sintéticos] --> B2[Pipeline demo aislado]
-  C[Yelp raw] --> D[Limpieza y recorte Miami]
+  A[Clientes raw privados] --> S[Staging validado]
+  A2[Clientes demo sintéticos] --> S
+  S --> B[Limpieza y privacidad]
+  C[Yelp raw] --> S2[Yelp staging]
+  S2 --> D[Limpieza y recorte Miami]
   B --> E[Clientes Miami]
-  B2 --> E2[Outputs demo]
-  D --> E2
   E --> F[Valor por segmento]
   E --> G[Oportunidad por preferencia]
   D --> G
   H[Mapping auditable] --> G
   F --> I[Notebook de negocio]
   G --> I
+  G --> K[Competencia por precio]
+  G --> L[Sensibilidad de umbrales]
+  K --> I
+  L --> I
+  S --> M[Manifest de hashes]
+  S2 --> M
   B --> J[Reporte de calidad]
   D --> J
 ```
@@ -68,7 +76,9 @@ flowchart LR
 
 - 🧹 **ETL:** transforma las fuentes y deja datos limpios, trazables y sin PII.
 - 🧪 **Demo reproducible:** genera 750 clientes totalmente sintéticos con semilla fija y ejecuta el ETL completo sin depender del raw privado.
+- ♻️ **Ejecución incremental:** detecta snapshots sin cambios mediante hashes y conserva un `run_id` determinista.
 - 📊 **Capa de negocio:** calcula valor del cliente y oportunidad por preferencia.
+- 🔬 **Robustez analítica:** compara bandas de precio y tres escenarios de umbrales.
 - 📓 **Notebook:** convierte las tablas en hallazgos, recomendaciones y próximos pasos.
 - ✅ **Validaciones y tests:** detienen el proceso ante problemas de claves, rangos, privacidad o reglas de negocio.
 - 📝 **Documentación:** registra procedencia, transformaciones, métricas y limitaciones.
@@ -79,6 +89,7 @@ flowchart LR
 ETLGITHUB/
   data/
     raw/          fuentes locales; el raw de clientes no se publica
+    staging/      snapshots validados; el full permanece fuera de Git
     clean/        datos limpios sin PII
     final/        tablas listas para análisis y decisión
     reference/    mapping auditable de categorías
@@ -123,6 +134,14 @@ La ruta recomendada genera **750 clientes totalmente sintéticos** con la semill
 
 El generador usa identidades marcadas como demo, correos `example.invalid` y teléfonos del rango reservado `202-555-01xx`. Una segunda ejecución produce exactamente los mismos archivos para la misma semilla.
 
+Para comprobar explícitamente el modo incremental después de la reconstrucción:
+
+```powershell
+.\.venv\Scripts\python.exe -m src.pipeline --mode demo
+```
+
+El resultado debe indicar `unchanged` y conservar el mismo `run_id`.
+
 ### Opción B — Reconstrucción completa del ETL
 
 La reconstrucción completa requiere un archivo compatible en:
@@ -155,6 +174,16 @@ python scripts/render_notebook.py
 python -m pytest -q
 ```
 
+### Verificación C3-Lite
+
+La puerta final reúne lint, tests, dos reconstrucciones demo, cache incremental, presupuestos de rendimiento, privacidad, notebook y consistencia documental:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\verify_c3_lite.py
+```
+
+Quien tenga el raw privado autorizado puede añadir `--include-full`. La evidencia verificada está en [docs/c3_lite_verification.md](docs/c3_lite_verification.md).
+
 ### Dependencias reproducibles
 
 - `requirements.in` declara únicamente las **11 dependencias directas**.
@@ -176,7 +205,7 @@ Después de actualizarlo deben repetirse el pipeline, las pruebas y el renderiza
 
 ## ✅ Calidad y pruebas
 
-La suite actual contiene **19 pruebas automatizadas**. El workflow de verificación pública ejecuta lint, tests, el pipeline demo completo, validaciones de privacidad y el notebook en **Python 3.12, 3.13 y 3.14 sobre Windows**. Además conserva los outputs demo como artefacto de cada ejecución. Comprueba, entre otras reglas:
+La suite actual contiene **24 pruebas automatizadas**. El workflow de verificación pública ejecuta lint, tests, el pipeline demo completo, validaciones de privacidad, el notebook y C3-Lite en **Python 3.12, 3.13 y 3.14 sobre Windows**. Además conserva los outputs demo como artefacto de cada ejecución. Comprueba, entre otras reglas:
 
 - IDs únicos y rangos válidos;
 - frecuencia y gasto no negativos;
@@ -187,18 +216,22 @@ La suite actual contiene **19 pruebas automatizadas**. El workflow de verificaci
 - categorías cubiertas por el mapping;
 - clasificación correcta de brecha, equilibrio y oferta amplia;
 - tratamiento explícito de preferencias imputadas como evidencia no concluyente.
-- contratos de entrada y salida con esquema `1.0.0`;
+- contratos de entrada y salida con esquema `1.1.0`;
 - reconciliación de filas rechazadas y causas;
 - determinismo del generador y del pipeline demo;
 - separación entre cálculos reutilizables y narrativa del notebook.
+- publicación atómica con restauración ante fallos;
+- detección incremental mediante manifiestos y hashes;
+- contratos de los marts de competencia y sensibilidad;
+- presupuestos de 10 segundos y 256 MiB para la demo pública.
 
 Ejecución validada antes de la publicación:
 
 ```text
-19 passed
+24 passed
 Pipeline full y demo completos
-Notebook: 23 celdas, 8 de código, 0 errores y 4 gráficos
-Validación de privacidad y consistencia superada
+Notebook: 27 celdas, 10 de código, 0 errores y 6 gráficos
+C3-Lite aprobado
 ```
 
 El reporte operativo está disponible en [docs/data_quality_report.md](docs/data_quality_report.md).
@@ -209,6 +242,9 @@ El reporte operativo está disponible en [docs/data_quality_report.md](docs/data
 
 - [`customer_value_miami.csv`](data/final/customer_value_miami.csv): valor por membresía y estrato.
 - [`preference_opportunity_miami.csv`](data/final/preference_opportunity_miami.csv): demanda, gasto, cobertura y acción sugerida.
+- [`restaurant_competition_miami.csv`](data/final/restaurant_competition_miami.csv): cobertura por preferencia y banda de precio, incluida la proporción imputada.
+- [`preference_sensitivity_miami.csv`](data/final/preference_sensitivity_miami.csv): señal bajo escenarios conservador, base y exploratorio.
+- [`pipeline_manifest.json`](data/final/pipeline_manifest.json): hashes, filas, versiones y `run_id` reproducible.
 - [`data_quality_report.csv`](data/final/data_quality_report.csv): métricas de calidad legibles por máquina.
 - [`data_rejections.csv`](data/final/data_rejections.csv): cantidad de descartes por etapa y causa.
 - [`data/demo/`](data/demo/): pipeline completo con fuente sintética y metadatos de generación.
@@ -224,10 +260,14 @@ El reporte operativo está disponible en [docs/data_quality_report.md](docs/data
 | [cleaning_decisions.md](docs/cleaning_decisions.md) | Registra qué se corrigió y por qué. |
 | [data_dictionary.md](docs/data_dictionary.md) | Define columnas y archivos finales. |
 | [data_contracts.md](docs/data_contracts.md) | Declara contratos, versión de esquema y política de cambios. |
+| [pipeline_operations.md](docs/pipeline_operations.md) | Explica staging, incrementalidad, manifiestos, rollback y métricas. |
+| [next_experiment_design.md](docs/next_experiment_design.md) | Convierte la sensibilidad C2 en una prueba comercial predefinida. |
 | [data_provenance.md](docs/data_provenance.md) | Aclara origen, privacidad y límites de uso. |
 | [data_quality_report.md](docs/data_quality_report.md) | Presenta controles generados por el pipeline. |
 | [tests.md](docs/tests.md) | Resume qué protege la suite de pruebas. |
 | [consistency_review.md](docs/consistency_review.md) | Registra la revisión final y sus pendientes deliberados. |
+| [performance_baseline.json](docs/performance_baseline.json) | Registra cinco benchmarks demo y presupuestos de regresión. |
+| [c3_lite_verification.md](docs/c3_lite_verification.md) | Consolida la puerta técnica final y su evidencia. |
 
 ## 🔎 Alcance y limitaciones
 
@@ -237,6 +277,7 @@ El reporte operativo está disponible en [docs/data_quality_report.md](docs/data
 - Yelp aporta una muestra limitada y ordenada, no aleatoria ni censal.
 - Un restaurante puede relacionarse con varias preferencias; la métrica es **cobertura observada**, no cuota de mercado.
 - No hay costos, márgenes, alquileres, elasticidad de precio ni evidencia causal.
+- Los precios Yelp faltantes se imputan y se exponen como proporción; no representan disposición a pagar.
 - El demo verifica la reproducibilidad técnica, pero no reemplaza la evidencia del caso educativo ni demuestra representatividad comercial.
 
 La metodología completa está en [business_methodology.md](docs/business_methodology.md) y la procedencia en [data_provenance.md](docs/data_provenance.md).

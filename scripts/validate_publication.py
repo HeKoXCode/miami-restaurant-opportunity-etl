@@ -80,8 +80,13 @@ def validate_notebook():
     code_cells = [cell for cell in notebook["cells"] if cell["cell_type"] == "code"]
     outputs = [output for cell in code_cells for output in cell.get("outputs", [])]
 
-    require(len(notebook["cells"]) == 23, "El notebook debe conservar 23 celdas.")
-    require(len(code_cells) == 8, "El notebook debe conservar 8 celdas de código.")
+    require(
+        notebook.get("metadata", {}).get("language_info", {}).get("version") == "3",
+        "El notebook debe normalizar la microversión de Python.",
+    )
+
+    require(len(notebook["cells"]) == 27, "El notebook debe conservar 27 celdas.")
+    require(len(code_cells) == 10, "El notebook debe conservar 10 celdas de código.")
     require(
         all(cell.get("execution_count") is not None for cell in code_cells),
         "Todas las celdas de código deben quedar ejecutadas.",
@@ -91,8 +96,8 @@ def validate_notebook():
         "El notebook contiene un output de error.",
     )
     require(
-        sum("image/png" in output.get("data", {}) for output in outputs) == 4,
-        "El notebook debe contener exactamente 4 gráficos PNG.",
+        sum("image/png" in output.get("data", {}) for output in outputs) == 6,
+        "El notebook debe contener exactamente 6 gráficos PNG.",
     )
     require(
         all("execution" not in cell.get("metadata", {}) for cell in code_cells),
@@ -145,13 +150,18 @@ def validate_demo_outputs():
     expected_files = {
         "README.md",
         "raw/customers_demo_raw.csv",
+        "staging/customers_staging.csv",
+        "staging/yelp_restaurants_staging.csv",
         "clean/customers_clean.csv",
         "clean/yelp_restaurants_clean.csv",
         "final/customers_miami.csv",
         "final/customer_value_miami.csv",
         "final/preference_opportunity_miami.csv",
+        "final/restaurant_competition_miami.csv",
+        "final/preference_sensitivity_miami.csv",
         "final/data_quality_report.csv",
         "final/data_rejections.csv",
+        "final/pipeline_manifest.json",
         "docs/data_quality_report.md",
         "docs/generation_metadata.json",
     }
@@ -175,6 +185,16 @@ def validate_demo_outputs():
     require(metadata.get("seed") == 20260713, "La semilla demo no es la documentada.")
     require(metadata.get("rows") == 750, "La demo versionada no contiene 750 filas raw.")
 
+    manifest = json.loads(
+        (demo_root / "final" / "pipeline_manifest.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    require(manifest.get("pipeline_version") == "2.0.0", "Pipeline sin versión C1.")
+    require(manifest.get("schema_version") == "1.1.0", "Schema demo inesperado.")
+    require(len(manifest.get("inputs", [])) == 3, "Manifest sin tres fuentes.")
+    require(len(manifest.get("outputs", [])) == 12, "Manifest incompleto.")
+
     raw = read_csv("data/demo/raw/customers_demo_raw.csv")
     require(len(raw) == 750, "El raw demo debe contener 750 clientes.")
     require(
@@ -189,6 +209,46 @@ def validate_demo_outputs():
         all("-555-0" in row["telefono_contacto"] for row in raw),
         "El raw demo contiene teléfonos fuera del rango reservado 555-01xx.",
     )
+
+
+def validate_advanced_marts(mode):
+    prefix = "data" if mode == "full" else "data/demo"
+    opportunity = read_csv(f"{prefix}/final/preference_opportunity_miami.csv")
+    competition = read_csv(f"{prefix}/final/restaurant_competition_miami.csv")
+    sensitivity = read_csv(f"{prefix}/final/preference_sensitivity_miami.csv")
+    require(len(competition) == 30, "Competencia debe tener 6 preferencias x 5 precios.")
+    require(len(sensitivity) == 18, "Sensibilidad debe tener 6 x 3 escenarios.")
+    require(
+        {row["price_level"] for row in competition} == {"0", "1", "2", "3", "4"},
+        "Faltan niveles en competencia por precio.",
+    )
+    require(
+        {row["scenario"] for row in sensitivity}
+        == {"Conservador", "Base", "Exploratorio"},
+        "Faltan escenarios de sensibilidad.",
+    )
+    base_signals = {
+        row["customer_preference"]: row["coverage_signal"]
+        for row in sensitivity
+        if row["scenario"] == "Base"
+    }
+    published_signals = {
+        row["customer_preference"]: row["coverage_signal"]
+        for row in opportunity
+    }
+    require(
+        base_signals == published_signals,
+        "El escenario Base no reconcilia con opportunity.",
+    )
+
+    manifest = json.loads(
+        (BASE_DIR / prefix / "final" / "pipeline_manifest.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    require(manifest.get("pipeline_version") == "2.0.0", "Pipeline sin versión C1.")
+    require(manifest.get("mode") == mode, "Modo incorrecto en manifest.")
+    require(len(manifest.get("outputs", [])) == 12, "Manifest incompleto.")
 
 
 def validate_local_links():
@@ -216,6 +276,7 @@ def main(argv=None):
         validate_notebook()
     else:
         validate_demo_outputs()
+    validate_advanced_marts(args.mode)
     validate_privacy(args.mode)
     validate_local_links()
     print(

@@ -1,8 +1,10 @@
 from src.reporting import (
     build_executive_metrics,
     build_preference_value_view,
+    build_price_competition_view,
     build_priority_view,
     build_quality_view,
+    build_sensitivity_view,
     build_stratum_view,
     load_report_data,
 )
@@ -33,3 +35,5 @@ def test_reporting_views_keep_presentation_logic_out_of_notebook():
         "missing_total",
         "duplicate_rows",
     }
+    assert build_price_competition_view(report.restaurant_competition).shape == (6, 5)
+    assert build_sensitivity_view(report.preference_sensitivity).shape == (6, 3)

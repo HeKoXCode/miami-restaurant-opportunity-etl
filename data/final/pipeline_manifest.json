@@ -1,0 +1,90 @@
+{
+  "manifest_version": "1.0.0",
+  "pipeline_version": "2.0.0",
+  "schema_version": "1.1.0",
+  "mode": "full",
+  "run_id": "1aa6a2953069e064",
+  "code_sha256": "bdb8ac21149026479d9634305fd412eadb119f92f754140d8b8915f26fd89d3b",
+  "inputs": [
+    {
+      "dataset": "customers",
+      "file": "customers_raw.csv",
+      "rows": 30000,
+      "sha256": "f9d270e9c961f93b16e1a0e410dbd8043e792e56964b53ec169f7c6e03b7f6ea"
+    },
+    {
+      "dataset": "yelp",
+      "file": "yelp_restaurants_raw.csv",
+      "rows": 240,
+      "sha256": "94acc110466c244356f0fa4b9173cef91ad6c7db647194334f06c42914667655"
+    },
+    {
+      "dataset": "category_mapping",
+      "file": "category_mapping.csv",
+      "rows": 37,
+      "sha256": "aad243b001971fc718388b28df27e6cb0150472605afaa6abd3dbf979d460a79"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "data/clean/customers_clean.csv",
+      "rows": 29978,
+      "sha256": "a0f9bfc18c3b5d74d7c5a8e62234c8edb2763d15f778c06b42105501ff38a120"
+    },
+    {
+      "file": "data/clean/yelp_restaurants_clean.csv",
+      "rows": 186,
+      "sha256": "a6d372aa203699a5f4750e221257d740c7764063123fa3f4f3fe8e28a59415e2"
+    },
+    {
+      "file": "data/final/customer_value_miami.csv",
+      "rows": 6,
+      "sha256": "280cfe36e0849c566d0e6161ce5baf38e73c015b3a03bc3051f09146dd58f395"
+    },
+    {
+      "file": "data/final/customers_miami.csv",
+      "rows": 3183,
+      "sha256": "eb9db4902a435b1b600351976c25bf24dd423a4d0ef9c4e73f0f278943bef0f2"
+    },
+    {
+      "file": "data/final/data_quality_report.csv",
+      "rows": 11,
+      "sha256": "8189b8b2f632e219c15576a373225d4715ab815273cddfb1e7453e818ab14c4a"
+    },
+    {
+      "file": "data/final/data_rejections.csv",
+      "rows": 6,
+      "sha256": "322020bc525786a26e5135d6956a2efb68ea804febbc6be4b55e2e5ab4a3fdf1"
+    },
+    {
+      "file": "data/final/preference_opportunity_miami.csv",
+      "rows": 6,
+      "sha256": "abade9c4a77e1087da6f5902a1c631259f682857c9ae182a01156bfcc595961a"
+    },
+    {
+      "file": "data/final/preference_sensitivity_miami.csv",
+      "rows": 18,
+      "sha256": "0d644abea8b6723653fac25797e51760fe31f3cf53a6c57104dba6537b26ee85"
+    },
+    {
+      "file": "data/final/restaurant_competition_miami.csv",
+      "rows": 30,
+      "sha256": "fb789e3bca3b216abd6b83816cc6f6d39538bd199d5ec1e9f4034d32558581dd"
+    },
+    {
+      "file": "data/staging/customers_staging.csv",
+      "rows": 30000,
+      "sha256": "0cd3c8bd6e61527b2f530b9512e04adfeef5a07f8ec5ed591a0e31a0451c2eb5"
+    },
+    {
+      "file": "data/staging/yelp_restaurants_staging.csv",
+      "rows": 240,
+      "sha256": "b1bba6bbd621aa225c762284b5bdb76de0370dab397cb4eb82c5f4bd7ebe16d8"
+    },
+    {
+      "file": "docs/data_quality_report.md",
+      "rows": null,
+      "sha256": "7f5c858520005be1ccb335c665a681a9f0fd393c98ec72f2b18e0e425f0fe630"
+    }
+  ]
+}

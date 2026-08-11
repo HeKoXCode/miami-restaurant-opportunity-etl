@@ -15,7 +15,7 @@ from src.contracts import (
 def test_input_contract_reports_missing_columns_with_context():
     incomplete = pd.DataFrame({"id_persona": [1]})
 
-    with pytest.raises(DataContractError, match=r"customers_raw v1\.0\.0.*faltan columnas"):
+    with pytest.raises(DataContractError, match=r"customers_raw v1\.1\.0.*faltan columnas"):
         validate_contract(incomplete, CUSTOMERS_RAW_CONTRACT, stage="input")
 
 
@@ -37,8 +37,10 @@ def test_published_outputs_match_schema_version():
         pd.read_csv(paths.yelp_clean),
         pd.read_csv(paths.customer_value_miami),
         pd.read_csv(paths.preference_opportunity_miami),
+        pd.read_csv(paths.restaurant_competition_miami),
+        pd.read_csv(paths.preference_sensitivity_miami),
         pd.read_csv(paths.data_quality_report_csv),
         pd.read_csv(paths.data_rejections_csv),
     )
 
-    assert SCHEMA_VERSION == "1.0.0"
+    assert SCHEMA_VERSION == "1.1.0"

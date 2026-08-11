@@ -10,6 +10,8 @@ __pycache__/
 # Archivos temporales de trabajo
 *.log
 *.tmp
+.pipeline_state/
 
 # El raw de clientes contiene campos de contacto y no debe publicarse.
 data/raw/customers_raw.csv
+data/staging/

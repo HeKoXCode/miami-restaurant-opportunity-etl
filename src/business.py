@@ -55,16 +55,22 @@ def preference_data_quality(imputed_share):
     return "Alta"
 
 
-def coverage_signal(index_value, restaurant_count, data_quality):
+def coverage_signal(
+    index_value,
+    restaurant_count,
+    data_quality,
+    gap_threshold=COVERAGE_GAP_THRESHOLD,
+    wide_threshold=COVERAGE_WIDE_THRESHOLD,
+):
     # Una preferencia con demasiados datos imputados no debería terminar
     # etiquetada como oportunidad, aunque el índice parezca atractivo.
     if data_quality == "Baja":
         return "No concluyente"
     if restaurant_count == 0:
         return "Sin oferta observada"
-    if index_value >= COVERAGE_GAP_THRESHOLD:
+    if index_value >= gap_threshold:
         return "Brecha de cobertura observada"
-    if index_value <= COVERAGE_WIDE_THRESHOLD:
+    if index_value <= wide_threshold:
         return "Oferta observada amplia"
     return "Cobertura observada equilibrada"
 
@@ -228,3 +234,112 @@ def build_preference_opportunity(
         ["preference_data_quality", "demand_coverage_index"],
         ascending=[True, False],
     ).reset_index(drop=True)
+
+
+PRICE_SEGMENTS = {
+    0: "Sin precio",
+    1: "$",
+    2: "$$",
+    3: "$$$",
+    4: "$$$$",
+}
+
+
+def build_restaurant_competition(
+    restaurants,
+    mapping,
+    city=TARGET_CITY,
+):
+    """Compare observable restaurant supply by preference and Yelp price band."""
+    preference_to_yelp = mapping_as_dict(mapping)
+    rows = []
+    for preference, yelp_categories in preference_to_yelp.items():
+        matching = restaurants_for_preference(restaurants, yelp_categories)
+        total_matching = len(matching)
+        for price_level, price_segment in PRICE_SEGMENTS.items():
+            price_slice = matching.loc[matching["price_level"] == price_level]
+            restaurant_count = len(price_slice)
+            rows.append({
+                "city": city,
+                "customer_preference": preference,
+                "price_level": price_level,
+                "price_segment": price_segment,
+                "restaurant_count": restaurant_count,
+                "restaurant_share_within_preference": round(
+                    restaurant_count / total_matching if total_matching else 0,
+                    4,
+                ),
+                "imputed_price_count": int(price_slice["price_was_missing"].sum()),
+                "imputed_price_share": round(
+                    price_slice["price_was_missing"].mean(),
+                    4,
+                )
+                if restaurant_count
+                else 0,
+                "avg_rating": round(price_slice["rating"].mean(), 2)
+                if restaurant_count
+                else 0,
+                "median_review_count": round(price_slice["review_count"].median(), 0)
+                if restaurant_count
+                else 0,
+                "avg_quality_score": round(price_slice["quality_score"].mean(), 2)
+                if restaurant_count
+                else 0,
+                "delivery_share": round(price_slice["has_delivery"].mean(), 4)
+                if restaurant_count
+                else 0,
+                "reservation_share": round(
+                    price_slice["has_reservation"].mean(),
+                    4,
+                )
+                if restaurant_count
+                else 0,
+            })
+    return pd.DataFrame(rows).sort_values(
+        ["customer_preference", "price_level"]
+    ).reset_index(drop=True)
+
+
+SENSITIVITY_SCENARIOS = (
+    ("Conservador", 1.50, 0.60),
+    ("Base", COVERAGE_GAP_THRESHOLD, COVERAGE_WIDE_THRESHOLD),
+    ("Exploratorio", 1.10, 0.90),
+)
+
+
+def build_preference_sensitivity(preference_opportunity):
+    """Expose how opportunity labels respond to plausible threshold choices."""
+    rows = []
+    for opportunity in preference_opportunity.to_dict(orient="records"):
+        for scenario, gap_threshold, wide_threshold in SENSITIVITY_SCENARIOS:
+            signal = coverage_signal(
+                opportunity["demand_coverage_index"],
+                opportunity["restaurant_count"],
+                opportunity["preference_data_quality"],
+                gap_threshold=gap_threshold,
+                wide_threshold=wide_threshold,
+            )
+            rows.append({
+                "city": opportunity["city"],
+                "customer_preference": opportunity["customer_preference"],
+                "scenario": scenario,
+                "gap_threshold": gap_threshold,
+                "wide_threshold": wide_threshold,
+                "demand_coverage_index": opportunity["demand_coverage_index"],
+                "preference_data_quality": opportunity[
+                    "preference_data_quality"
+                ],
+                "restaurant_count": opportunity["restaurant_count"],
+                "coverage_signal": signal,
+            })
+
+    result = pd.DataFrame(rows)
+    signal_counts = result.groupby("customer_preference")["coverage_signal"].transform(
+        "nunique"
+    )
+    result["stable_across_scenarios"] = signal_counts.eq(1)
+    scenario_order = {name: index for index, (name, _, _) in enumerate(SENSITIVITY_SCENARIOS)}
+    result["_scenario_order"] = result["scenario"].map(scenario_order)
+    return result.sort_values(
+        ["customer_preference", "_scenario_order"]
+    ).drop(columns="_scenario_order").reset_index(drop=True)

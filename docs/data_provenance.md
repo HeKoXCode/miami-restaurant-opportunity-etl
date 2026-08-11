@@ -25,6 +25,8 @@ La extracción existente es anterior al registro de metadata y su fecha exacta n
 
 La demo reutiliza el snapshot público de Yelp y el mapping versionado. Sus inputs, outputs y reportes se guardan bajo `data/demo/`, separados del caso completo. No pretende reproducir la distribución del raw educativo: su función es demostrar el recorrido técnico y las reglas de calidad sin exponer datos privados.
 
+Los manifiestos publican hashes y nombres de archivo, no registros privados. El historial con timestamps y métricas de cada equipo se guarda en `.pipeline_state/` fuera de Git. El staging full también queda fuera de Git; el staging demo es publicable porque todos sus contactos son ficticios y reservados.
+
 ## Publicación responsable
 
 El código y los resultados agregados pueden mostrarse como ejercicio educativo. Antes de publicar datos de detalle se debe confirmar licencia, privacidad y términos de uso de cada fuente.

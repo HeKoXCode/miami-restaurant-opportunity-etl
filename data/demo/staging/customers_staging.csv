@@ -1,0 +1,751 @@
+id_persona,nombre,apellido,edad,genero,ciudad_residencia,estrato_socioeconomico,frecuencia_visita,promedio_gasto_comida,ocio,consume_licor,preferencias_alimenticias,membresia_premium,telefono_contacto,correo_electronico,tipo_de_pago_mas_usado,ingresos_mensuales
+9000000000,Cliente Demo 0000,Sintético,53.0,Femenino,Orlando,Bajo,-1.0,33.02,Sí,Sí,Mariscos,No,+1-202-555-0100,cliente-demo-0000@example.invalid,Tarjeta,2251.0
+9000000001,Cliente Demo 0001,Sintético,29.0,Masculino,Miami,Muy Alto,7.0,92.26,Sí,Sí,Pescado,Sí,+1-202-555-0101,cliente-demo-0001@example.invalid,Tarjeta,10553.0
+9000000002,Cliente Demo 0002,Sintético,19.0,Femenino,Miami,Bajo,2.0,29.29,Sí,Sí,Carnes,No,+1-202-555-0102,cliente-demo-0002@example.invalid,Tarjeta,1840.0
+9000000003,Cliente Demo 0003,Sintético,43.0,Masculino,Miami,Bajo,7.0,23.77,No,Sí,Vegetariano,No,+1-202-555-0103,cliente-demo-0003@example.invalid,Tarjeta,2077.0
+9000000004,Cliente Demo 0004,Sintético,60.0,Masculino,Miami,Bajo,10.0,26.64,Sí,Sí,Vegano,No,+1-202-555-0104,cliente-demo-0004@example.invalid,Tarjeta,3333.0
+9000000005,Cliente Demo 0005,Sintético,71.0,Femenino,Miami,Medio,7.0,41.48,No,Sí,Otro,No,+1-202-555-0105,cliente-demo-0005@example.invalid,Billetera digital,2927.0
+9000000006,Cliente Demo 0006,Sintético,40.0,Femenino,Miami,Medio,11.0,38.37,Sí,Sí,Vegano,No,+1-202-555-0106,cliente-demo-0006@example.invalid,Billetera digital,2691.0
+9000000007,Cliente Demo 0007,Sintético,44.0,No binario,Miami,Bajo,2.0,22.95,Sí,No,Vegetariano,No,+1-202-555-0107,cliente-demo-0007@example.invalid,Efectivo,2239.0
+9000000008,Cliente Demo 0008,Sintético,31.0,Masculino,Orlando,Muy Alto,12.0,89.59,Sí,Sí,Vegano,Sí,+1-202-555-0108,cliente-demo-0008@example.invalid,Tarjeta,10017.0
+9000000009,Cliente Demo 0009,Sintético,77.0,Masculino,Orlando,Alto,5.0,64.67,Sí,No,Vegetariano,Sí,+1-202-555-0109,cliente-demo-0009@example.invalid,Billetera digital,6201.0
+9000000010,Cliente Demo 0010,Sintético,21.0,Femenino,Fort Lauderdale,Medio,8.0,11.01,No,Sí,Mariscos,Sí,+1-202-555-0110,cliente-demo-0010@example.invalid,Billetera digital,2825.0
+9000000011,Cliente Demo 0011,Sintético,105.0,Femenino,Miami,Bajo,9.0,20.69,Sí,No,Mariscos,No,+1-202-555-0111,cliente-demo-0011@example.invalid,Tarjeta,1545.0
+9000000012,Cliente Demo 0012,Sintético,73.0,Masculino,Miami,Medio,5.0,47.04,No,No,Vegetariano,Sí,+1-202-555-0112,cliente-demo-0012@example.invalid,Tarjeta,1623.0
+9000000013,Cliente Demo 0013,Sintético,72.0,Femenino,Miami,Muy Alto,1.0,106.58,No,Sí,Mariscos,Sí,+1-202-555-0113,cliente-demo-0013@example.invalid,Efectivo,10942.0
+9000000014,Cliente Demo 0014,Sintético,39.0,Femenino,Miami,Muy Alto,5.0,101.27,Sí,Sí,Mariscos,Sí,+1-202-555-0114,cliente-demo-0014@example.invalid,Tarjeta,9868.0
+9000000015,Cliente Demo 0015,Sintético,79.0,Masculino,Fort Lauderdale,Bajo,7.0,39.52,No,Sí,Vegetariano,No,+1-202-555-0115,cliente-demo-0015@example.invalid,Efectivo,2450.0
+9000000016,Cliente Demo 0016,Sintético,28.0,Masculino,Miami,Medio,8.0,22.7,Sí,No,Vegano,No,+1-202-555-0116,cliente-demo-0016@example.invalid,Tarjeta,3114.0
+9000000017,Cliente Demo 0017,Sintético,78.0,Masculino,Miami,Medio,7.0,,Sí,Sí,Vegetariano,No,+1-202-555-0117,cliente-demo-0017@example.invalid,Tarjeta,2301.0
+9000000018,Cliente Demo 0018,Sintético,18.0,Femenino,Miami,Alto,5.0,76.29,No,No,Mariscos,Sí,+1-202-555-0118,cliente-demo-0018@example.invalid,Efectivo,6591.0
+9000000019,Cliente Demo 0019,Sintético,64.0,Masculino,Miami,Medio,11.0,46.59,No,Sí,Carnes,Sí,+1-202-555-0119,cliente-demo-0019@example.invalid,Efectivo,3607.0
+9000000020,Cliente Demo 0020,Sintético,48.0,Masculino,Fort Lauderdale,Bajo,10.0,42.63,No,Sí,Vegano,No,+1-202-555-0120,cliente-demo-0020@example.invalid,Tarjeta,1811.0
+9000000021,Cliente Demo 0021,Sintético,23.0,Masculino,Miami,Medio,6.0,48.14,Sí,Sí,Otro,No,+1-202-555-0121,cliente-demo-0021@example.invalid,Tarjeta,3847.0
+9000000022,Cliente Demo 0022,Sintético,26.0,Masculino,Miami,Bajo,1.0,38.67,No,No,Vegetariano,No,+1-202-555-0122,cliente-demo-0022@example.invalid,Tarjeta,1348.0
+9000000023,Cliente Demo 0023,Sintético,36.0,Masculino,Miami,Muy Alto,4.0,113.51,Sí,Sí,,No,+1-202-555-0123,cliente-demo-0023@example.invalid,Tarjeta,10667.0
+9000000024,Cliente Demo 0024,Sintético,36.0,Femenino,Miami,Alto,2.0,77.91,Sí,Sí,Vegetariano,No,+1-202-555-0124,cliente-demo-0024@example.invalid,Tarjeta,5213.0
+9000000025,Cliente Demo 0025,Sintético,82.0,Femenino,Miami,Bajo,11.0,23.91,No,Sí,Vegetariano,No,+1-202-555-0125,cliente-demo-0025@example.invalid,Billetera digital,2579.0
+9000000026,Cliente Demo 0026,Sintético,56.0,Femenino,Orlando,Alto,11.0,78.65,No,Sí,Vegetariano,Sí,+1-202-555-0126,cliente-demo-0026@example.invalid,Tarjeta,6751.0
+9000000027,Cliente Demo 0027,Sintético,45.0,Masculino,Miami,Muy Alto,12.0,95.72,Sí,No,Carnes,Sí,+1-202-555-0127,cliente-demo-0027@example.invalid,Tarjeta,11186.0
+9000000028,Cliente Demo 0028,Sintético,22.0,Masculino,Miami,Medio,8.0,27.77,No,Sí,Vegetariano,No,+1-202-555-0128,cliente-demo-0028@example.invalid,Efectivo,5165.0
+9000000029,Cliente Demo 0029,Sintético,56.0,Masculino,Miami,Alto,9.0,67.15,Sí,No,Otro,Sí,+1-202-555-0129,cliente-demo-0029@example.invalid,Tarjeta,5489.0
+9000000030,Cliente Demo 0030,Sintético,40.0,Masculino,Miami,Medio,6.0,37.28,No,Sí,Carnes,No,+1-202-555-0130,cliente-demo-0030@example.invalid,Billetera digital,5085.0
+9000000031,Cliente Demo 0031,Sintético,38.0,Masculino,Miami,Bajo,-1.0,,No,Sí,Pescado,No,+1-202-555-0131,cliente-demo-0031@example.invalid,Billetera digital,2089.0
+9000000032,Cliente Demo 0032,Sintético,29.0,Femenino,Tampa,Alto,3.0,55.12,Sí,Sí,Mariscos,Sí,+1-202-555-0132,cliente-demo-0032@example.invalid,Billetera digital,6595.0
+9000000033,Cliente Demo 0033,Sintético,66.0,Femenino,Miami,Medio,1.0,41.67,Sí,Sí,Mariscos,No,+1-202-555-0133,cliente-demo-0033@example.invalid,Tarjeta,4267.0
+9000000034,Cliente Demo 0034,Sintético,33.0,Femenino,Miami,Alto,11.0,63.03,No,Sí,Vegano,Sí,+1-202-555-0134,cliente-demo-0034@example.invalid,Tarjeta,4320.0
+9000000035,Cliente Demo 0035,Sintético,78.0,Femenino,Miami,Medio,10.0,27.39,Sí,No,Vegano,No,+1-202-555-0135,cliente-demo-0035@example.invalid,Tarjeta,2864.0
+9000000036,Cliente Demo 0036,Sintético,33.0,Masculino,Miami,Medio,9.0,32.17,Sí,Sí,Mariscos,No,+1-202-555-0136,cliente-demo-0036@example.invalid,Tarjeta,3758.0
+9000000037,Cliente Demo 0037,Sintético,42.0,Masculino,Miami,Muy Alto,5.0,118.74,No,Sí,Mariscos,Sí,+1-202-555-0137,cliente-demo-0037@example.invalid,Tarjeta,10681.0
+9000000038,Cliente Demo 0038,Sintético,44.0,Masculino,Miami,Bajo,6.0,33.85,Sí,No,Otro,No,+1-202-555-0138,cliente-demo-0038@example.invalid,Tarjeta,3101.0
+9000000039,Cliente Demo 0039,Sintético,41.0,Masculino,Miami,Bajo,12.0,10.87,No,Sí,Carnes,Sí,+1-202-555-0139,cliente-demo-0039@example.invalid,Tarjeta,1227.0
+9000000040,Cliente Demo 0040,Sintético,53.0,Masculino,Miami,Medio,3.0,41.21,Sí,No,Pescado,No,+1-202-555-0140,cliente-demo-0040@example.invalid,Efectivo,3950.0
+9000000041,Cliente Demo 0041,Sintético,79.0,Femenino,Miami,Medio,10.0,45.68,No,Sí,Carnes,Sí,+1-202-555-0141,cliente-demo-0041@example.invalid,Tarjeta,4551.0
+9000000042,Cliente Demo 0042,Sintético,85.0,Masculino,Miami,Bajo,3.0,22.03,Sí,No,Pescado,No,+1-202-555-0142,cliente-demo-0042@example.invalid,Efectivo,3276.0
+9000000043,Cliente Demo 0043,Sintético,31.0,Femenino,Miami,Bajo,,0.0,Sí,No,Vegano,No,+1-202-555-0143,cliente-demo-0043@example.invalid,Tarjeta,900.0
+9000000044,Cliente Demo 0044,Sintético,85.0,Femenino,Miami,Bajo,5.0,20.17,Sí,Sí,Vegano,Sí,+1-202-555-0144,cliente-demo-0044@example.invalid,Efectivo,3645.0
+9000000045,Cliente Demo 0045,Sintético,43.0,Femenino,Miami,Alto,11.0,76.34,Sí,Sí,Pescado,No,+1-202-555-0145,cliente-demo-0045@example.invalid,Efectivo,6785.0
+9000000046,Cliente Demo 0046,Sintético,48.0,Masculino,Miami,Bajo,7.0,26.84,Sí,Sí,Vegetariano,No,+1-202-555-0146,cliente-demo-0046@example.invalid,Billetera digital,2767.0
+9000000047,Cliente Demo 0047,Sintético,36.0,Masculino,Miami,Medio,7.0,49.65,Sí,Sí,Vegetariano,No,+1-202-555-0147,cliente-demo-0047@example.invalid,Tarjeta,3703.0
+9000000048,Cliente Demo 0048,Sintético,23.0,Masculino,Miami,Medio,1.0,35.0,Sí,Sí,Mariscos,Sí,+1-202-555-0148,cliente-demo-0048@example.invalid,Efectivo,4106.0
+9000000049,Cliente Demo 0049,Sintético,39.0,Femenino,Fort Lauderdale,Alto,12.0,66.87,Sí,Sí,Mariscos,No,+1-202-555-0149,cliente-demo-0049@example.invalid,Tarjeta,6520.0
+9000000050,Cliente Demo 0050,Sintético,72.0,Masculino,Fort Lauderdale,Medio,11.0,47.05,No,Sí,Otro,No,+1-202-555-0150,cliente-demo-0050@example.invalid,Tarjeta,5195.0
+9000000051,Cliente Demo 0051,Sintético,20.0,Masculino,Miami,Alto,12.0,70.49,Sí,No,Pescado,Sí,+1-202-555-0151,cliente-demo-0051@example.invalid,Tarjeta,5362.0
+9000000052,Cliente Demo 0052,Sintético,73.0,Masculino,Miami,Medio,10.0,36.16,Sí,Sí,Vegetariano,Sí,+1-202-555-0152,cliente-demo-0052@example.invalid,Tarjeta,5181.0
+9000000053,Cliente Demo 0053,Sintético,41.0,Masculino,Miami,Bajo,2.0,20.99,Sí,No,Mariscos,No,+1-202-555-0153,cliente-demo-0053@example.invalid,Tarjeta,2277.0
+9000000054,Cliente Demo 0054,Sintético,77.0,Femenino,Miami,Alto,2.0,73.27,No,Sí,Carnes,Sí,+1-202-555-0154,cliente-demo-0054@example.invalid,Tarjeta,5570.0
+9000000055,Cliente Demo 0055,Sintético,20.0,Femenino,Fort Lauderdale,Muy Alto,6.0,97.62,Sí,Sí,Mariscos,Sí,+1-202-555-0155,cliente-demo-0055@example.invalid,Tarjeta,10231.0
+9000000056,Cliente Demo 0056,Sintético,33.0,Femenino,Miami,Bajo,3.0,22.94,Sí,Sí,Vegetariano,No,+1-202-555-0156,cliente-demo-0056@example.invalid,Billetera digital,3333.0
+9000000057,Cliente Demo 0057,Sintético,38.0,Femenino,Miami,Bajo,7.0,17.78,No,No,Carnes,No,+1-202-555-0157,cliente-demo-0057@example.invalid,Tarjeta,3395.0
+9000000058,Cliente Demo 0058,Sintético,71.0,Femenino,Miami,Alto,3.0,69.9,Sí,No,Mariscos,Sí,+1-202-555-0158,cliente-demo-0058@example.invalid,Billetera digital,7231.0
+9000000059,Cliente Demo 0059,Sintético,15.0,Femenino,Tampa,Alto,0.0,0.0,Sí,No,Carnes,No,+1-202-555-0159,cliente-demo-0059@example.invalid,Tarjeta,8309.0
+9000000060,Cliente Demo 0060,Sintético,73.0,Femenino,Orlando,Muy Alto,10.0,98.7,No,No,Pescado,No,+1-202-555-0160,cliente-demo-0060@example.invalid,Tarjeta,10437.0
+9000000061,Cliente Demo 0061,Sintético,83.0,Femenino,Fort Lauderdale,Muy Alto,8.0,107.42,Sí,Sí,Mariscos,Sí,+1-202-555-0161,cliente-demo-0061@example.invalid,Efectivo,8801.0
+9000000062,Cliente Demo 0062,Sintético,65.0,Femenino,Tampa,Alto,12.0,77.62,Sí,No,Vegetariano,No,+1-202-555-0162,cliente-demo-0062@example.invalid,Efectivo,5358.0
+9000000063,Cliente Demo 0063,Sintético,24.0,Masculino,Miami,Medio,8.0,53.7,Sí,No,Mariscos,No,+1-202-555-0163,cliente-demo-0063@example.invalid,Billetera digital,3083.0
+9000000064,Cliente Demo 0064,Sintético,48.0,Masculino,Miami,Bajo,4.0,8.0,No,Sí,Vegetariano,No,+1-202-555-0164,cliente-demo-0064@example.invalid,Billetera digital,2150.0
+9000000065,Cliente Demo 0065,Sintético,79.0,Masculino,Fort Lauderdale,Bajo,3.0,22.86,Sí,Sí,Vegetariano,No,+1-202-555-0165,cliente-demo-0065@example.invalid,Tarjeta,1424.0
+9000000066,Cliente Demo 0066,Sintético,18.0,Masculino,Fort Lauderdale,Bajo,7.0,21.46,Sí,No,Otro,No,+1-202-555-0166,cliente-demo-0066@example.invalid,Tarjeta,2794.0
+9000000067,Cliente Demo 0067,Sintético,66.0,Masculino,Fort Lauderdale,Medio,5.0,43.7,Sí,No,Otro,No,+1-202-555-0167,cliente-demo-0067@example.invalid,Tarjeta,2748.0
+9000000068,Cliente Demo 0068,Sintético,20.0,Masculino,Fort Lauderdale,Muy Alto,10.0,102.34,Sí,Sí,Vegetariano,Sí,+1-202-555-0168,cliente-demo-0068@example.invalid,Efectivo,9737.0
+9000000069,Cliente Demo 0069,Sintético,33.0,Femenino,Miami,Muy Alto,8.0,106.75,Sí,Sí,Vegetariano,Sí,+1-202-555-0169,cliente-demo-0069@example.invalid,Tarjeta,8028.0
+9000000070,Cliente Demo 0070,Sintético,29.0,Masculino,Miami,Medio,6.0,36.44,No,Sí,Vegetariano,No,+1-202-555-0170,cliente-demo-0070@example.invalid,Tarjeta,2558.0
+9000000071,Cliente Demo 0071,Sintético,40.0,Masculino,Orlando,Medio,11.0,41.38,Sí,Sí,Vegetariano,Sí,+1-202-555-0171,cliente-demo-0071@example.invalid,Tarjeta,3352.0
+9000000072,Cliente Demo 0072,Sintético,49.0,Masculino,Miami,Alto,4.0,73.58,Sí,No,Otro,No,+1-202-555-0172,cliente-demo-0072@example.invalid,Billetera digital,5074.0
+9000000073,Cliente Demo 0073,Sintético,20.0,Masculino,Miami,Alto,2.0,61.51,Sí,No,Mariscos,No,+1-202-555-0173,cliente-demo-0073@example.invalid,Efectivo,6342.0
+9000000074,Cliente Demo 0074,Sintético,43.0,Femenino,Miami,Alto,1.0,65.66,No,Sí,Vegano,No,+1-202-555-0174,cliente-demo-0074@example.invalid,Tarjeta,5681.0
+9000000075,Cliente Demo 0075,Sintético,18.0,Femenino,Tampa,Bajo,12.0,27.06,Sí,Sí,Otro,No,+1-202-555-0175,cliente-demo-0075@example.invalid,Tarjeta,900.0
+9000000076,Cliente Demo 0076,Sintético,75.0,Femenino,Miami,Bajo,3.0,20.56,No,No,Vegetariano,No,+1-202-555-0176,cliente-demo-0076@example.invalid,Billetera digital,2230.0
+9000000077,Cliente Demo 0077,Sintético,39.0,Femenino,Orlando,Alto,10.0,74.55,No,Sí,Carnes,Sí,+1-202-555-0177,cliente-demo-0077@example.invalid,Efectivo,6151.0
+9000000078,Cliente Demo 0078,Sintético,33.0,Femenino,Miami,Muy Alto,11.0,108.72,No,Sí,Pescado,Sí,+1-202-555-0178,cliente-demo-0078@example.invalid,Billetera digital,9885.0
+9000000079,Cliente Demo 0079,Sintético,29.0,Masculino,Miami,Medio,1.0,27.22,No,Sí,Mariscos,Sí,+1-202-555-0179,cliente-demo-0079@example.invalid,Tarjeta,2564.0
+9000000080,Cliente Demo 0080,Sintético,68.0,Masculino,Miami,Bajo,10.0,8.0,Sí,No,Otro,No,+1-202-555-0180,cliente-demo-0080@example.invalid,Tarjeta,2205.0
+9000000081,Cliente Demo 0081,Sintético,71.0,Masculino,Miami,Medio,12.0,42.85,No,Sí,Vegetariano,No,+1-202-555-0181,cliente-demo-0081@example.invalid,Tarjeta,3949.0
+9000000082,Cliente Demo 0082,Sintético,39.0,Femenino,Orlando,Muy Alto,8.0,119.62,Sí,No,Vegano,Sí,+1-202-555-0182,cliente-demo-0082@example.invalid,Tarjeta,9882.0
+9000000083,Cliente Demo 0083,Sintético,80.0,Femenino,Miami,Medio,12.0,46.18,No,No,Mariscos,No,+1-202-555-0183,cliente-demo-0083@example.invalid,Efectivo,4030.0
+9000000084,Cliente Demo 0084,Sintético,22.0,No binario,Fort Lauderdale,Medio,5.0,38.32,Sí,No,Mariscos,No,+1-202-555-0184,cliente-demo-0084@example.invalid,Tarjeta,3637.0
+9000000085,Cliente Demo 0085,Sintético,75.0,Masculino,Miami,Muy Alto,5.0,104.64,No,Sí,Vegetariano,No,+1-202-555-0185,cliente-demo-0085@example.invalid,Tarjeta,10084.0
+9000000086,Cliente Demo 0086,Sintético,50.0,Femenino,Orlando,Medio,1.0,31.67,Sí,Sí,Otro,Sí,+1-202-555-0186,cliente-demo-0086@example.invalid,Billetera digital,2916.0
+9000000087,Cliente Demo 0087,Sintético,79.0,Masculino,Fort Lauderdale,Bajo,4.0,22.38,No,No,Otro,No,+1-202-555-0187,cliente-demo-0087@example.invalid,Tarjeta,2829.0
+9000000088,Cliente Demo 0088,Sintético,71.0,Masculino,Orlando,Alto,3.0,88.72,Sí,Sí,Carnes,No,+1-202-555-0188,cliente-demo-0088@example.invalid,Billetera digital,8549.0
+9000000089,Cliente Demo 0089,Sintético,48.0,Masculino,Miami,Muy Alto,4.0,89.36,Sí,Sí,Vegano,Sí,+1-202-555-0189,cliente-demo-0089@example.invalid,Billetera digital,9046.0
+9000000090,Cliente Demo 0090,Sintético,19.0,Masculino,Orlando,Medio,9.0,35.12,No,No,,Sí,+1-202-555-0190,cliente-demo-0090@example.invalid,Tarjeta,4052.0
+9000000091,Cliente Demo 0091,Sintético,29.0,No binario,Fort Lauderdale,Medio,10.0,49.34,Sí,Sí,Vegano,No,+1-202-555-0191,cliente-demo-0091@example.invalid,Tarjeta,3270.0
+9000000092,Cliente Demo 0092,Sintético,36.0,Femenino,Orlando,Alto,10.0,76.27,No,No,Carnes,No,+1-202-555-0192,cliente-demo-0092@example.invalid,Tarjeta,5469.0
+9000000093,Cliente Demo 0093,Sintético,38.0,Masculino,Miami,Muy Alto,9.0,93.63,No,Sí,Vegano,Sí,+1-202-555-0193,cliente-demo-0093@example.invalid,Tarjeta,8850.0
+9000000094,Cliente Demo 0094,Sintético,46.0,Femenino,Miami,Muy Alto,12.0,108.38,Sí,No,Mariscos,Sí,+1-202-555-0194,cliente-demo-0094@example.invalid,Billetera digital,9568.0
+9000000095,Cliente Demo 0095,Sintético,75.0,Femenino,Fort Lauderdale,Bajo,7.0,31.25,No,Sí,Otro,No,+1-202-555-0195,cliente-demo-0095@example.invalid,Tarjeta,2252.0
+9000000096,Cliente Demo 0096,Sintético,66.0,Masculino,Miami,Bajo,4.0,26.56,Sí,Sí,Otro,Sí,+1-202-555-0196,cliente-demo-0096@example.invalid,Tarjeta,1753.0
+9000000097,Cliente Demo 0097,Sintético,67.0,Femenino,Miami,Bajo,-1.0,32.8,No,No,Vegetariano,No,+1-202-555-0197,cliente-demo-0097@example.invalid,Billetera digital,1564.0
+9000000098,Cliente Demo 0098,Sintético,43.0,Masculino,Orlando,Alto,12.0,61.36,Sí,No,Carnes,Sí,+1-202-555-0198,cliente-demo-0098@example.invalid,Tarjeta,5336.0
+9000000099,Cliente Demo 0099,Sintético,80.0,Femenino,Tampa,Bajo,11.0,26.69,Sí,Sí,Carnes,No,+1-202-555-0199,cliente-demo-0099@example.invalid,Efectivo,2497.0
+9000000100,Cliente Demo 0100,Sintético,105.0,Femenino,Miami,Alto,7.0,76.2,Sí,Sí,Otro,Sí,+1-202-555-0100,cliente-demo-0100@example.invalid,Tarjeta,5298.0
+9000000101,Cliente Demo 0101,Sintético,58.0,Femenino,Miami,Alto,8.0,65.48,Sí,Sí,Vegetariano,Sí,+1-202-555-0101,cliente-demo-0101@example.invalid,Efectivo,6746.0
+9000000102,Cliente Demo 0102,Sintético,24.0,Femenino,Fort Lauderdale,Muy Alto,6.0,117.74,Sí,Sí,Mariscos,Sí,+1-202-555-0102,cliente-demo-0102@example.invalid,Tarjeta,11721.0
+9000000103,Cliente Demo 0103,Sintético,53.0,Masculino,Miami,Medio,12.0,43.8,No,Sí,Pescado,No,+1-202-555-0103,cliente-demo-0103@example.invalid,Efectivo,3770.0
+9000000104,Cliente Demo 0104,Sintético,83.0,Masculino,Orlando,Bajo,12.0,31.0,Sí,Sí,Vegetariano,No,+1-202-555-0104,cliente-demo-0104@example.invalid,Tarjeta,900.0
+9000000105,Cliente Demo 0105,Sintético,27.0,Femenino,Fort Lauderdale,Alto,8.0,63.25,Sí,No,Mariscos,Sí,+1-202-555-0105,cliente-demo-0105@example.invalid,Tarjeta,6802.0
+9000000106,Cliente Demo 0106,Sintético,64.0,Masculino,Miami,Medio,11.0,27.69,Sí,Sí,Vegetariano,No,+1-202-555-0106,cliente-demo-0106@example.invalid,Efectivo,4019.0
+9000000107,Cliente Demo 0107,Sintético,45.0,Femenino,Miami,Medio,2.0,33.62,Sí,Sí,Otro,No,+1-202-555-0107,cliente-demo-0107@example.invalid,Efectivo,3159.0
+9000000108,Cliente Demo 0108,Sintético,83.0,Masculino,Miami,Muy Alto,1.0,102.38,Sí,No,Vegetariano,Sí,+1-202-555-0108,cliente-demo-0108@example.invalid,Tarjeta,10599.0
+9000000109,Cliente Demo 0109,Sintético,79.0,Femenino,Miami,Medio,11.0,50.83,Sí,No,Vegetariano,No,+1-202-555-0109,cliente-demo-0109@example.invalid,Efectivo,4167.0
+9000000110,Cliente Demo 0110,Sintético,70.0,Masculino,Miami,Muy Alto,8.0,98.92,Sí,No,Vegano,Sí,+1-202-555-0110,cliente-demo-0110@example.invalid,Tarjeta,10411.0
+9000000111,Cliente Demo 0111,Sintético,50.0,Femenino,Miami,Medio,5.0,35.53,Sí,Sí,Vegetariano,No,+1-202-555-0111,cliente-demo-0111@example.invalid,Tarjeta,3594.0
+9000000112,Cliente Demo 0112,Sintético,18.0,Femenino,Miami,Medio,1.0,38.89,Sí,No,Mariscos,Sí,+1-202-555-0112,cliente-demo-0112@example.invalid,Efectivo,3832.0
+9000000113,Cliente Demo 0113,Sintético,83.0,Femenino,Tampa,Alto,3.0,83.82,No,Sí,Otro,No,+1-202-555-0113,cliente-demo-0113@example.invalid,Tarjeta,4985.0
+9000000114,Cliente Demo 0114,Sintético,27.0,Femenino,Fort Lauderdale,Muy Alto,8.0,109.31,Sí,No,Vegano,Sí,+1-202-555-0114,cliente-demo-0114@example.invalid,Tarjeta,11003.0
+9000000115,Cliente Demo 0115,Sintético,81.0,Femenino,Miami,Bajo,4.0,21.87,No,Sí,Mariscos,No,+1-202-555-0115,cliente-demo-0115@example.invalid,Tarjeta,3004.0
+9000000116,Cliente Demo 0116,Sintético,64.0,Femenino,Miami,Medio,4.0,23.64,Sí,Sí,Carnes,No,+1-202-555-0116,cliente-demo-0116@example.invalid,Tarjeta,2526.0
+9000000117,Cliente Demo 0117,Sintético,38.0,Femenino,Orlando,Medio,10.0,28.34,Sí,No,Carnes,Sí,+1-202-555-0117,cliente-demo-0117@example.invalid,Tarjeta,2614.0
+9000000118,Cliente Demo 0118,Sintético,36.0,Masculino,Miami,Alto,8.0,,Sí,Sí,Otro,No,+1-202-555-0118,cliente-demo-0118@example.invalid,Efectivo,6905.0
+9000000119,Cliente Demo 0119,Sintético,82.0,Masculino,Miami,Alto,11.0,48.16,Sí,No,Vegano,Sí,+1-202-555-0119,cliente-demo-0119@example.invalid,Billetera digital,6692.0
+9000000120,Cliente Demo 0120,Sintético,51.0,Masculino,Miami,Alto,8.0,69.96,Sí,No,Vegetariano,Sí,+1-202-555-0120,cliente-demo-0120@example.invalid,Tarjeta,5648.0
+9000000121,Cliente Demo 0121,Sintético,69.0,Femenino,Miami,Alto,4.0,66.33,Sí,Sí,Mariscos,No,+1-202-555-0121,cliente-demo-0121@example.invalid,Tarjeta,6663.0
+9000000122,Cliente Demo 0122,Sintético,50.0,Femenino,Miami,Medio,11.0,43.25,Sí,Sí,Otro,No,+1-202-555-0122,cliente-demo-0122@example.invalid,Billetera digital,2760.0
+9000000123,Cliente Demo 0123,Sintético,79.0,Femenino,Miami,Alto,3.0,74.73,No,Sí,Vegano,Sí,+1-202-555-0123,cliente-demo-0123@example.invalid,Tarjeta,4589.0
+9000000124,Cliente Demo 0124,Sintético,82.0,Femenino,Fort Lauderdale,Alto,11.0,62.34,Sí,No,Mariscos,No,+1-202-555-0124,cliente-demo-0124@example.invalid,Efectivo,6857.0
+9000000125,Cliente Demo 0125,Sintético,40.0,Masculino,Miami,Medio,12.0,50.58,Sí,Sí,Vegano,No,+1-202-555-0125,cliente-demo-0125@example.invalid,Billetera digital,2261.0
+9000000126,Cliente Demo 0126,Sintético,43.0,Masculino,Miami,Medio,12.0,45.94,No,Sí,Mariscos,No,+1-202-555-0126,cliente-demo-0126@example.invalid,Tarjeta,2866.0
+9000000127,Cliente Demo 0127,Sintético,75.0,Masculino,Orlando,Bajo,6.0,26.13,Sí,No,Vegetariano,No,+1-202-555-0127,cliente-demo-0127@example.invalid,Tarjeta,2569.0
+9000000128,Cliente Demo 0128,Sintético,62.0,Femenino,Tampa,Alto,9.0,56.48,Sí,No,Carnes,Sí,+1-202-555-0128,cliente-demo-0128@example.invalid,Billetera digital,6264.0
+9000000129,Cliente Demo 0129,Sintético,57.0,Femenino,Orlando,Alto,1.0,76.08,Sí,No,Mariscos,Sí,+1-202-555-0129,cliente-demo-0129@example.invalid,Tarjeta,6382.0
+9000000130,Cliente Demo 0130,Sintético,45.0,Masculino,Tampa,Medio,5.0,45.62,Sí,Sí,Vegetariano,No,+1-202-555-0130,cliente-demo-0130@example.invalid,Efectivo,4014.0
+9000000131,Cliente Demo 0131,Sintético,32.0,Femenino,Fort Lauderdale,Muy Alto,2.0,95.06,No,Sí,Carnes,Sí,+1-202-555-0131,cliente-demo-0131@example.invalid,Billetera digital,9110.0
+9000000132,Cliente Demo 0132,Sintético,35.0,Masculino,Orlando,Alto,4.0,80.77,Sí,Sí,Mariscos,No,+1-202-555-0132,cliente-demo-0132@example.invalid,Efectivo,5602.0
+9000000133,Cliente Demo 0133,Sintético,25.0,Femenino,Orlando,Muy Alto,11.0,124.2,Sí,Sí,Vegano,Sí,+1-202-555-0133,cliente-demo-0133@example.invalid,Tarjeta,10511.0
+9000000134,Cliente Demo 0134,Sintético,68.0,Masculino,Miami,Alto,3.0,56.27,Sí,No,Vegano,Sí,+1-202-555-0134,cliente-demo-0134@example.invalid,Tarjeta,6990.0
+9000000135,Cliente Demo 0135,Sintético,61.0,Femenino,Miami,Medio,12.0,33.99,No,No,Vegetariano,Sí,+1-202-555-0135,cliente-demo-0135@example.invalid,Tarjeta,3182.0
+9000000136,Cliente Demo 0136,Sintético,50.0,Femenino,Miami,Medio,11.0,43.2,No,Sí,Otro,No,+1-202-555-0136,cliente-demo-0136@example.invalid,Billetera digital,3203.0
+9000000137,Cliente Demo 0137,Sintético,85.0,Masculino,Miami,Bajo,1.0,30.71,Sí,Sí,Vegano,No,+1-202-555-0137,cliente-demo-0137@example.invalid,Tarjeta,2133.0
+9000000138,Cliente Demo 0138,Sintético,34.0,Masculino,Miami,Medio,6.0,40.4,No,Sí,Vegano,No,+1-202-555-0138,cliente-demo-0138@example.invalid,Tarjeta,4378.0
+9000000139,Cliente Demo 0139,Sintético,37.0,Masculino,Miami,Alto,7.0,59.13,No,No,Pescado,No,+1-202-555-0139,cliente-demo-0139@example.invalid,Efectivo,6733.0
+9000000140,Cliente Demo 0140,Sintético,76.0,Femenino,Tampa,Medio,2.0,39.83,No,Sí,Mariscos,Sí,+1-202-555-0140,cliente-demo-0140@example.invalid,Tarjeta,3502.0
+9000000141,Cliente Demo 0141,Sintético,70.0,Femenino,Tampa,Bajo,12.0,22.75,No,No,Pescado,No,+1-202-555-0141,cliente-demo-0141@example.invalid,Efectivo,2859.0
+9000000142,Cliente Demo 0142,Sintético,27.0,Femenino,Miami,Medio,10.0,45.85,Sí,No,Vegetariano,Sí,+1-202-555-0142,cliente-demo-0142@example.invalid,Tarjeta,2403.0
+9000000143,Cliente Demo 0143,Sintético,30.0,Femenino,Orlando,Bajo,3.0,26.98,Sí,Sí,Vegetariano,Sí,+1-202-555-0143,cliente-demo-0143@example.invalid,Tarjeta,3787.0
+9000000144,Cliente Demo 0144,Sintético,63.0,Masculino,Orlando,Medio,-1.0,,Sí,No,Vegetariano,No,+1-202-555-0144,cliente-demo-0144@example.invalid,Billetera digital,5444.0
+9000000145,Cliente Demo 0145,Sintético,81.0,Masculino,Miami,Medio,11.0,46.5,No,No,Carnes,Sí,+1-202-555-0145,cliente-demo-0145@example.invalid,Tarjeta,4375.0
+9000000146,Cliente Demo 0146,Sintético,50.0,Femenino,Miami,Muy Alto,3.0,110.65,Sí,No,Vegetariano,Sí,+1-202-555-0146,cliente-demo-0146@example.invalid,Tarjeta,10107.0
+9000000147,Cliente Demo 0147,Sintético,85.0,Femenino,Orlando,Alto,10.0,76.52,Sí,Sí,Vegano,Sí,+1-202-555-0147,cliente-demo-0147@example.invalid,Efectivo,5224.0
+9000000148,Cliente Demo 0148,Sintético,61.0,Femenino,Miami,Alto,1.0,60.39,No,Sí,Carnes,Sí,+1-202-555-0148,cliente-demo-0148@example.invalid,Efectivo,6183.0
+9000000149,Cliente Demo 0149,Sintético,31.0,Masculino,Miami,Alto,10.0,77.25,Sí,No,Vegano,No,+1-202-555-0149,cliente-demo-0149@example.invalid,Billetera digital,5576.0
+9000000150,Cliente Demo 0150,Sintético,40.0,Masculino,Miami,Alto,3.0,60.56,No,No,Otro,Sí,+1-202-555-0150,cliente-demo-0150@example.invalid,Tarjeta,7743.0
+9000000151,Cliente Demo 0151,Sintético,71.0,Masculino,Miami,Muy Alto,12.0,117.17,No,Sí,Otro,Sí,+1-202-555-0151,cliente-demo-0151@example.invalid,Efectivo,11482.0
+9000000152,Cliente Demo 0152,Sintético,70.0,Masculino,Fort Lauderdale,Alto,12.0,72.26,Sí,No,Vegetariano,No,+1-202-555-0152,cliente-demo-0152@example.invalid,Tarjeta,5017.0
+9000000153,Cliente Demo 0153,Sintético,22.0,Femenino,Miami,Medio,3.0,59.92,Sí,Sí,Otro,Sí,+1-202-555-0153,cliente-demo-0153@example.invalid,Billetera digital,3581.0
+9000000154,Cliente Demo 0154,Sintético,43.0,Masculino,Miami,Bajo,4.0,24.5,No,No,Mariscos,No,+1-202-555-0154,cliente-demo-0154@example.invalid,Tarjeta,1376.0
+9000000155,Cliente Demo 0155,Sintético,56.0,Femenino,Orlando,Bajo,3.0,15.81,Sí,No,Mariscos,No,+1-202-555-0155,cliente-demo-0155@example.invalid,Tarjeta,3235.0
+9000000156,Cliente Demo 0156,Sintético,80.0,Femenino,Miami,Bajo,3.0,25.32,Sí,Sí,Mariscos,No,+1-202-555-0156,cliente-demo-0156@example.invalid,Efectivo,1886.0
+9000000157,Cliente Demo 0157,Sintético,65.0,Femenino,Miami,Medio,4.0,38.23,Sí,No,,No,+1-202-555-0157,cliente-demo-0157@example.invalid,Tarjeta,4373.0
+9000000158,Cliente Demo 0158,Sintético,22.0,Femenino,Tampa,Alto,10.0,46.14,Sí,Sí,Otro,Sí,+1-202-555-0158,cliente-demo-0158@example.invalid,Tarjeta,5785.0
+9000000159,Cliente Demo 0159,Sintético,73.0,Femenino,Miami,Alto,9.0,70.56,Sí,Sí,Mariscos,Sí,+1-202-555-0159,cliente-demo-0159@example.invalid,Billetera digital,5738.0
+9000000160,Cliente Demo 0160,Sintético,76.0,Femenino,Miami,Medio,3.0,27.92,Sí,No,Carnes,Sí,+1-202-555-0160,cliente-demo-0160@example.invalid,Billetera digital,3464.0
+9000000161,Cliente Demo 0161,Sintético,41.0,Masculino,Fort Lauderdale,Bajo,10.0,19.56,Sí,Sí,Otro,Sí,+1-202-555-0161,cliente-demo-0161@example.invalid,Tarjeta,1546.0
+9000000162,Cliente Demo 0162,Sintético,38.0,Femenino,Miami,Muy Alto,7.0,119.79,Sí,Sí,Mariscos,Sí,+1-202-555-0162,cliente-demo-0162@example.invalid,Tarjeta,9588.0
+9000000163,Cliente Demo 0163,Sintético,46.0,Masculino,Miami,Bajo,8.0,38.94,No,No,Carnes,Sí,+1-202-555-0163,cliente-demo-0163@example.invalid,Tarjeta,3504.0
+9000000164,Cliente Demo 0164,Sintético,55.0,Masculino,Miami,Bajo,10.0,22.35,Sí,Sí,Carnes,No,+1-202-555-0164,cliente-demo-0164@example.invalid,Tarjeta,1922.0
+9000000165,Cliente Demo 0165,Sintético,70.0,Femenino,Miami,Medio,3.0,52.03,Sí,Sí,Vegetariano,No,+1-202-555-0165,cliente-demo-0165@example.invalid,Tarjeta,3548.0
+9000000166,Cliente Demo 0166,Sintético,73.0,Femenino,Miami,Muy Alto,6.0,97.96,Sí,Sí,Vegano,Sí,+1-202-555-0166,cliente-demo-0166@example.invalid,Tarjeta,8602.0
+9000000167,Cliente Demo 0167,Sintético,22.0,Masculino,Miami,Medio,10.0,31.05,Sí,Sí,Mariscos,No,+1-202-555-0167,cliente-demo-0167@example.invalid,Billetera digital,4227.0
+9000000168,Cliente Demo 0168,Sintético,54.0,Masculino,Miami,Muy Alto,5.0,112.86,Sí,Sí,Mariscos,Sí,+1-202-555-0168,cliente-demo-0168@example.invalid,Tarjeta,10046.0
+9000000169,Cliente Demo 0169,Sintético,64.0,Masculino,Tampa,Muy Alto,3.0,110.25,Sí,Sí,Carnes,Sí,+1-202-555-0169,cliente-demo-0169@example.invalid,Billetera digital,11232.0
+9000000170,Cliente Demo 0170,Sintético,70.0,Masculino,Miami,Alto,,0.0,Sí,Sí,Pescado,Sí,+1-202-555-0170,cliente-demo-0170@example.invalid,Tarjeta,6432.0
+9000000171,Cliente Demo 0171,Sintético,37.0,Masculino,Miami,Alto,4.0,69.71,Sí,Sí,Mariscos,Sí,+1-202-555-0171,cliente-demo-0171@example.invalid,Tarjeta,7120.0
+9000000172,Cliente Demo 0172,Sintético,78.0,Masculino,Tampa,Muy Alto,4.0,101.92,No,No,Otro,Sí,+1-202-555-0172,cliente-demo-0172@example.invalid,Efectivo,11712.0
+9000000173,Cliente Demo 0173,Sintético,29.0,Masculino,Miami,Alto,1.0,60.2,Sí,Sí,Vegetariano,No,+1-202-555-0173,cliente-demo-0173@example.invalid,Tarjeta,6242.0
+9000000174,Cliente Demo 0174,Sintético,68.0,Femenino,Miami,Muy Alto,11.0,111.84,No,Sí,Mariscos,Sí,+1-202-555-0174,cliente-demo-0174@example.invalid,Tarjeta,9714.0
+9000000175,Cliente Demo 0175,Sintético,83.0,Femenino,Miami,Bajo,8.0,18.16,No,Sí,Carnes,No,+1-202-555-0175,cliente-demo-0175@example.invalid,Efectivo,1994.0
+9000000176,Cliente Demo 0176,Sintético,73.0,Femenino,Fort Lauderdale,Alto,4.0,52.63,Sí,No,Mariscos,Sí,+1-202-555-0176,cliente-demo-0176@example.invalid,Tarjeta,6334.0
+9000000177,Cliente Demo 0177,Sintético,47.0,Masculino,Miami,Medio,7.0,33.47,No,Sí,Carnes,Sí,+1-202-555-0177,cliente-demo-0177@example.invalid,Tarjeta,2806.0
+9000000178,Cliente Demo 0178,Sintético,37.0,Masculino,Miami,Muy Alto,7.0,117.12,No,No,Carnes,Sí,+1-202-555-0178,cliente-demo-0178@example.invalid,Tarjeta,10774.0
+9000000179,Cliente Demo 0179,Sintético,56.0,Femenino,Orlando,Medio,2.0,56.56,Sí,No,Pescado,No,+1-202-555-0179,cliente-demo-0179@example.invalid,Efectivo,3068.0
+9000000180,Cliente Demo 0180,Sintético,82.0,Masculino,Fort Lauderdale,Medio,12.0,35.68,Sí,Sí,Otro,No,+1-202-555-0180,cliente-demo-0180@example.invalid,Billetera digital,2796.0
+9000000181,Cliente Demo 0181,Sintético,43.0,Femenino,Orlando,Alto,1.0,66.04,Sí,No,Mariscos,Sí,+1-202-555-0181,cliente-demo-0181@example.invalid,Tarjeta,5723.0
+9000000182,Cliente Demo 0182,Sintético,74.0,Femenino,Miami,Alto,10.0,68.91,Sí,Sí,Mariscos,Sí,+1-202-555-0182,cliente-demo-0182@example.invalid,Tarjeta,7632.0
+9000000183,Cliente Demo 0183,Sintético,44.0,Masculino,Miami,Muy Alto,1.0,104.77,No,Sí,Vegano,Sí,+1-202-555-0183,cliente-demo-0183@example.invalid,Efectivo,11151.0
+9000000184,Cliente Demo 0184,Sintético,81.0,Femenino,Miami,Alto,11.0,69.59,Sí,Sí,Carnes,Sí,+1-202-555-0184,cliente-demo-0184@example.invalid,Tarjeta,6754.0
+9000000185,Cliente Demo 0185,Sintético,64.0,Femenino,Orlando,Alto,2.0,72.63,Sí,No,Vegetariano,Sí,+1-202-555-0185,cliente-demo-0185@example.invalid,Tarjeta,6030.0
+9000000186,Cliente Demo 0186,Sintético,54.0,Femenino,Miami,Alto,7.0,52.44,Sí,No,Otro,Sí,+1-202-555-0186,cliente-demo-0186@example.invalid,Tarjeta,5366.0
+9000000187,Cliente Demo 0187,Sintético,64.0,Femenino,Tampa,Alto,5.0,79.64,No,No,Otro,Sí,+1-202-555-0187,cliente-demo-0187@example.invalid,Efectivo,7409.0
+9000000188,Cliente Demo 0188,Sintético,54.0,Femenino,Miami,Bajo,4.0,28.68,Sí,No,Mariscos,No,+1-202-555-0188,cliente-demo-0188@example.invalid,Efectivo,2002.0
+9000000189,Cliente Demo 0189,Sintético,105.0,Femenino,Miami,Medio,9.0,39.29,Sí,No,Vegetariano,Sí,+1-202-555-0189,cliente-demo-0189@example.invalid,Tarjeta,2950.0
+9000000190,Cliente Demo 0190,Sintético,72.0,Femenino,Tampa,Muy Alto,11.0,115.25,Sí,No,Mariscos,Sí,+1-202-555-0190,cliente-demo-0190@example.invalid,Tarjeta,9912.0
+9000000191,Cliente Demo 0191,Sintético,33.0,Femenino,Miami,Medio,12.0,41.5,Sí,No,Mariscos,Sí,+1-202-555-0191,cliente-demo-0191@example.invalid,Tarjeta,5078.0
+9000000192,Cliente Demo 0192,Sintético,53.0,Masculino,Miami,Bajo,9.0,28.81,Sí,No,Vegetariano,No,+1-202-555-0192,cliente-demo-0192@example.invalid,Tarjeta,1677.0
+9000000193,Cliente Demo 0193,Sintético,66.0,Femenino,Tampa,Medio,7.0,33.1,Sí,Sí,Vegetariano,No,+1-202-555-0193,cliente-demo-0193@example.invalid,Billetera digital,3458.0
+9000000194,Cliente Demo 0194,Sintético,64.0,Masculino,Tampa,Muy Alto,-1.0,110.62,Sí,Sí,Pescado,Sí,+1-202-555-0194,cliente-demo-0194@example.invalid,Tarjeta,8818.0
+9000000195,Cliente Demo 0195,Sintético,27.0,Masculino,Tampa,Bajo,2.0,33.49,Sí,Sí,Pescado,No,+1-202-555-0195,cliente-demo-0195@example.invalid,Billetera digital,1787.0
+9000000196,Cliente Demo 0196,Sintético,15.0,Masculino,Fort Lauderdale,Medio,0.0,0.0,Sí,Sí,Vegano,No,+1-202-555-0196,cliente-demo-0196@example.invalid,Billetera digital,5042.0
+9000000197,Cliente Demo 0197,Sintético,59.0,Masculino,Miami,Alto,12.0,67.33,Sí,No,Vegano,Sí,+1-202-555-0197,cliente-demo-0197@example.invalid,Tarjeta,4663.0
+9000000198,Cliente Demo 0198,Sintético,60.0,Femenino,Tampa,Alto,12.0,67.14,No,No,Mariscos,Sí,+1-202-555-0198,cliente-demo-0198@example.invalid,Tarjeta,7163.0
+9000000199,Cliente Demo 0199,Sintético,46.0,Masculino,Fort Lauderdale,Alto,10.0,57.59,Sí,No,Otro,No,+1-202-555-0199,cliente-demo-0199@example.invalid,Tarjeta,5944.0
+9000000200,Cliente Demo 0200,Sintético,77.0,Masculino,Miami,Medio,10.0,33.75,No,Sí,Vegano,Sí,+1-202-555-0100,cliente-demo-0200@example.invalid,Efectivo,5193.0
+9000000201,Cliente Demo 0201,Sintético,57.0,Masculino,Fort Lauderdale,Bajo,12.0,28.77,No,Sí,Carnes,No,+1-202-555-0101,cliente-demo-0201@example.invalid,Billetera digital,2687.0
+9000000202,Cliente Demo 0202,Sintético,81.0,Femenino,Tampa,Medio,5.0,42.15,No,No,Carnes,No,+1-202-555-0102,cliente-demo-0202@example.invalid,Tarjeta,5893.0
+9000000203,Cliente Demo 0203,Sintético,78.0,Femenino,Orlando,Medio,4.0,30.65,Sí,Sí,Otro,No,+1-202-555-0103,cliente-demo-0203@example.invalid,Billetera digital,3739.0
+9000000204,Cliente Demo 0204,Sintético,71.0,Femenino,Fort Lauderdale,Medio,3.0,27.1,Sí,No,Mariscos,No,+1-202-555-0104,cliente-demo-0204@example.invalid,Billetera digital,2704.0
+9000000205,Cliente Demo 0205,Sintético,73.0,Femenino,Miami,Bajo,9.0,39.43,Sí,No,Vegetariano,No,+1-202-555-0105,cliente-demo-0205@example.invalid,Tarjeta,2142.0
+9000000206,Cliente Demo 0206,Sintético,69.0,Femenino,Miami,Medio,2.0,33.44,Sí,Sí,Vegetariano,No,+1-202-555-0106,cliente-demo-0206@example.invalid,Tarjeta,3282.0
+9000000207,Cliente Demo 0207,Sintético,66.0,Masculino,Orlando,Alto,9.0,69.99,Sí,Sí,Mariscos,No,+1-202-555-0107,cliente-demo-0207@example.invalid,Tarjeta,6894.0
+9000000208,Cliente Demo 0208,Sintético,68.0,Femenino,Fort Lauderdale,Alto,1.0,56.15,Sí,Sí,Carnes,Sí,+1-202-555-0108,cliente-demo-0208@example.invalid,Billetera digital,5938.0
+9000000209,Cliente Demo 0209,Sintético,59.0,Masculino,Orlando,Alto,1.0,65.92,No,Sí,Vegetariano,No,+1-202-555-0109,cliente-demo-0209@example.invalid,Efectivo,6815.0
+9000000210,Cliente Demo 0210,Sintético,71.0,Masculino,Miami,Medio,10.0,20.03,Sí,Sí,Mariscos,No,+1-202-555-0110,cliente-demo-0210@example.invalid,Efectivo,4659.0
+9000000211,Cliente Demo 0211,Sintético,52.0,Masculino,Miami,Bajo,7.0,25.14,Sí,Sí,Vegetariano,No,+1-202-555-0111,cliente-demo-0211@example.invalid,Tarjeta,2304.0
+9000000212,Cliente Demo 0212,Sintético,39.0,Masculino,Miami,Medio,6.0,25.43,Sí,Sí,Vegano,Sí,+1-202-555-0112,cliente-demo-0212@example.invalid,Billetera digital,2275.0
+9000000213,Cliente Demo 0213,Sintético,39.0,No binario,Miami,Medio,1.0,42.67,Sí,Sí,Carnes,No,+1-202-555-0113,cliente-demo-0213@example.invalid,Billetera digital,4064.0
+9000000214,Cliente Demo 0214,Sintético,28.0,Masculino,Fort Lauderdale,Muy Alto,1.0,100.7,No,Sí,Pescado,Sí,+1-202-555-0114,cliente-demo-0214@example.invalid,Tarjeta,8915.0
+9000000215,Cliente Demo 0215,Sintético,44.0,Femenino,Orlando,Muy Alto,1.0,115.77,Sí,Sí,Mariscos,Sí,+1-202-555-0115,cliente-demo-0215@example.invalid,Tarjeta,10703.0
+9000000216,Cliente Demo 0216,Sintético,82.0,Femenino,Miami,Alto,5.0,55.42,Sí,No,Pescado,Sí,+1-202-555-0116,cliente-demo-0216@example.invalid,Billetera digital,7125.0
+9000000217,Cliente Demo 0217,Sintético,70.0,Femenino,Tampa,Bajo,7.0,31.37,Sí,No,Vegetariano,No,+1-202-555-0117,cliente-demo-0217@example.invalid,Efectivo,1569.0
+9000000218,Cliente Demo 0218,Sintético,23.0,Femenino,Miami,Medio,3.0,51.91,Sí,Sí,Vegetariano,Sí,+1-202-555-0118,cliente-demo-0218@example.invalid,Tarjeta,5125.0
+9000000219,Cliente Demo 0219,Sintético,47.0,Femenino,Tampa,Medio,10.0,,No,Sí,Vegano,No,+1-202-555-0119,cliente-demo-0219@example.invalid,Tarjeta,5177.0
+9000000220,Cliente Demo 0220,Sintético,43.0,Masculino,Orlando,Alto,12.0,70.39,Sí,Sí,Vegetariano,Sí,+1-202-555-0120,cliente-demo-0220@example.invalid,Billetera digital,6044.0
+9000000221,Cliente Demo 0221,Sintético,69.0,Femenino,Fort Lauderdale,Bajo,4.0,41.73,No,No,Carnes,No,+1-202-555-0121,cliente-demo-0221@example.invalid,Billetera digital,1501.0
+9000000222,Cliente Demo 0222,Sintético,25.0,Femenino,Miami,Medio,9.0,30.37,Sí,Sí,Vegano,No,+1-202-555-0122,cliente-demo-0222@example.invalid,Billetera digital,4082.0
+9000000223,Cliente Demo 0223,Sintético,73.0,Masculino,Miami,Alto,2.0,60.83,Sí,Sí,Mariscos,Sí,+1-202-555-0123,cliente-demo-0223@example.invalid,Billetera digital,5821.0
+9000000224,Cliente Demo 0224,Sintético,50.0,Femenino,Miami,Bajo,9.0,25.95,No,Sí,,No,+1-202-555-0124,cliente-demo-0224@example.invalid,Tarjeta,1994.0
+9000000225,Cliente Demo 0225,Sintético,85.0,No binario,Orlando,Alto,12.0,73.69,Sí,No,Otro,Sí,+1-202-555-0125,cliente-demo-0225@example.invalid,Efectivo,5163.0
+9000000226,Cliente Demo 0226,Sintético,40.0,Femenino,Miami,Medio,4.0,30.98,Sí,No,Carnes,No,+1-202-555-0126,cliente-demo-0226@example.invalid,Tarjeta,2392.0
+9000000227,Cliente Demo 0227,Sintético,48.0,Femenino,Miami,Medio,4.0,38.15,Sí,Sí,Pescado,No,+1-202-555-0127,cliente-demo-0227@example.invalid,Tarjeta,4093.0
+9000000228,Cliente Demo 0228,Sintético,50.0,Masculino,Miami,Alto,9.0,70.21,No,Sí,Carnes,Sí,+1-202-555-0128,cliente-demo-0228@example.invalid,Tarjeta,7355.0
+9000000229,Cliente Demo 0229,Sintético,83.0,Masculino,Miami,Medio,5.0,26.32,No,No,Mariscos,No,+1-202-555-0129,cliente-demo-0229@example.invalid,Billetera digital,3754.0
+9000000230,Cliente Demo 0230,Sintético,20.0,Femenino,Fort Lauderdale,Alto,3.0,68.87,Sí,No,Vegano,Sí,+1-202-555-0130,cliente-demo-0230@example.invalid,Efectivo,5484.0
+9000000231,Cliente Demo 0231,Sintético,85.0,Masculino,Tampa,Bajo,10.0,37.95,Sí,Sí,Vegano,No,+1-202-555-0131,cliente-demo-0231@example.invalid,Billetera digital,2432.0
+9000000232,Cliente Demo 0232,Sintético,66.0,Masculino,Miami,Medio,11.0,35.97,No,Sí,Otro,No,+1-202-555-0132,cliente-demo-0232@example.invalid,Tarjeta,3159.0
+9000000233,Cliente Demo 0233,Sintético,22.0,Masculino,Fort Lauderdale,Medio,5.0,39.55,No,Sí,Vegetariano,Sí,+1-202-555-0133,cliente-demo-0233@example.invalid,Tarjeta,3028.0
+9000000234,Cliente Demo 0234,Sintético,34.0,Masculino,Miami,Alto,7.0,68.38,No,No,Otro,No,+1-202-555-0134,cliente-demo-0234@example.invalid,Billetera digital,5816.0
+9000000235,Cliente Demo 0235,Sintético,74.0,No binario,Tampa,Alto,3.0,63.58,Sí,No,Carnes,No,+1-202-555-0135,cliente-demo-0235@example.invalid,Billetera digital,6873.0
+9000000236,Cliente Demo 0236,Sintético,38.0,Femenino,Miami,Medio,8.0,30.2,No,No,Carnes,No,+1-202-555-0136,cliente-demo-0236@example.invalid,Tarjeta,6142.0
+9000000237,Cliente Demo 0237,Sintético,44.0,Femenino,Orlando,Alto,1.0,74.22,Sí,Sí,Mariscos,No,+1-202-555-0137,cliente-demo-0237@example.invalid,Tarjeta,6146.0
+9000000238,Cliente Demo 0238,Sintético,47.0,Femenino,Miami,Alto,7.0,67.25,No,Sí,Vegano,Sí,+1-202-555-0138,cliente-demo-0238@example.invalid,Tarjeta,6690.0
+9000000239,Cliente Demo 0239,Sintético,31.0,Femenino,Miami,Bajo,5.0,21.81,No,Sí,Mariscos,No,+1-202-555-0139,cliente-demo-0239@example.invalid,Billetera digital,3553.0
+9000000240,Cliente Demo 0240,Sintético,32.0,Femenino,Orlando,Medio,10.0,32.26,Sí,Sí,Otro,Sí,+1-202-555-0140,cliente-demo-0240@example.invalid,Tarjeta,4043.0
+9000000241,Cliente Demo 0241,Sintético,75.0,Femenino,Orlando,Alto,1.0,57.05,Sí,No,Pescado,Sí,+1-202-555-0141,cliente-demo-0241@example.invalid,Tarjeta,4574.0
+9000000242,Cliente Demo 0242,Sintético,58.0,Masculino,Miami,Bajo,3.0,16.68,No,No,Vegetariano,No,+1-202-555-0142,cliente-demo-0242@example.invalid,Tarjeta,2412.0
+9000000243,Cliente Demo 0243,Sintético,18.0,Femenino,Miami,Muy Alto,10.0,95.95,Sí,Sí,Vegano,Sí,+1-202-555-0143,cliente-demo-0243@example.invalid,Billetera digital,7809.0
+9000000244,Cliente Demo 0244,Sintético,42.0,Masculino,Miami,Alto,6.0,68.18,Sí,Sí,Pescado,No,+1-202-555-0144,cliente-demo-0244@example.invalid,Tarjeta,5281.0
+9000000245,Cliente Demo 0245,Sintético,26.0,Femenino,Miami,Muy Alto,12.0,89.31,Sí,Sí,Carnes,Sí,+1-202-555-0145,cliente-demo-0245@example.invalid,Billetera digital,9836.0
+9000000246,Cliente Demo 0246,Sintético,29.0,Femenino,Miami,Alto,8.0,80.46,Sí,No,Otro,Sí,+1-202-555-0146,cliente-demo-0246@example.invalid,Billetera digital,5569.0
+9000000247,Cliente Demo 0247,Sintético,74.0,Masculino,Miami,Alto,9.0,74.9,No,Sí,Pescado,Sí,+1-202-555-0147,cliente-demo-0247@example.invalid,Tarjeta,6481.0
+9000000248,Cliente Demo 0248,Sintético,80.0,Femenino,Miami,Alto,6.0,52.38,No,No,Carnes,Sí,+1-202-555-0148,cliente-demo-0248@example.invalid,Tarjeta,6826.0
+9000000249,Cliente Demo 0249,Sintético,85.0,No binario,Miami,Alto,5.0,74.39,Sí,No,Vegano,Sí,+1-202-555-0149,cliente-demo-0249@example.invalid,Tarjeta,6463.0
+9000000250,Cliente Demo 0250,Sintético,47.0,Masculino,Miami,Bajo,7.0,23.35,Sí,Sí,Pescado,Sí,+1-202-555-0150,cliente-demo-0250@example.invalid,Efectivo,1918.0
+9000000251,Cliente Demo 0251,Sintético,79.0,Femenino,Miami,Alto,1.0,54.73,No,No,Otro,Sí,+1-202-555-0151,cliente-demo-0251@example.invalid,Tarjeta,4894.0
+9000000252,Cliente Demo 0252,Sintético,25.0,Masculino,Miami,Alto,1.0,54.94,Sí,No,Vegetariano,No,+1-202-555-0152,cliente-demo-0252@example.invalid,Billetera digital,6378.0
+9000000253,Cliente Demo 0253,Sintético,79.0,Femenino,Orlando,Medio,2.0,27.26,Sí,No,Otro,No,+1-202-555-0153,cliente-demo-0253@example.invalid,Billetera digital,3360.0
+9000000254,Cliente Demo 0254,Sintético,83.0,Femenino,Tampa,Medio,2.0,23.81,Sí,No,Pescado,No,+1-202-555-0154,cliente-demo-0254@example.invalid,Efectivo,4127.0
+9000000255,Cliente Demo 0255,Sintético,85.0,Femenino,Orlando,Medio,8.0,29.98,Sí,No,Vegetariano,No,+1-202-555-0155,cliente-demo-0255@example.invalid,Billetera digital,4213.0
+9000000256,Cliente Demo 0256,Sintético,27.0,Masculino,Miami,Medio,10.0,28.93,Sí,Sí,Vegano,No,+1-202-555-0156,cliente-demo-0256@example.invalid,Efectivo,4078.0
+9000000257,Cliente Demo 0257,Sintético,20.0,Masculino,Orlando,Muy Alto,-1.0,,No,Sí,Vegetariano,Sí,+1-202-555-0157,cliente-demo-0257@example.invalid,Billetera digital,10693.0
+9000000258,Cliente Demo 0258,Sintético,36.0,Femenino,Orlando,Bajo,12.0,19.92,Sí,No,Mariscos,No,+1-202-555-0158,cliente-demo-0258@example.invalid,Tarjeta,3111.0
+9000000259,Cliente Demo 0259,Sintético,30.0,Masculino,Miami,Bajo,6.0,34.92,Sí,Sí,Vegetariano,No,+1-202-555-0159,cliente-demo-0259@example.invalid,Billetera digital,2580.0
+9000000260,Cliente Demo 0260,Sintético,62.0,Masculino,Miami,Alto,7.0,81.77,Sí,No,Mariscos,Sí,+1-202-555-0160,cliente-demo-0260@example.invalid,Tarjeta,7597.0
+9000000261,Cliente Demo 0261,Sintético,68.0,Masculino,Miami,Alto,11.0,62.28,Sí,No,Vegano,Sí,+1-202-555-0161,cliente-demo-0261@example.invalid,Tarjeta,5769.0
+9000000262,Cliente Demo 0262,Sintético,67.0,Femenino,Miami,Medio,12.0,36.74,Sí,No,Carnes,No,+1-202-555-0162,cliente-demo-0262@example.invalid,Efectivo,4222.0
+9000000263,Cliente Demo 0263,Sintético,62.0,Masculino,Fort Lauderdale,Medio,4.0,47.46,Sí,No,Otro,No,+1-202-555-0163,cliente-demo-0263@example.invalid,Tarjeta,4702.0
+9000000264,Cliente Demo 0264,Sintético,64.0,Masculino,Miami,Alto,7.0,59.89,Sí,Sí,Mariscos,No,+1-202-555-0164,cliente-demo-0264@example.invalid,Billetera digital,6070.0
+9000000265,Cliente Demo 0265,Sintético,68.0,Femenino,Miami,Bajo,8.0,9.74,Sí,No,Pescado,No,+1-202-555-0165,cliente-demo-0265@example.invalid,Tarjeta,1751.0
+9000000266,Cliente Demo 0266,Sintético,44.0,Masculino,Miami,Medio,9.0,32.78,Sí,Sí,Vegano,No,+1-202-555-0166,cliente-demo-0266@example.invalid,Tarjeta,5625.0
+9000000267,Cliente Demo 0267,Sintético,70.0,Femenino,Orlando,Muy Alto,8.0,100.45,Sí,No,Mariscos,Sí,+1-202-555-0167,cliente-demo-0267@example.invalid,Billetera digital,11154.0
+9000000268,Cliente Demo 0268,Sintético,63.0,Masculino,Tampa,Alto,6.0,75.83,Sí,Sí,Pescado,Sí,+1-202-555-0168,cliente-demo-0268@example.invalid,Tarjeta,7125.0
+9000000269,Cliente Demo 0269,Sintético,34.0,Masculino,Fort Lauderdale,Muy Alto,8.0,105.82,Sí,No,Vegetariano,Sí,+1-202-555-0169,cliente-demo-0269@example.invalid,Tarjeta,10074.0
+9000000270,Cliente Demo 0270,Sintético,80.0,Masculino,Miami,Bajo,6.0,10.31,Sí,Sí,Vegetariano,No,+1-202-555-0170,cliente-demo-0270@example.invalid,Billetera digital,2285.0
+9000000271,Cliente Demo 0271,Sintético,49.0,Femenino,Miami,Medio,8.0,37.11,Sí,No,Mariscos,Sí,+1-202-555-0171,cliente-demo-0271@example.invalid,Billetera digital,3332.0
+9000000272,Cliente Demo 0272,Sintético,79.0,Femenino,Miami,Medio,3.0,31.01,Sí,Sí,Pescado,No,+1-202-555-0172,cliente-demo-0272@example.invalid,Tarjeta,2806.0
+9000000273,Cliente Demo 0273,Sintético,46.0,Masculino,Miami,Alto,4.0,76.46,No,Sí,Vegetariano,Sí,+1-202-555-0173,cliente-demo-0273@example.invalid,Tarjeta,7033.0
+9000000274,Cliente Demo 0274,Sintético,82.0,Femenino,Fort Lauderdale,Alto,8.0,74.32,Sí,Sí,Otro,Sí,+1-202-555-0174,cliente-demo-0274@example.invalid,Tarjeta,7334.0
+9000000275,Cliente Demo 0275,Sintético,48.0,Masculino,Miami,Muy Alto,7.0,94.6,Sí,Sí,Otro,Sí,+1-202-555-0175,cliente-demo-0275@example.invalid,Tarjeta,9947.0
+9000000276,Cliente Demo 0276,Sintético,22.0,Masculino,Fort Lauderdale,Medio,6.0,34.48,Sí,Sí,Vegetariano,Sí,+1-202-555-0176,cliente-demo-0276@example.invalid,Tarjeta,2966.0
+9000000277,Cliente Demo 0277,Sintético,72.0,Masculino,Miami,Muy Alto,3.0,124.04,Sí,Sí,Carnes,Sí,+1-202-555-0177,cliente-demo-0277@example.invalid,Tarjeta,10548.0
+9000000278,Cliente Demo 0278,Sintético,105.0,Masculino,Fort Lauderdale,Bajo,9.0,31.32,Sí,Sí,Vegano,No,+1-202-555-0178,cliente-demo-0278@example.invalid,Tarjeta,2837.0
+9000000279,Cliente Demo 0279,Sintético,25.0,Masculino,Miami,Medio,11.0,54.98,Sí,Sí,Vegetariano,Sí,+1-202-555-0179,cliente-demo-0279@example.invalid,Tarjeta,4468.0
+9000000280,Cliente Demo 0280,Sintético,20.0,Femenino,Miami,Alto,6.0,62.01,Sí,Sí,Vegetariano,Sí,+1-202-555-0180,cliente-demo-0280@example.invalid,Tarjeta,3694.0
+9000000281,Cliente Demo 0281,Sintético,33.0,Masculino,Tampa,Bajo,9.0,22.37,Sí,Sí,Otro,Sí,+1-202-555-0181,cliente-demo-0281@example.invalid,Tarjeta,1377.0
+9000000282,Cliente Demo 0282,Sintético,59.0,Femenino,Miami,Alto,5.0,64.29,Sí,Sí,Carnes,Sí,+1-202-555-0182,cliente-demo-0282@example.invalid,Tarjeta,6227.0
+9000000283,Cliente Demo 0283,Sintético,32.0,Masculino,Fort Lauderdale,Medio,3.0,49.05,No,No,Otro,Sí,+1-202-555-0183,cliente-demo-0283@example.invalid,Tarjeta,3843.0
+9000000284,Cliente Demo 0284,Sintético,63.0,Masculino,Miami,Medio,4.0,48.79,No,Sí,Otro,No,+1-202-555-0184,cliente-demo-0284@example.invalid,Billetera digital,4221.0
+9000000285,Cliente Demo 0285,Sintético,42.0,Femenino,Tampa,Alto,1.0,48.94,Sí,No,Pescado,No,+1-202-555-0185,cliente-demo-0285@example.invalid,Tarjeta,6031.0
+9000000286,Cliente Demo 0286,Sintético,35.0,Femenino,Miami,Bajo,1.0,23.44,Sí,No,Carnes,No,+1-202-555-0186,cliente-demo-0286@example.invalid,Tarjeta,2913.0
+9000000287,Cliente Demo 0287,Sintético,46.0,Femenino,Miami,Alto,11.0,73.13,Sí,Sí,Mariscos,No,+1-202-555-0187,cliente-demo-0287@example.invalid,Tarjeta,5083.0
+9000000288,Cliente Demo 0288,Sintético,47.0,Femenino,Miami,Bajo,1.0,32.27,Sí,Sí,Carnes,No,+1-202-555-0188,cliente-demo-0288@example.invalid,Tarjeta,2981.0
+9000000289,Cliente Demo 0289,Sintético,78.0,Masculino,Miami,Bajo,10.0,25.97,No,No,Otro,Sí,+1-202-555-0189,cliente-demo-0289@example.invalid,Billetera digital,2558.0
+9000000290,Cliente Demo 0290,Sintético,70.0,Masculino,Orlando,Alto,8.0,68.66,Sí,Sí,Vegetariano,No,+1-202-555-0190,cliente-demo-0290@example.invalid,Efectivo,6935.0
+9000000291,Cliente Demo 0291,Sintético,31.0,Femenino,Miami,Bajo,-1.0,28.37,No,No,,No,+1-202-555-0191,cliente-demo-0291@example.invalid,Billetera digital,1320.0
+9000000292,Cliente Demo 0292,Sintético,51.0,Femenino,Orlando,Muy Alto,11.0,95.62,No,No,Mariscos,Sí,+1-202-555-0192,cliente-demo-0292@example.invalid,Tarjeta,10322.0
+9000000293,Cliente Demo 0293,Sintético,65.0,Masculino,Miami,Alto,3.0,69.26,Sí,Sí,Vegetariano,Sí,+1-202-555-0193,cliente-demo-0293@example.invalid,Billetera digital,6256.0
+9000000294,Cliente Demo 0294,Sintético,68.0,Masculino,Orlando,Bajo,8.0,20.86,Sí,No,Otro,No,+1-202-555-0194,cliente-demo-0294@example.invalid,Tarjeta,2706.0
+9000000295,Cliente Demo 0295,Sintético,48.0,Femenino,Tampa,Bajo,9.0,23.83,Sí,No,Mariscos,No,+1-202-555-0195,cliente-demo-0295@example.invalid,Tarjeta,1939.0
+9000000296,Cliente Demo 0296,Sintético,37.0,Masculino,Miami,Medio,4.0,38.6,Sí,Sí,Carnes,No,+1-202-555-0196,cliente-demo-0296@example.invalid,Tarjeta,3381.0
+9000000297,Cliente Demo 0297,Sintético,18.0,Femenino,Miami,Alto,,0.0,Sí,No,Vegetariano,Sí,+1-202-555-0197,cliente-demo-0297@example.invalid,Tarjeta,8247.0
+9000000298,Cliente Demo 0298,Sintético,26.0,Masculino,Miami,Muy Alto,7.0,115.49,No,Sí,Otro,No,+1-202-555-0198,cliente-demo-0298@example.invalid,Billetera digital,10714.0
+9000000299,Cliente Demo 0299,Sintético,59.0,No binario,Fort Lauderdale,Muy Alto,11.0,119.41,No,No,Vegetariano,Sí,+1-202-555-0199,cliente-demo-0299@example.invalid,Tarjeta,8983.0
+9000000300,Cliente Demo 0300,Sintético,27.0,Femenino,Fort Lauderdale,Muy Alto,10.0,102.34,Sí,No,Mariscos,Sí,+1-202-555-0100,cliente-demo-0300@example.invalid,Tarjeta,10321.0
+9000000301,Cliente Demo 0301,Sintético,36.0,Femenino,Miami,Muy Alto,4.0,96.63,No,Sí,Mariscos,No,+1-202-555-0101,cliente-demo-0301@example.invalid,Efectivo,10772.0
+9000000302,Cliente Demo 0302,Sintético,34.0,Masculino,Miami,Medio,3.0,50.21,Sí,Sí,Pescado,No,+1-202-555-0102,cliente-demo-0302@example.invalid,Billetera digital,3114.0
+9000000303,Cliente Demo 0303,Sintético,59.0,Femenino,Miami,Bajo,2.0,23.09,Sí,No,Vegetariano,No,+1-202-555-0103,cliente-demo-0303@example.invalid,Billetera digital,1428.0
+9000000304,Cliente Demo 0304,Sintético,50.0,Femenino,Orlando,Medio,11.0,30.85,Sí,No,Mariscos,Sí,+1-202-555-0104,cliente-demo-0304@example.invalid,Billetera digital,3059.0
+9000000305,Cliente Demo 0305,Sintético,53.0,Femenino,Miami,Bajo,11.0,25.87,Sí,Sí,Carnes,No,+1-202-555-0105,cliente-demo-0305@example.invalid,Tarjeta,1740.0
+9000000306,Cliente Demo 0306,Sintético,78.0,Masculino,Miami,Medio,5.0,34.47,Sí,Sí,Pescado,No,+1-202-555-0106,cliente-demo-0306@example.invalid,Billetera digital,4285.0
+9000000307,Cliente Demo 0307,Sintético,45.0,Masculino,Miami,Medio,11.0,36.63,No,Sí,Pescado,No,+1-202-555-0107,cliente-demo-0307@example.invalid,Tarjeta,4379.0
+9000000308,Cliente Demo 0308,Sintético,41.0,Masculino,Miami,Bajo,7.0,15.06,Sí,Sí,Carnes,No,+1-202-555-0108,cliente-demo-0308@example.invalid,Efectivo,2706.0
+9000000309,Cliente Demo 0309,Sintético,62.0,Masculino,Miami,Bajo,1.0,28.22,Sí,No,Mariscos,No,+1-202-555-0109,cliente-demo-0309@example.invalid,Billetera digital,2596.0
+9000000310,Cliente Demo 0310,Sintético,18.0,Femenino,Tampa,Medio,11.0,49.86,Sí,Sí,Vegano,No,+1-202-555-0110,cliente-demo-0310@example.invalid,Efectivo,2300.0
+9000000311,Cliente Demo 0311,Sintético,74.0,Femenino,Miami,Bajo,5.0,25.19,Sí,No,Otro,No,+1-202-555-0111,cliente-demo-0311@example.invalid,Efectivo,3121.0
+9000000312,Cliente Demo 0312,Sintético,63.0,Masculino,Miami,Medio,8.0,56.81,No,Sí,Otro,Sí,+1-202-555-0112,cliente-demo-0312@example.invalid,Efectivo,4710.0
+9000000313,Cliente Demo 0313,Sintético,69.0,Femenino,Miami,Medio,1.0,53.0,Sí,No,Vegetariano,No,+1-202-555-0113,cliente-demo-0313@example.invalid,Efectivo,4912.0
+9000000314,Cliente Demo 0314,Sintético,34.0,Femenino,Miami,Muy Alto,11.0,103.52,Sí,No,Vegetariano,Sí,+1-202-555-0114,cliente-demo-0314@example.invalid,Billetera digital,10994.0
+9000000315,Cliente Demo 0315,Sintético,25.0,Masculino,Tampa,Bajo,12.0,33.77,Sí,Sí,Otro,No,+1-202-555-0115,cliente-demo-0315@example.invalid,Efectivo,2445.0
+9000000316,Cliente Demo 0316,Sintético,59.0,Femenino,Miami,Medio,9.0,44.02,Sí,Sí,Pescado,Sí,+1-202-555-0116,cliente-demo-0316@example.invalid,Tarjeta,4103.0
+9000000317,Cliente Demo 0317,Sintético,42.0,Femenino,Miami,Bajo,10.0,8.0,Sí,Sí,Pescado,No,+1-202-555-0117,cliente-demo-0317@example.invalid,Tarjeta,900.0
+9000000318,Cliente Demo 0318,Sintético,65.0,Masculino,Orlando,Bajo,2.0,11.6,No,No,Vegetariano,No,+1-202-555-0118,cliente-demo-0318@example.invalid,Efectivo,2548.0
+9000000319,Cliente Demo 0319,Sintético,79.0,Masculino,Miami,Muy Alto,12.0,117.05,Sí,No,Vegano,Sí,+1-202-555-0119,cliente-demo-0319@example.invalid,Tarjeta,9391.0
+9000000320,Cliente Demo 0320,Sintético,62.0,Femenino,Miami,Medio,2.0,,Sí,Sí,Otro,No,+1-202-555-0120,cliente-demo-0320@example.invalid,Tarjeta,4390.0
+9000000321,Cliente Demo 0321,Sintético,79.0,Femenino,Miami,Medio,3.0,43.14,Sí,No,Vegano,No,+1-202-555-0121,cliente-demo-0321@example.invalid,Billetera digital,4516.0
+9000000322,Cliente Demo 0322,Sintético,68.0,Femenino,Miami,Medio,3.0,34.75,No,No,Mariscos,No,+1-202-555-0122,cliente-demo-0322@example.invalid,Tarjeta,2797.0
+9000000323,Cliente Demo 0323,Sintético,45.0,Femenino,Tampa,Medio,8.0,30.55,Sí,Sí,Pescado,Sí,+1-202-555-0123,cliente-demo-0323@example.invalid,Efectivo,3595.0
+9000000324,Cliente Demo 0324,Sintético,81.0,Masculino,Miami,Alto,8.0,59.4,No,Sí,Otro,Sí,+1-202-555-0124,cliente-demo-0324@example.invalid,Tarjeta,6013.0
+9000000325,Cliente Demo 0325,Sintético,53.0,Femenino,Miami,Bajo,3.0,23.82,No,Sí,Mariscos,No,+1-202-555-0125,cliente-demo-0325@example.invalid,Efectivo,3160.0
+9000000326,Cliente Demo 0326,Sintético,51.0,Masculino,Tampa,Medio,8.0,42.16,Sí,No,Mariscos,Sí,+1-202-555-0126,cliente-demo-0326@example.invalid,Billetera digital,3006.0
+9000000327,Cliente Demo 0327,Sintético,46.0,Masculino,Orlando,Medio,11.0,29.75,Sí,Sí,Carnes,Sí,+1-202-555-0127,cliente-demo-0327@example.invalid,Tarjeta,2994.0
+9000000328,Cliente Demo 0328,Sintético,65.0,Masculino,Miami,Muy Alto,12.0,98.59,Sí,Sí,Vegetariano,No,+1-202-555-0128,cliente-demo-0328@example.invalid,Tarjeta,8494.0
+9000000329,Cliente Demo 0329,Sintético,19.0,Femenino,Miami,Alto,12.0,63.61,Sí,Sí,Carnes,Sí,+1-202-555-0129,cliente-demo-0329@example.invalid,Tarjeta,7822.0
+9000000330,Cliente Demo 0330,Sintético,43.0,Masculino,Miami,Medio,3.0,35.75,Sí,Sí,Vegetariano,No,+1-202-555-0130,cliente-demo-0330@example.invalid,Tarjeta,3356.0
+9000000331,Cliente Demo 0331,Sintético,39.0,No binario,Miami,Bajo,6.0,21.96,Sí,Sí,Otro,No,+1-202-555-0131,cliente-demo-0331@example.invalid,Efectivo,1081.0
+9000000332,Cliente Demo 0332,Sintético,78.0,Masculino,Orlando,Bajo,5.0,26.9,No,Sí,Otro,No,+1-202-555-0132,cliente-demo-0332@example.invalid,Tarjeta,2039.0
+9000000333,Cliente Demo 0333,Sintético,15.0,Masculino,Miami,Muy Alto,0.0,0.0,Sí,Sí,Otro,Sí,+1-202-555-0133,cliente-demo-0333@example.invalid,Tarjeta,9632.0
+9000000334,Cliente Demo 0334,Sintético,63.0,Femenino,Miami,Medio,11.0,38.91,No,Sí,Pescado,Sí,+1-202-555-0134,cliente-demo-0334@example.invalid,Tarjeta,1916.0
+9000000335,Cliente Demo 0335,Sintético,80.0,Masculino,Miami,Alto,2.0,69.56,No,No,Otro,Sí,+1-202-555-0135,cliente-demo-0335@example.invalid,Billetera digital,5106.0
+9000000336,Cliente Demo 0336,Sintético,39.0,Masculino,Orlando,Medio,4.0,33.63,No,No,Carnes,Sí,+1-202-555-0136,cliente-demo-0336@example.invalid,Billetera digital,4279.0
+9000000337,Cliente Demo 0337,Sintético,27.0,Femenino,Miami,Muy Alto,8.0,99.72,No,No,Mariscos,Sí,+1-202-555-0137,cliente-demo-0337@example.invalid,Tarjeta,9536.0
+9000000338,Cliente Demo 0338,Sintético,34.0,Masculino,Miami,Alto,10.0,62.91,Sí,No,Carnes,No,+1-202-555-0138,cliente-demo-0338@example.invalid,Tarjeta,6262.0
+9000000339,Cliente Demo 0339,Sintético,36.0,Masculino,Miami,Alto,9.0,66.68,Sí,Sí,Vegetariano,Sí,+1-202-555-0139,cliente-demo-0339@example.invalid,Tarjeta,6903.0
+9000000340,Cliente Demo 0340,Sintético,79.0,Masculino,Fort Lauderdale,Alto,11.0,68.33,No,Sí,Vegano,Sí,+1-202-555-0140,cliente-demo-0340@example.invalid,Tarjeta,6622.0
+9000000341,Cliente Demo 0341,Sintético,32.0,Femenino,Miami,Medio,5.0,46.03,Sí,Sí,Vegetariano,No,+1-202-555-0141,cliente-demo-0341@example.invalid,Tarjeta,3371.0
+9000000342,Cliente Demo 0342,Sintético,24.0,Femenino,Miami,Bajo,11.0,23.19,Sí,Sí,Vegetariano,No,+1-202-555-0142,cliente-demo-0342@example.invalid,Tarjeta,1002.0
+9000000343,Cliente Demo 0343,Sintético,19.0,Femenino,Tampa,Medio,11.0,36.76,Sí,No,Vegetariano,Sí,+1-202-555-0143,cliente-demo-0343@example.invalid,Efectivo,3611.0
+9000000344,Cliente Demo 0344,Sintético,84.0,Femenino,Miami,Bajo,12.0,24.82,Sí,Sí,Carnes,No,+1-202-555-0144,cliente-demo-0344@example.invalid,Tarjeta,1153.0
+9000000345,Cliente Demo 0345,Sintético,48.0,Masculino,Orlando,Muy Alto,1.0,103.2,No,No,Mariscos,Sí,+1-202-555-0145,cliente-demo-0345@example.invalid,Tarjeta,9146.0
+9000000346,Cliente Demo 0346,Sintético,25.0,Masculino,Miami,Bajo,11.0,30.03,No,Sí,Vegano,No,+1-202-555-0146,cliente-demo-0346@example.invalid,Tarjeta,2630.0
+9000000347,Cliente Demo 0347,Sintético,78.0,Femenino,Miami,Bajo,9.0,10.26,Sí,Sí,Vegano,No,+1-202-555-0147,cliente-demo-0347@example.invalid,Efectivo,2908.0
+9000000348,Cliente Demo 0348,Sintético,75.0,Femenino,Fort Lauderdale,Alto,2.0,69.7,Sí,Sí,Mariscos,Sí,+1-202-555-0148,cliente-demo-0348@example.invalid,Efectivo,6393.0
+9000000349,Cliente Demo 0349,Sintético,66.0,Femenino,Tampa,Bajo,2.0,33.04,Sí,No,Mariscos,Sí,+1-202-555-0149,cliente-demo-0349@example.invalid,Tarjeta,2413.0
+9000000350,Cliente Demo 0350,Sintético,80.0,Femenino,Tampa,Medio,8.0,32.59,Sí,No,Carnes,No,+1-202-555-0150,cliente-demo-0350@example.invalid,Tarjeta,3801.0
+9000000351,Cliente Demo 0351,Sintético,46.0,Femenino,Orlando,Bajo,1.0,17.38,Sí,Sí,Otro,No,+1-202-555-0151,cliente-demo-0351@example.invalid,Billetera digital,2534.0
+9000000352,Cliente Demo 0352,Sintético,60.0,Femenino,Miami,Muy Alto,10.0,114.56,Sí,Sí,Vegetariano,Sí,+1-202-555-0152,cliente-demo-0352@example.invalid,Tarjeta,10199.0
+9000000353,Cliente Demo 0353,Sintético,70.0,Femenino,Miami,Alto,9.0,64.99,Sí,Sí,Otro,Sí,+1-202-555-0153,cliente-demo-0353@example.invalid,Billetera digital,7354.0
+9000000354,Cliente Demo 0354,Sintético,49.0,Masculino,Miami,Medio,1.0,46.11,No,No,Vegetariano,No,+1-202-555-0154,cliente-demo-0354@example.invalid,Tarjeta,4793.0
+9000000355,Cliente Demo 0355,Sintético,75.0,Masculino,Fort Lauderdale,Medio,3.0,45.6,Sí,No,Otro,No,+1-202-555-0155,cliente-demo-0355@example.invalid,Tarjeta,5433.0
+9000000356,Cliente Demo 0356,Sintético,82.0,Femenino,Miami,Muy Alto,1.0,101.7,Sí,Sí,Otro,Sí,+1-202-555-0156,cliente-demo-0356@example.invalid,Efectivo,9590.0
+9000000357,Cliente Demo 0357,Sintético,26.0,Masculino,Miami,Muy Alto,9.0,103.9,Sí,No,Mariscos,Sí,+1-202-555-0157,cliente-demo-0357@example.invalid,Efectivo,9394.0
+9000000358,Cliente Demo 0358,Sintético,84.0,Masculino,Miami,Alto,4.0,62.62,Sí,Sí,,Sí,+1-202-555-0158,cliente-demo-0358@example.invalid,Efectivo,5912.0
+9000000359,Cliente Demo 0359,Sintético,69.0,Femenino,Miami,Alto,5.0,76.59,Sí,Sí,Mariscos,Sí,+1-202-555-0159,cliente-demo-0359@example.invalid,Tarjeta,6859.0
+9000000360,Cliente Demo 0360,Sintético,68.0,Femenino,Tampa,Alto,7.0,66.51,No,No,Vegetariano,Sí,+1-202-555-0160,cliente-demo-0360@example.invalid,Efectivo,7528.0
+9000000361,Cliente Demo 0361,Sintético,78.0,No binario,Miami,Medio,7.0,33.16,Sí,Sí,Vegetariano,No,+1-202-555-0161,cliente-demo-0361@example.invalid,Tarjeta,4872.0
+9000000362,Cliente Demo 0362,Sintético,65.0,Femenino,Fort Lauderdale,Medio,7.0,37.07,Sí,Sí,Mariscos,No,+1-202-555-0162,cliente-demo-0362@example.invalid,Efectivo,5491.0
+9000000363,Cliente Demo 0363,Sintético,25.0,Masculino,Miami,Alto,7.0,64.28,Sí,No,Vegetariano,Sí,+1-202-555-0163,cliente-demo-0363@example.invalid,Efectivo,7573.0
+9000000364,Cliente Demo 0364,Sintético,48.0,Femenino,Orlando,Medio,9.0,48.76,Sí,No,Vegano,No,+1-202-555-0164,cliente-demo-0364@example.invalid,Efectivo,4100.0
+9000000365,Cliente Demo 0365,Sintético,77.0,Femenino,Miami,Alto,9.0,63.96,Sí,Sí,Otro,Sí,+1-202-555-0165,cliente-demo-0365@example.invalid,Tarjeta,5143.0
+9000000366,Cliente Demo 0366,Sintético,80.0,Masculino,Miami,Muy Alto,7.0,109.47,Sí,Sí,Carnes,No,+1-202-555-0166,cliente-demo-0366@example.invalid,Tarjeta,8552.0
+9000000367,Cliente Demo 0367,Sintético,105.0,Masculino,Orlando,Medio,7.0,38.3,Sí,Sí,Carnes,No,+1-202-555-0167,cliente-demo-0367@example.invalid,Tarjeta,3816.0
+9000000368,Cliente Demo 0368,Sintético,21.0,No binario,Miami,Bajo,11.0,30.41,Sí,No,Carnes,No,+1-202-555-0168,cliente-demo-0368@example.invalid,Tarjeta,2735.0
+9000000369,Cliente Demo 0369,Sintético,65.0,Masculino,Miami,Muy Alto,9.0,91.34,Sí,Sí,Vegano,Sí,+1-202-555-0169,cliente-demo-0369@example.invalid,Tarjeta,9438.0
+9000000370,Cliente Demo 0370,Sintético,33.0,Femenino,Miami,Alto,-1.0,,Sí,Sí,Vegetariano,Sí,+1-202-555-0170,cliente-demo-0370@example.invalid,Billetera digital,6924.0
+9000000371,Cliente Demo 0371,Sintético,38.0,Femenino,Miami,Alto,3.0,77.96,Sí,Sí,Vegano,Sí,+1-202-555-0171,cliente-demo-0371@example.invalid,Efectivo,4364.0
+9000000372,Cliente Demo 0372,Sintético,30.0,Masculino,Orlando,Bajo,1.0,16.91,No,Sí,Vegano,No,+1-202-555-0172,cliente-demo-0372@example.invalid,Tarjeta,2633.0
+9000000373,Cliente Demo 0373,Sintético,35.0,Masculino,Miami,Medio,6.0,18.4,No,Sí,Vegetariano,Sí,+1-202-555-0173,cliente-demo-0373@example.invalid,Tarjeta,2618.0
+9000000374,Cliente Demo 0374,Sintético,45.0,Femenino,Miami,Bajo,9.0,21.03,No,Sí,Vegano,No,+1-202-555-0174,cliente-demo-0374@example.invalid,Tarjeta,1622.0
+9000000375,Cliente Demo 0375,Sintético,32.0,Femenino,Miami,Alto,3.0,79.58,Sí,Sí,Mariscos,No,+1-202-555-0175,cliente-demo-0375@example.invalid,Tarjeta,5173.0
+9000000376,Cliente Demo 0376,Sintético,36.0,No binario,Tampa,Medio,8.0,41.98,Sí,Sí,Vegetariano,No,+1-202-555-0176,cliente-demo-0376@example.invalid,Tarjeta,2944.0
+9000000377,Cliente Demo 0377,Sintético,79.0,Masculino,Miami,Muy Alto,3.0,105.84,Sí,Sí,Vegano,No,+1-202-555-0177,cliente-demo-0377@example.invalid,Efectivo,9985.0
+9000000378,Cliente Demo 0378,Sintético,28.0,Femenino,Tampa,Bajo,10.0,25.69,No,No,Vegano,No,+1-202-555-0178,cliente-demo-0378@example.invalid,Tarjeta,1976.0
+9000000379,Cliente Demo 0379,Sintético,44.0,Masculino,Miami,Muy Alto,5.0,109.96,No,Sí,Carnes,Sí,+1-202-555-0179,cliente-demo-0379@example.invalid,Tarjeta,10446.0
+9000000380,Cliente Demo 0380,Sintético,36.0,Femenino,Miami,Bajo,6.0,15.07,Sí,Sí,Mariscos,Sí,+1-202-555-0180,cliente-demo-0380@example.invalid,Efectivo,2434.0
+9000000381,Cliente Demo 0381,Sintético,28.0,Masculino,Miami,Alto,7.0,75.25,No,No,Mariscos,No,+1-202-555-0181,cliente-demo-0381@example.invalid,Tarjeta,7078.0
+9000000382,Cliente Demo 0382,Sintético,48.0,Femenino,Miami,Medio,4.0,38.22,Sí,Sí,Mariscos,No,+1-202-555-0182,cliente-demo-0382@example.invalid,Tarjeta,5553.0
+9000000383,Cliente Demo 0383,Sintético,76.0,Femenino,Fort Lauderdale,Medio,9.0,26.56,Sí,Sí,Vegano,No,+1-202-555-0183,cliente-demo-0383@example.invalid,Tarjeta,4090.0
+9000000384,Cliente Demo 0384,Sintético,64.0,Femenino,Miami,Medio,8.0,41.29,Sí,No,Carnes,No,+1-202-555-0184,cliente-demo-0384@example.invalid,Billetera digital,3946.0
+9000000385,Cliente Demo 0385,Sintético,54.0,Masculino,Miami,Muy Alto,4.0,124.41,Sí,Sí,Vegano,Sí,+1-202-555-0185,cliente-demo-0385@example.invalid,Efectivo,9253.0
+9000000386,Cliente Demo 0386,Sintético,64.0,Femenino,Miami,Alto,11.0,56.36,No,No,Vegetariano,Sí,+1-202-555-0186,cliente-demo-0386@example.invalid,Tarjeta,6625.0
+9000000387,Cliente Demo 0387,Sintético,53.0,Femenino,Miami,Bajo,11.0,32.4,Sí,Sí,Otro,No,+1-202-555-0187,cliente-demo-0387@example.invalid,Billetera digital,1550.0
+9000000388,Cliente Demo 0388,Sintético,38.0,Masculino,Tampa,Alto,-1.0,61.88,Sí,Sí,Carnes,Sí,+1-202-555-0188,cliente-demo-0388@example.invalid,Tarjeta,7009.0
+9000000389,Cliente Demo 0389,Sintético,23.0,Femenino,Orlando,Medio,8.0,27.69,No,Sí,Vegano,Sí,+1-202-555-0189,cliente-demo-0389@example.invalid,Billetera digital,4026.0
+9000000390,Cliente Demo 0390,Sintético,85.0,Masculino,Miami,Bajo,8.0,35.52,Sí,Sí,Vegano,No,+1-202-555-0190,cliente-demo-0390@example.invalid,Billetera digital,2082.0
+9000000391,Cliente Demo 0391,Sintético,57.0,Masculino,Orlando,Alto,10.0,83.86,Sí,No,Mariscos,Sí,+1-202-555-0191,cliente-demo-0391@example.invalid,Tarjeta,5628.0
+9000000392,Cliente Demo 0392,Sintético,31.0,Masculino,Miami,Alto,2.0,76.0,Sí,Sí,Carnes,Sí,+1-202-555-0192,cliente-demo-0392@example.invalid,Tarjeta,6070.0
+9000000393,Cliente Demo 0393,Sintético,70.0,Femenino,Tampa,Muy Alto,11.0,103.62,Sí,Sí,Carnes,Sí,+1-202-555-0193,cliente-demo-0393@example.invalid,Tarjeta,10437.0
+9000000394,Cliente Demo 0394,Sintético,27.0,Femenino,Miami,Alto,6.0,72.23,Sí,No,Vegano,Sí,+1-202-555-0194,cliente-demo-0394@example.invalid,Tarjeta,5760.0
+9000000395,Cliente Demo 0395,Sintético,60.0,Masculino,Miami,Medio,2.0,44.55,No,No,Pescado,No,+1-202-555-0195,cliente-demo-0395@example.invalid,Tarjeta,2137.0
+9000000396,Cliente Demo 0396,Sintético,83.0,Masculino,Miami,Medio,8.0,44.14,Sí,No,Vegetariano,Sí,+1-202-555-0196,cliente-demo-0396@example.invalid,Tarjeta,3104.0
+9000000397,Cliente Demo 0397,Sintético,19.0,Femenino,Miami,Medio,2.0,50.08,No,No,Mariscos,Sí,+1-202-555-0197,cliente-demo-0397@example.invalid,Efectivo,3714.0
+9000000398,Cliente Demo 0398,Sintético,52.0,Masculino,Miami,Muy Alto,4.0,98.44,Sí,Sí,Vegetariano,No,+1-202-555-0198,cliente-demo-0398@example.invalid,Tarjeta,8627.0
+9000000399,Cliente Demo 0399,Sintético,76.0,Masculino,Miami,Muy Alto,8.0,108.4,No,Sí,Otro,No,+1-202-555-0199,cliente-demo-0399@example.invalid,Tarjeta,8292.0
+9000000400,Cliente Demo 0400,Sintético,76.0,Femenino,Miami,Muy Alto,12.0,111.46,Sí,Sí,Vegano,Sí,+1-202-555-0100,cliente-demo-0400@example.invalid,Tarjeta,10540.0
+9000000401,Cliente Demo 0401,Sintético,34.0,Femenino,Miami,Muy Alto,8.0,108.45,Sí,Sí,Pescado,Sí,+1-202-555-0101,cliente-demo-0401@example.invalid,Efectivo,9817.0
+9000000402,Cliente Demo 0402,Sintético,80.0,No binario,Fort Lauderdale,Alto,6.0,57.58,Sí,Sí,Vegano,No,+1-202-555-0102,cliente-demo-0402@example.invalid,Efectivo,5499.0
+9000000403,Cliente Demo 0403,Sintético,23.0,Femenino,Miami,Medio,8.0,48.99,Sí,Sí,Vegetariano,No,+1-202-555-0103,cliente-demo-0403@example.invalid,Tarjeta,3391.0
+9000000404,Cliente Demo 0404,Sintético,26.0,Femenino,Orlando,Muy Alto,6.0,97.89,No,Sí,Otro,Sí,+1-202-555-0104,cliente-demo-0404@example.invalid,Tarjeta,9798.0
+9000000405,Cliente Demo 0405,Sintético,36.0,Masculino,Tampa,Bajo,5.0,47.72,Sí,Sí,Vegetariano,No,+1-202-555-0105,cliente-demo-0405@example.invalid,Tarjeta,1252.0
+9000000406,Cliente Demo 0406,Sintético,26.0,Femenino,Orlando,Alto,10.0,80.25,Sí,No,Vegetariano,Sí,+1-202-555-0106,cliente-demo-0406@example.invalid,Tarjeta,5558.0
+9000000407,Cliente Demo 0407,Sintético,72.0,Femenino,Orlando,Alto,5.0,79.44,No,Sí,Pescado,Sí,+1-202-555-0107,cliente-demo-0407@example.invalid,Tarjeta,6558.0
+9000000408,Cliente Demo 0408,Sintético,84.0,Masculino,Miami,Muy Alto,11.0,115.46,Sí,Sí,Carnes,Sí,+1-202-555-0108,cliente-demo-0408@example.invalid,Tarjeta,9622.0
+9000000409,Cliente Demo 0409,Sintético,62.0,Femenino,Miami,Muy Alto,5.0,96.49,Sí,No,Vegetariano,Sí,+1-202-555-0109,cliente-demo-0409@example.invalid,Billetera digital,9670.0
+9000000410,Cliente Demo 0410,Sintético,37.0,Femenino,Tampa,Medio,7.0,45.98,No,Sí,Mariscos,No,+1-202-555-0110,cliente-demo-0410@example.invalid,Billetera digital,3227.0
+9000000411,Cliente Demo 0411,Sintético,69.0,Femenino,Tampa,Medio,5.0,34.08,Sí,Sí,Mariscos,No,+1-202-555-0111,cliente-demo-0411@example.invalid,Tarjeta,4125.0
+9000000412,Cliente Demo 0412,Sintético,80.0,Femenino,Miami,Medio,11.0,37.01,No,No,Carnes,No,+1-202-555-0112,cliente-demo-0412@example.invalid,Efectivo,2875.0
+9000000413,Cliente Demo 0413,Sintético,33.0,Masculino,Orlando,Medio,2.0,37.28,No,No,Otro,No,+1-202-555-0113,cliente-demo-0413@example.invalid,Tarjeta,3597.0
+9000000414,Cliente Demo 0414,Sintético,62.0,Femenino,Orlando,Bajo,11.0,32.53,Sí,Sí,Carnes,No,+1-202-555-0114,cliente-demo-0414@example.invalid,Billetera digital,2043.0
+9000000415,Cliente Demo 0415,Sintético,62.0,Masculino,Tampa,Alto,3.0,65.18,Sí,Sí,Mariscos,Sí,+1-202-555-0115,cliente-demo-0415@example.invalid,Tarjeta,7537.0
+9000000416,Cliente Demo 0416,Sintético,84.0,Masculino,Miami,Medio,5.0,36.79,Sí,Sí,Mariscos,No,+1-202-555-0116,cliente-demo-0416@example.invalid,Efectivo,3441.0
+9000000417,Cliente Demo 0417,Sintético,78.0,Femenino,Orlando,Alto,1.0,70.29,No,Sí,Vegano,No,+1-202-555-0117,cliente-demo-0417@example.invalid,Tarjeta,5198.0
+9000000418,Cliente Demo 0418,Sintético,59.0,Femenino,Miami,Medio,4.0,35.69,No,No,Mariscos,Sí,+1-202-555-0118,cliente-demo-0418@example.invalid,Tarjeta,2731.0
+9000000419,Cliente Demo 0419,Sintético,71.0,Femenino,Tampa,Alto,6.0,55.04,Sí,Sí,Mariscos,Sí,+1-202-555-0119,cliente-demo-0419@example.invalid,Tarjeta,7284.0
+9000000420,Cliente Demo 0420,Sintético,33.0,Masculino,Tampa,Medio,3.0,47.74,Sí,Sí,Mariscos,No,+1-202-555-0120,cliente-demo-0420@example.invalid,Efectivo,3292.0
+9000000421,Cliente Demo 0421,Sintético,74.0,Masculino,Miami,Alto,6.0,,Sí,No,Mariscos,No,+1-202-555-0121,cliente-demo-0421@example.invalid,Tarjeta,4651.0
+9000000422,Cliente Demo 0422,Sintético,35.0,Masculino,Orlando,Medio,2.0,35.42,Sí,No,Pescado,No,+1-202-555-0122,cliente-demo-0422@example.invalid,Tarjeta,3472.0
+9000000423,Cliente Demo 0423,Sintético,38.0,Femenino,Miami,Muy Alto,5.0,100.3,No,Sí,Vegano,Sí,+1-202-555-0123,cliente-demo-0423@example.invalid,Tarjeta,10830.0
+9000000424,Cliente Demo 0424,Sintético,22.0,Femenino,Miami,Alto,,0.0,Sí,Sí,Mariscos,Sí,+1-202-555-0124,cliente-demo-0424@example.invalid,Billetera digital,5948.0
+9000000425,Cliente Demo 0425,Sintético,73.0,Femenino,Miami,Alto,1.0,75.56,Sí,No,,Sí,+1-202-555-0125,cliente-demo-0425@example.invalid,Tarjeta,6083.0
+9000000426,Cliente Demo 0426,Sintético,69.0,Femenino,Miami,Medio,3.0,31.81,Sí,No,Mariscos,No,+1-202-555-0126,cliente-demo-0426@example.invalid,Efectivo,4018.0
+9000000427,Cliente Demo 0427,Sintético,83.0,Femenino,Miami,Bajo,7.0,30.05,Sí,Sí,Vegetariano,Sí,+1-202-555-0127,cliente-demo-0427@example.invalid,Tarjeta,2593.0
+9000000428,Cliente Demo 0428,Sintético,46.0,Masculino,Miami,Bajo,7.0,16.02,Sí,No,Vegano,No,+1-202-555-0128,cliente-demo-0428@example.invalid,Tarjeta,900.0
+9000000429,Cliente Demo 0429,Sintético,69.0,Femenino,Fort Lauderdale,Medio,9.0,26.23,Sí,Sí,Vegetariano,Sí,+1-202-555-0129,cliente-demo-0429@example.invalid,Efectivo,2358.0
+9000000430,Cliente Demo 0430,Sintético,70.0,Femenino,Orlando,Alto,3.0,82.43,Sí,Sí,Vegetariano,Sí,+1-202-555-0130,cliente-demo-0430@example.invalid,Billetera digital,7790.0
+9000000431,Cliente Demo 0431,Sintético,26.0,Femenino,Fort Lauderdale,Bajo,4.0,23.03,Sí,Sí,Mariscos,No,+1-202-555-0131,cliente-demo-0431@example.invalid,Billetera digital,902.0
+9000000432,Cliente Demo 0432,Sintético,65.0,Femenino,Tampa,Muy Alto,3.0,97.3,Sí,No,Pescado,Sí,+1-202-555-0132,cliente-demo-0432@example.invalid,Tarjeta,10018.0
+9000000433,Cliente Demo 0433,Sintético,43.0,No binario,Miami,Medio,10.0,25.79,Sí,Sí,Mariscos,Sí,+1-202-555-0133,cliente-demo-0433@example.invalid,Tarjeta,2556.0
+9000000434,Cliente Demo 0434,Sintético,28.0,Femenino,Tampa,Medio,6.0,50.24,Sí,Sí,Carnes,Sí,+1-202-555-0134,cliente-demo-0434@example.invalid,Tarjeta,4527.0
+9000000435,Cliente Demo 0435,Sintético,68.0,Masculino,Tampa,Medio,6.0,38.86,Sí,Sí,Vegetariano,No,+1-202-555-0135,cliente-demo-0435@example.invalid,Tarjeta,2841.0
+9000000436,Cliente Demo 0436,Sintético,67.0,Masculino,Miami,Bajo,10.0,15.41,No,Sí,Vegano,No,+1-202-555-0136,cliente-demo-0436@example.invalid,Billetera digital,3217.0
+9000000437,Cliente Demo 0437,Sintético,69.0,Masculino,Miami,Medio,6.0,30.79,Sí,No,Carnes,Sí,+1-202-555-0137,cliente-demo-0437@example.invalid,Tarjeta,2599.0
+9000000438,Cliente Demo 0438,Sintético,35.0,No binario,Miami,Bajo,6.0,17.31,No,Sí,Carnes,No,+1-202-555-0138,cliente-demo-0438@example.invalid,Billetera digital,1933.0
+9000000439,Cliente Demo 0439,Sintético,67.0,Femenino,Miami,Medio,6.0,41.66,No,Sí,Pescado,Sí,+1-202-555-0139,cliente-demo-0439@example.invalid,Tarjeta,3611.0
+9000000440,Cliente Demo 0440,Sintético,26.0,Femenino,Miami,Medio,11.0,51.9,Sí,Sí,Pescado,Sí,+1-202-555-0140,cliente-demo-0440@example.invalid,Billetera digital,3609.0
+9000000441,Cliente Demo 0441,Sintético,32.0,Masculino,Orlando,Muy Alto,6.0,109.23,Sí,No,Pescado,No,+1-202-555-0141,cliente-demo-0441@example.invalid,Billetera digital,11094.0
+9000000442,Cliente Demo 0442,Sintético,44.0,Masculino,Miami,Bajo,1.0,19.0,Sí,No,Carnes,No,+1-202-555-0142,cliente-demo-0442@example.invalid,Tarjeta,3267.0
+9000000443,Cliente Demo 0443,Sintético,21.0,Masculino,Miami,Alto,11.0,77.99,No,Sí,Carnes,No,+1-202-555-0143,cliente-demo-0443@example.invalid,Efectivo,6033.0
+9000000444,Cliente Demo 0444,Sintético,76.0,Masculino,Miami,Alto,2.0,60.9,No,No,Vegetariano,Sí,+1-202-555-0144,cliente-demo-0444@example.invalid,Tarjeta,6461.0
+9000000445,Cliente Demo 0445,Sintético,80.0,Femenino,Miami,Muy Alto,8.0,110.69,No,Sí,Vegetariano,Sí,+1-202-555-0145,cliente-demo-0445@example.invalid,Billetera digital,8760.0
+9000000446,Cliente Demo 0446,Sintético,81.0,Masculino,Miami,Medio,9.0,50.98,Sí,No,Mariscos,No,+1-202-555-0146,cliente-demo-0446@example.invalid,Efectivo,3132.0
+9000000447,Cliente Demo 0447,Sintético,85.0,Femenino,Fort Lauderdale,Medio,11.0,43.27,Sí,No,Mariscos,Sí,+1-202-555-0147,cliente-demo-0447@example.invalid,Tarjeta,4341.0
+9000000448,Cliente Demo 0448,Sintético,70.0,Femenino,Orlando,Alto,8.0,82.23,No,No,Otro,Sí,+1-202-555-0148,cliente-demo-0448@example.invalid,Tarjeta,7054.0
+9000000449,Cliente Demo 0449,Sintético,39.0,Femenino,Miami,Medio,11.0,34.98,Sí,Sí,Vegano,No,+1-202-555-0149,cliente-demo-0449@example.invalid,Tarjeta,3423.0
+9000000450,Cliente Demo 0450,Sintético,26.0,Femenino,Miami,Alto,1.0,68.26,Sí,Sí,Otro,No,+1-202-555-0150,cliente-demo-0450@example.invalid,Billetera digital,7690.0
+9000000451,Cliente Demo 0451,Sintético,57.0,Femenino,Miami,Muy Alto,6.0,98.84,No,Sí,Vegano,Sí,+1-202-555-0151,cliente-demo-0451@example.invalid,Billetera digital,10560.0
+9000000452,Cliente Demo 0452,Sintético,58.0,Masculino,Miami,Bajo,4.0,14.98,Sí,Sí,Mariscos,No,+1-202-555-0152,cliente-demo-0452@example.invalid,Efectivo,2602.0
+9000000453,Cliente Demo 0453,Sintético,66.0,Masculino,Miami,Muy Alto,7.0,105.27,Sí,No,Vegetariano,Sí,+1-202-555-0153,cliente-demo-0453@example.invalid,Efectivo,9671.0
+9000000454,Cliente Demo 0454,Sintético,43.0,Masculino,Orlando,Alto,3.0,75.86,Sí,Sí,Pescado,No,+1-202-555-0154,cliente-demo-0454@example.invalid,Efectivo,7025.0
+9000000455,Cliente Demo 0455,Sintético,68.0,Masculino,Miami,Alto,1.0,81.02,No,No,Vegetariano,Sí,+1-202-555-0155,cliente-demo-0455@example.invalid,Efectivo,6467.0
+9000000456,Cliente Demo 0456,Sintético,105.0,Masculino,Fort Lauderdale,Medio,12.0,38.85,Sí,Sí,Carnes,No,+1-202-555-0156,cliente-demo-0456@example.invalid,Tarjeta,3190.0
+9000000457,Cliente Demo 0457,Sintético,38.0,Masculino,Miami,Medio,4.0,48.15,No,Sí,Carnes,No,+1-202-555-0157,cliente-demo-0457@example.invalid,Billetera digital,3015.0
+9000000458,Cliente Demo 0458,Sintético,84.0,Femenino,Miami,Medio,5.0,34.82,Sí,Sí,Otro,No,+1-202-555-0158,cliente-demo-0458@example.invalid,Tarjeta,3848.0
+9000000459,Cliente Demo 0459,Sintético,47.0,Masculino,Orlando,Medio,2.0,29.39,Sí,No,Otro,No,+1-202-555-0159,cliente-demo-0459@example.invalid,Tarjeta,4124.0
+9000000460,Cliente Demo 0460,Sintético,41.0,Masculino,Miami,Bajo,3.0,26.39,No,Sí,Pescado,No,+1-202-555-0160,cliente-demo-0460@example.invalid,Tarjeta,2153.0
+9000000461,Cliente Demo 0461,Sintético,44.0,Masculino,Miami,Alto,4.0,58.07,Sí,Sí,Vegano,Sí,+1-202-555-0161,cliente-demo-0461@example.invalid,Billetera digital,7150.0
+9000000462,Cliente Demo 0462,Sintético,78.0,Femenino,Fort Lauderdale,Medio,11.0,34.04,Sí,No,Mariscos,No,+1-202-555-0162,cliente-demo-0462@example.invalid,Tarjeta,2238.0
+9000000463,Cliente Demo 0463,Sintético,73.0,Masculino,Fort Lauderdale,Bajo,7.0,8.0,Sí,Sí,Carnes,No,+1-202-555-0163,cliente-demo-0463@example.invalid,Tarjeta,2811.0
+9000000464,Cliente Demo 0464,Sintético,70.0,Masculino,Miami,Bajo,5.0,9.56,Sí,No,Pescado,No,+1-202-555-0164,cliente-demo-0464@example.invalid,Tarjeta,1270.0
+9000000465,Cliente Demo 0465,Sintético,24.0,Masculino,Miami,Medio,5.0,33.01,Sí,Sí,Mariscos,No,+1-202-555-0165,cliente-demo-0465@example.invalid,Tarjeta,3283.0
+9000000466,Cliente Demo 0466,Sintético,56.0,Masculino,Miami,Alto,3.0,64.72,Sí,No,Vegetariano,Sí,+1-202-555-0166,cliente-demo-0466@example.invalid,Tarjeta,6894.0
+9000000467,Cliente Demo 0467,Sintético,23.0,Masculino,Miami,Medio,1.0,42.31,Sí,Sí,Mariscos,No,+1-202-555-0167,cliente-demo-0467@example.invalid,Tarjeta,3401.0
+9000000468,Cliente Demo 0468,Sintético,30.0,Masculino,Miami,Medio,4.0,38.73,Sí,Sí,Carnes,Sí,+1-202-555-0168,cliente-demo-0468@example.invalid,Tarjeta,3660.0
+9000000469,Cliente Demo 0469,Sintético,80.0,Femenino,Tampa,Alto,9.0,64.34,Sí,Sí,Mariscos,Sí,+1-202-555-0169,cliente-demo-0469@example.invalid,Tarjeta,5885.0
+9000000470,Cliente Demo 0470,Sintético,15.0,Masculino,Miami,Medio,0.0,0.0,Sí,Sí,Mariscos,No,+1-202-555-0170,cliente-demo-0470@example.invalid,Tarjeta,4857.0
+9000000471,Cliente Demo 0471,Sintético,55.0,Femenino,Orlando,Medio,8.0,31.73,No,No,Vegano,Sí,+1-202-555-0171,cliente-demo-0471@example.invalid,Billetera digital,2753.0
+9000000472,Cliente Demo 0472,Sintético,71.0,Femenino,Tampa,Alto,12.0,80.32,Sí,Sí,Mariscos,Sí,+1-202-555-0172,cliente-demo-0472@example.invalid,Tarjeta,6439.0
+9000000473,Cliente Demo 0473,Sintético,78.0,Femenino,Tampa,Medio,1.0,43.27,Sí,Sí,Otro,No,+1-202-555-0173,cliente-demo-0473@example.invalid,Efectivo,3761.0
+9000000474,Cliente Demo 0474,Sintético,53.0,Femenino,Miami,Medio,2.0,30.79,Sí,No,Mariscos,Sí,+1-202-555-0174,cliente-demo-0474@example.invalid,Tarjeta,4535.0
+9000000475,Cliente Demo 0475,Sintético,31.0,Masculino,Tampa,Alto,8.0,58.01,No,Sí,Mariscos,Sí,+1-202-555-0175,cliente-demo-0475@example.invalid,Billetera digital,6859.0
+9000000476,Cliente Demo 0476,Sintético,23.0,Masculino,Miami,Medio,1.0,40.4,Sí,No,Mariscos,No,+1-202-555-0176,cliente-demo-0476@example.invalid,Tarjeta,2296.0
+9000000477,Cliente Demo 0477,Sintético,77.0,Masculino,Orlando,Medio,9.0,33.07,Sí,No,Pescado,No,+1-202-555-0177,cliente-demo-0477@example.invalid,Efectivo,3295.0
+9000000478,Cliente Demo 0478,Sintético,56.0,Masculino,Miami,Medio,6.0,48.83,Sí,Sí,Mariscos,Sí,+1-202-555-0178,cliente-demo-0478@example.invalid,Tarjeta,4001.0
+9000000479,Cliente Demo 0479,Sintético,28.0,Masculino,Orlando,Medio,5.0,38.76,Sí,Sí,Mariscos,No,+1-202-555-0179,cliente-demo-0479@example.invalid,Efectivo,3301.0
+9000000480,Cliente Demo 0480,Sintético,20.0,Masculino,Miami,Medio,5.0,36.65,Sí,Sí,Vegetariano,No,+1-202-555-0180,cliente-demo-0480@example.invalid,Billetera digital,3802.0
+9000000481,Cliente Demo 0481,Sintético,70.0,Femenino,Miami,Alto,2.0,64.83,Sí,No,Otro,No,+1-202-555-0181,cliente-demo-0481@example.invalid,Tarjeta,5634.0
+9000000482,Cliente Demo 0482,Sintético,29.0,Femenino,Miami,Alto,12.0,75.06,Sí,Sí,Pescado,Sí,+1-202-555-0182,cliente-demo-0482@example.invalid,Efectivo,6193.0
+9000000483,Cliente Demo 0483,Sintético,77.0,Femenino,Miami,Medio,-1.0,,Sí,No,Pescado,No,+1-202-555-0183,cliente-demo-0483@example.invalid,Efectivo,5528.0
+9000000484,Cliente Demo 0484,Sintético,26.0,Femenino,Miami,Medio,5.0,49.16,No,Sí,Otro,No,+1-202-555-0184,cliente-demo-0484@example.invalid,Tarjeta,2525.0
+9000000485,Cliente Demo 0485,Sintético,74.0,Femenino,Miami,Alto,-1.0,90.71,Sí,No,Mariscos,No,+1-202-555-0185,cliente-demo-0485@example.invalid,Tarjeta,5314.0
+9000000486,Cliente Demo 0486,Sintético,31.0,Masculino,Miami,Medio,6.0,36.24,Sí,No,Mariscos,No,+1-202-555-0186,cliente-demo-0486@example.invalid,Efectivo,2386.0
+9000000487,Cliente Demo 0487,Sintético,47.0,Masculino,Miami,Medio,8.0,36.68,Sí,No,Carnes,No,+1-202-555-0187,cliente-demo-0487@example.invalid,Tarjeta,4188.0
+9000000488,Cliente Demo 0488,Sintético,51.0,Femenino,Orlando,Medio,10.0,44.77,Sí,No,Vegano,No,+1-202-555-0188,cliente-demo-0488@example.invalid,Tarjeta,2478.0
+9000000489,Cliente Demo 0489,Sintético,44.0,Masculino,Miami,Muy Alto,10.0,114.34,No,No,Mariscos,Sí,+1-202-555-0189,cliente-demo-0489@example.invalid,Tarjeta,10113.0
+9000000490,Cliente Demo 0490,Sintético,77.0,Masculino,Miami,Medio,9.0,32.16,Sí,Sí,Mariscos,Sí,+1-202-555-0190,cliente-demo-0490@example.invalid,Billetera digital,4423.0
+9000000491,Cliente Demo 0491,Sintético,31.0,Femenino,Miami,Medio,7.0,42.56,Sí,Sí,Vegano,No,+1-202-555-0191,cliente-demo-0491@example.invalid,Tarjeta,4315.0
+9000000492,Cliente Demo 0492,Sintético,71.0,Femenino,Miami,Muy Alto,2.0,102.99,Sí,Sí,,Sí,+1-202-555-0192,cliente-demo-0492@example.invalid,Tarjeta,9498.0
+9000000493,Cliente Demo 0493,Sintético,69.0,Masculino,Tampa,Medio,11.0,31.02,Sí,No,Mariscos,No,+1-202-555-0193,cliente-demo-0493@example.invalid,Tarjeta,3750.0
+9000000494,Cliente Demo 0494,Sintético,72.0,Femenino,Miami,Medio,4.0,22.85,Sí,No,Carnes,No,+1-202-555-0194,cliente-demo-0494@example.invalid,Billetera digital,4298.0
+9000000495,Cliente Demo 0495,Sintético,67.0,Femenino,Orlando,Alto,3.0,73.15,Sí,No,Carnes,Sí,+1-202-555-0195,cliente-demo-0495@example.invalid,Billetera digital,6334.0
+9000000496,Cliente Demo 0496,Sintético,49.0,Masculino,Orlando,Bajo,7.0,12.83,Sí,No,Vegano,No,+1-202-555-0196,cliente-demo-0496@example.invalid,Tarjeta,2491.0
+9000000497,Cliente Demo 0497,Sintético,56.0,Femenino,Miami,Alto,8.0,60.79,Sí,No,Otro,Sí,+1-202-555-0197,cliente-demo-0497@example.invalid,Tarjeta,7276.0
+9000000498,Cliente Demo 0498,Sintético,67.0,Femenino,Miami,Bajo,5.0,29.07,No,Sí,Mariscos,No,+1-202-555-0198,cliente-demo-0498@example.invalid,Billetera digital,2428.0
+9000000499,Cliente Demo 0499,Sintético,40.0,Masculino,Fort Lauderdale,Bajo,4.0,17.43,No,Sí,Carnes,No,+1-202-555-0199,cliente-demo-0499@example.invalid,Billetera digital,2751.0
+9000000500,Cliente Demo 0500,Sintético,36.0,Masculino,Miami,Medio,3.0,46.87,Sí,No,Carnes,Sí,+1-202-555-0100,cliente-demo-0500@example.invalid,Billetera digital,4640.0
+9000000501,Cliente Demo 0501,Sintético,49.0,Masculino,Fort Lauderdale,Alto,12.0,61.48,Sí,Sí,Carnes,Sí,+1-202-555-0101,cliente-demo-0501@example.invalid,Tarjeta,6755.0
+9000000502,Cliente Demo 0502,Sintético,29.0,Femenino,Orlando,Bajo,1.0,30.83,Sí,No,Otro,No,+1-202-555-0102,cliente-demo-0502@example.invalid,Tarjeta,3323.0
+9000000503,Cliente Demo 0503,Sintético,61.0,Femenino,Orlando,Medio,7.0,39.98,Sí,No,Carnes,No,+1-202-555-0103,cliente-demo-0503@example.invalid,Billetera digital,4211.0
+9000000504,Cliente Demo 0504,Sintético,53.0,Masculino,Miami,Muy Alto,1.0,111.84,Sí,Sí,Otro,Sí,+1-202-555-0104,cliente-demo-0504@example.invalid,Efectivo,9800.0
+9000000505,Cliente Demo 0505,Sintético,73.0,Masculino,Orlando,Alto,4.0,66.71,Sí,Sí,Pescado,Sí,+1-202-555-0105,cliente-demo-0505@example.invalid,Tarjeta,4307.0
+9000000506,Cliente Demo 0506,Sintético,78.0,Femenino,Miami,Medio,9.0,32.98,Sí,No,Mariscos,No,+1-202-555-0106,cliente-demo-0506@example.invalid,Tarjeta,3360.0
+9000000507,Cliente Demo 0507,Sintético,53.0,Femenino,Miami,Alto,12.0,62.86,Sí,Sí,Mariscos,Sí,+1-202-555-0107,cliente-demo-0507@example.invalid,Billetera digital,7265.0
+9000000508,Cliente Demo 0508,Sintético,47.0,Masculino,Miami,Bajo,9.0,30.48,Sí,Sí,Vegetariano,No,+1-202-555-0108,cliente-demo-0508@example.invalid,Tarjeta,1883.0
+9000000509,Cliente Demo 0509,Sintético,76.0,Masculino,Orlando,Alto,3.0,59.64,Sí,No,Vegetariano,Sí,+1-202-555-0109,cliente-demo-0509@example.invalid,Tarjeta,6137.0
+9000000510,Cliente Demo 0510,Sintético,60.0,Femenino,Orlando,Medio,8.0,37.98,Sí,Sí,Otro,No,+1-202-555-0110,cliente-demo-0510@example.invalid,Tarjeta,3156.0
+9000000511,Cliente Demo 0511,Sintético,61.0,Masculino,Orlando,Alto,7.0,66.95,Sí,Sí,Vegano,Sí,+1-202-555-0111,cliente-demo-0511@example.invalid,Tarjeta,6187.0
+9000000512,Cliente Demo 0512,Sintético,72.0,Femenino,Fort Lauderdale,Muy Alto,12.0,113.99,Sí,No,Otro,Sí,+1-202-555-0112,cliente-demo-0512@example.invalid,Tarjeta,8420.0
+9000000513,Cliente Demo 0513,Sintético,23.0,Femenino,Orlando,Medio,9.0,54.29,Sí,No,Mariscos,No,+1-202-555-0113,cliente-demo-0513@example.invalid,Tarjeta,5535.0
+9000000514,Cliente Demo 0514,Sintético,43.0,Masculino,Miami,Bajo,3.0,24.97,Sí,No,Otro,No,+1-202-555-0114,cliente-demo-0514@example.invalid,Tarjeta,2453.0
+9000000515,Cliente Demo 0515,Sintético,62.0,Masculino,Miami,Alto,6.0,54.08,No,No,Pescado,No,+1-202-555-0115,cliente-demo-0515@example.invalid,Tarjeta,5466.0
+9000000516,Cliente Demo 0516,Sintético,50.0,Femenino,Miami,Bajo,3.0,31.88,Sí,Sí,Vegetariano,No,+1-202-555-0116,cliente-demo-0516@example.invalid,Tarjeta,2720.0
+9000000517,Cliente Demo 0517,Sintético,76.0,Femenino,Miami,Alto,8.0,65.12,Sí,No,Pescado,Sí,+1-202-555-0117,cliente-demo-0517@example.invalid,Billetera digital,5768.0
+9000000518,Cliente Demo 0518,Sintético,27.0,Femenino,Miami,Alto,6.0,66.87,Sí,No,Vegano,No,+1-202-555-0118,cliente-demo-0518@example.invalid,Billetera digital,6282.0
+9000000519,Cliente Demo 0519,Sintético,20.0,Masculino,Miami,Muy Alto,1.0,102.48,No,No,Vegano,Sí,+1-202-555-0119,cliente-demo-0519@example.invalid,Billetera digital,7990.0
+9000000520,Cliente Demo 0520,Sintético,82.0,Femenino,Miami,Medio,3.0,38.11,Sí,No,Vegetariano,No,+1-202-555-0120,cliente-demo-0520@example.invalid,Tarjeta,3643.0
+9000000521,Cliente Demo 0521,Sintético,57.0,Masculino,Miami,Medio,12.0,43.69,Sí,No,Vegetariano,No,+1-202-555-0121,cliente-demo-0521@example.invalid,Tarjeta,2796.0
+9000000522,Cliente Demo 0522,Sintético,23.0,Femenino,Miami,Alto,5.0,,Sí,No,Mariscos,Sí,+1-202-555-0122,cliente-demo-0522@example.invalid,Tarjeta,5941.0
+9000000523,Cliente Demo 0523,Sintético,40.0,Masculino,Orlando,Medio,9.0,38.92,Sí,No,Mariscos,No,+1-202-555-0123,cliente-demo-0523@example.invalid,Tarjeta,1559.0
+9000000524,Cliente Demo 0524,Sintético,54.0,Masculino,Miami,Alto,6.0,60.2,Sí,Sí,Otro,Sí,+1-202-555-0124,cliente-demo-0524@example.invalid,Billetera digital,5582.0
+9000000525,Cliente Demo 0525,Sintético,28.0,Femenino,Miami,Medio,6.0,34.81,Sí,Sí,Vegetariano,No,+1-202-555-0125,cliente-demo-0525@example.invalid,Billetera digital,3464.0
+9000000526,Cliente Demo 0526,Sintético,40.0,Femenino,Miami,Medio,12.0,36.04,Sí,Sí,Vegetariano,Sí,+1-202-555-0126,cliente-demo-0526@example.invalid,Efectivo,4142.0
+9000000527,Cliente Demo 0527,Sintético,49.0,Masculino,Miami,Bajo,2.0,31.29,Sí,Sí,Carnes,No,+1-202-555-0127,cliente-demo-0527@example.invalid,Tarjeta,2170.0
+9000000528,Cliente Demo 0528,Sintético,57.0,Femenino,Miami,Medio,11.0,42.97,Sí,Sí,Mariscos,No,+1-202-555-0128,cliente-demo-0528@example.invalid,Tarjeta,3526.0
+9000000529,Cliente Demo 0529,Sintético,43.0,Femenino,Tampa,Medio,5.0,54.02,No,No,Vegano,No,+1-202-555-0129,cliente-demo-0529@example.invalid,Tarjeta,3018.0
+9000000530,Cliente Demo 0530,Sintético,85.0,Masculino,Miami,Bajo,1.0,14.0,Sí,Sí,Vegetariano,No,+1-202-555-0130,cliente-demo-0530@example.invalid,Efectivo,2021.0
+9000000531,Cliente Demo 0531,Sintético,80.0,Femenino,Miami,Bajo,12.0,8.0,Sí,No,Mariscos,No,+1-202-555-0131,cliente-demo-0531@example.invalid,Billetera digital,2191.0
+9000000532,Cliente Demo 0532,Sintético,29.0,Masculino,Miami,Bajo,8.0,11.7,Sí,No,Carnes,No,+1-202-555-0132,cliente-demo-0532@example.invalid,Tarjeta,2933.0
+9000000533,Cliente Demo 0533,Sintético,33.0,Femenino,Miami,Muy Alto,11.0,112.92,Sí,No,Mariscos,Sí,+1-202-555-0133,cliente-demo-0533@example.invalid,Efectivo,10170.0
+9000000534,Cliente Demo 0534,Sintético,57.0,Masculino,Miami,Medio,10.0,42.62,Sí,No,Mariscos,Sí,+1-202-555-0134,cliente-demo-0534@example.invalid,Tarjeta,4548.0
+9000000535,Cliente Demo 0535,Sintético,61.0,Masculino,Fort Lauderdale,Muy Alto,2.0,114.39,No,Sí,Pescado,Sí,+1-202-555-0135,cliente-demo-0535@example.invalid,Tarjeta,10187.0
+9000000536,Cliente Demo 0536,Sintético,19.0,Femenino,Miami,Alto,12.0,63.17,No,Sí,Vegetariano,No,+1-202-555-0136,cliente-demo-0536@example.invalid,Tarjeta,6269.0
+9000000537,Cliente Demo 0537,Sintético,31.0,Masculino,Tampa,Bajo,1.0,19.29,Sí,No,Mariscos,No,+1-202-555-0137,cliente-demo-0537@example.invalid,Tarjeta,3999.0
+9000000538,Cliente Demo 0538,Sintético,73.0,Masculino,Miami,Alto,10.0,75.07,Sí,Sí,Carnes,Sí,+1-202-555-0138,cliente-demo-0538@example.invalid,Tarjeta,6798.0
+9000000539,Cliente Demo 0539,Sintético,42.0,Masculino,Miami,Bajo,6.0,19.9,Sí,Sí,Carnes,No,+1-202-555-0139,cliente-demo-0539@example.invalid,Billetera digital,3424.0
+9000000540,Cliente Demo 0540,Sintético,27.0,Masculino,Orlando,Medio,7.0,40.29,No,Sí,Vegetariano,No,+1-202-555-0140,cliente-demo-0540@example.invalid,Tarjeta,3217.0
+9000000541,Cliente Demo 0541,Sintético,29.0,Femenino,Miami,Muy Alto,2.0,106.96,No,Sí,Mariscos,Sí,+1-202-555-0141,cliente-demo-0541@example.invalid,Tarjeta,10291.0
+9000000542,Cliente Demo 0542,Sintético,50.0,Masculino,Miami,Medio,10.0,50.72,Sí,No,Mariscos,Sí,+1-202-555-0142,cliente-demo-0542@example.invalid,Tarjeta,3146.0
+9000000543,Cliente Demo 0543,Sintético,67.0,Masculino,Tampa,Medio,4.0,41.31,Sí,No,Pescado,No,+1-202-555-0143,cliente-demo-0543@example.invalid,Tarjeta,3357.0
+9000000544,Cliente Demo 0544,Sintético,57.0,Masculino,Miami,Muy Alto,12.0,85.24,Sí,Sí,Carnes,Sí,+1-202-555-0144,cliente-demo-0544@example.invalid,Tarjeta,8606.0
+9000000545,Cliente Demo 0545,Sintético,105.0,Masculino,Orlando,Bajo,4.0,18.96,Sí,Sí,Mariscos,No,+1-202-555-0145,cliente-demo-0545@example.invalid,Efectivo,3183.0
+9000000546,Cliente Demo 0546,Sintético,24.0,Masculino,Orlando,Muy Alto,2.0,86.27,No,No,Mariscos,Sí,+1-202-555-0146,cliente-demo-0546@example.invalid,Tarjeta,9281.0
+9000000547,Cliente Demo 0547,Sintético,62.0,Femenino,Tampa,Bajo,10.0,30.14,Sí,No,Mariscos,No,+1-202-555-0147,cliente-demo-0547@example.invalid,Efectivo,1826.0
+9000000548,Cliente Demo 0548,Sintético,50.0,Femenino,Fort Lauderdale,Muy Alto,2.0,102.05,Sí,Sí,Mariscos,Sí,+1-202-555-0148,cliente-demo-0548@example.invalid,Tarjeta,11325.0
+9000000549,Cliente Demo 0549,Sintético,67.0,Femenino,Miami,Medio,4.0,53.94,No,Sí,Vegano,No,+1-202-555-0149,cliente-demo-0549@example.invalid,Tarjeta,3777.0
+9000000550,Cliente Demo 0550,Sintético,68.0,Femenino,Miami,Medio,5.0,24.24,Sí,No,Mariscos,No,+1-202-555-0150,cliente-demo-0550@example.invalid,Tarjeta,2989.0
+9000000551,Cliente Demo 0551,Sintético,34.0,Masculino,Miami,Alto,,0.0,Sí,No,Carnes,Sí,+1-202-555-0151,cliente-demo-0551@example.invalid,Tarjeta,7870.0
+9000000552,Cliente Demo 0552,Sintético,56.0,Masculino,Miami,Muy Alto,2.0,95.58,Sí,No,Carnes,No,+1-202-555-0152,cliente-demo-0552@example.invalid,Tarjeta,10140.0
+9000000553,Cliente Demo 0553,Sintético,37.0,Masculino,Miami,Alto,7.0,55.45,Sí,Sí,Otro,Sí,+1-202-555-0153,cliente-demo-0553@example.invalid,Efectivo,5272.0
+9000000554,Cliente Demo 0554,Sintético,44.0,Masculino,Miami,Muy Alto,10.0,108.91,Sí,Sí,Vegetariano,Sí,+1-202-555-0154,cliente-demo-0554@example.invalid,Billetera digital,11176.0
+9000000555,Cliente Demo 0555,Sintético,35.0,Femenino,Fort Lauderdale,Alto,11.0,66.81,Sí,Sí,Vegetariano,Sí,+1-202-555-0155,cliente-demo-0555@example.invalid,Tarjeta,7430.0
+9000000556,Cliente Demo 0556,Sintético,58.0,Masculino,Tampa,Muy Alto,12.0,91.33,No,No,Mariscos,Sí,+1-202-555-0156,cliente-demo-0556@example.invalid,Billetera digital,9820.0
+9000000557,Cliente Demo 0557,Sintético,75.0,No binario,Tampa,Medio,6.0,33.01,Sí,No,Otro,No,+1-202-555-0157,cliente-demo-0557@example.invalid,Billetera digital,4266.0
+9000000558,Cliente Demo 0558,Sintético,79.0,Masculino,Orlando,Medio,12.0,43.01,Sí,Sí,Mariscos,No,+1-202-555-0158,cliente-demo-0558@example.invalid,Tarjeta,4182.0
+9000000559,Cliente Demo 0559,Sintético,54.0,Masculino,Fort Lauderdale,Medio,8.0,31.61,No,No,,No,+1-202-555-0159,cliente-demo-0559@example.invalid,Tarjeta,2997.0
+9000000560,Cliente Demo 0560,Sintético,56.0,Masculino,Fort Lauderdale,Bajo,5.0,8.0,Sí,No,Otro,No,+1-202-555-0160,cliente-demo-0560@example.invalid,Billetera digital,1534.0
+9000000561,Cliente Demo 0561,Sintético,28.0,Masculino,Orlando,Muy Alto,1.0,111.44,Sí,Sí,Otro,Sí,+1-202-555-0161,cliente-demo-0561@example.invalid,Tarjeta,10122.0
+9000000562,Cliente Demo 0562,Sintético,48.0,Masculino,Orlando,Medio,7.0,26.8,Sí,Sí,Carnes,Sí,+1-202-555-0162,cliente-demo-0562@example.invalid,Tarjeta,5238.0
+9000000563,Cliente Demo 0563,Sintético,46.0,Masculino,Miami,Muy Alto,2.0,97.9,No,Sí,Vegetariano,Sí,+1-202-555-0163,cliente-demo-0563@example.invalid,Tarjeta,9264.0
+9000000564,Cliente Demo 0564,Sintético,46.0,Femenino,Miami,Alto,7.0,75.4,Sí,Sí,Carnes,Sí,+1-202-555-0164,cliente-demo-0564@example.invalid,Billetera digital,6734.0
+9000000565,Cliente Demo 0565,Sintético,46.0,Masculino,Miami,Alto,7.0,57.21,Sí,No,Carnes,Sí,+1-202-555-0165,cliente-demo-0565@example.invalid,Efectivo,7826.0
+9000000566,Cliente Demo 0566,Sintético,23.0,Masculino,Tampa,Muy Alto,5.0,106.46,Sí,No,Carnes,Sí,+1-202-555-0166,cliente-demo-0566@example.invalid,Efectivo,9447.0
+9000000567,Cliente Demo 0567,Sintético,73.0,Femenino,Tampa,Medio,2.0,42.7,No,Sí,Mariscos,Sí,+1-202-555-0167,cliente-demo-0567@example.invalid,Tarjeta,3021.0
+9000000568,Cliente Demo 0568,Sintético,44.0,Femenino,Miami,Alto,7.0,62.14,No,Sí,Mariscos,Sí,+1-202-555-0168,cliente-demo-0568@example.invalid,Efectivo,5333.0
+9000000569,Cliente Demo 0569,Sintético,29.0,Femenino,Miami,Bajo,2.0,38.14,Sí,No,Mariscos,No,+1-202-555-0169,cliente-demo-0569@example.invalid,Tarjeta,1119.0
+9000000570,Cliente Demo 0570,Sintético,64.0,Femenino,Tampa,Muy Alto,10.0,100.89,No,No,Vegetariano,No,+1-202-555-0170,cliente-demo-0570@example.invalid,Tarjeta,9557.0
+9000000571,Cliente Demo 0571,Sintético,46.0,Femenino,Orlando,Alto,12.0,64.18,Sí,Sí,Vegano,Sí,+1-202-555-0171,cliente-demo-0571@example.invalid,Tarjeta,5397.0
+9000000572,Cliente Demo 0572,Sintético,80.0,Masculino,Miami,Muy Alto,9.0,99.94,No,No,Vegetariano,Sí,+1-202-555-0172,cliente-demo-0572@example.invalid,Tarjeta,9690.0
+9000000573,Cliente Demo 0573,Sintético,80.0,Masculino,Miami,Muy Alto,10.0,103.22,Sí,No,Vegano,Sí,+1-202-555-0173,cliente-demo-0573@example.invalid,Billetera digital,8226.0
+9000000574,Cliente Demo 0574,Sintético,65.0,Masculino,Miami,Bajo,9.0,22.54,Sí,No,Carnes,No,+1-202-555-0174,cliente-demo-0574@example.invalid,Billetera digital,1300.0
+9000000575,Cliente Demo 0575,Sintético,46.0,Femenino,Miami,Alto,8.0,51.57,No,No,Carnes,No,+1-202-555-0175,cliente-demo-0575@example.invalid,Billetera digital,6112.0
+9000000576,Cliente Demo 0576,Sintético,56.0,Femenino,Fort Lauderdale,Alto,7.0,70.91,No,No,Pescado,Sí,+1-202-555-0176,cliente-demo-0576@example.invalid,Tarjeta,5857.0
+9000000577,Cliente Demo 0577,Sintético,30.0,Femenino,Miami,Muy Alto,10.0,96.94,Sí,Sí,Vegano,Sí,+1-202-555-0177,cliente-demo-0577@example.invalid,Tarjeta,9942.0
+9000000578,Cliente Demo 0578,Sintético,72.0,Masculino,Miami,Muy Alto,3.0,97.31,Sí,Sí,Vegetariano,Sí,+1-202-555-0178,cliente-demo-0578@example.invalid,Tarjeta,11454.0
+9000000579,Cliente Demo 0579,Sintético,41.0,Femenino,Miami,Bajo,12.0,23.15,Sí,Sí,Pescado,No,+1-202-555-0179,cliente-demo-0579@example.invalid,Tarjeta,1217.0
+9000000580,Cliente Demo 0580,Sintético,29.0,Masculino,Miami,Medio,4.0,45.85,Sí,Sí,Mariscos,No,+1-202-555-0180,cliente-demo-0580@example.invalid,Billetera digital,3631.0
+9000000581,Cliente Demo 0581,Sintético,29.0,Masculino,Miami,Medio,5.0,34.26,No,Sí,Mariscos,No,+1-202-555-0181,cliente-demo-0581@example.invalid,Efectivo,2229.0
+9000000582,Cliente Demo 0582,Sintético,60.0,Masculino,Miami,Medio,-1.0,40.96,No,No,Vegano,No,+1-202-555-0182,cliente-demo-0582@example.invalid,Tarjeta,2716.0
+9000000583,Cliente Demo 0583,Sintético,78.0,Femenino,Tampa,Medio,12.0,28.12,Sí,Sí,Vegetariano,No,+1-202-555-0183,cliente-demo-0583@example.invalid,Billetera digital,3374.0
+9000000584,Cliente Demo 0584,Sintético,47.0,No binario,Fort Lauderdale,Muy Alto,6.0,103.59,Sí,Sí,Pescado,Sí,+1-202-555-0184,cliente-demo-0584@example.invalid,Billetera digital,9865.0
+9000000585,Cliente Demo 0585,Sintético,45.0,Masculino,Miami,Bajo,5.0,18.21,Sí,Sí,Carnes,No,+1-202-555-0185,cliente-demo-0585@example.invalid,Tarjeta,2943.0
+9000000586,Cliente Demo 0586,Sintético,56.0,Masculino,Miami,Alto,11.0,70.17,Sí,No,Mariscos,No,+1-202-555-0186,cliente-demo-0586@example.invalid,Efectivo,6974.0
+9000000587,Cliente Demo 0587,Sintético,67.0,Femenino,Miami,Muy Alto,7.0,114.49,Sí,No,Carnes,Sí,+1-202-555-0187,cliente-demo-0587@example.invalid,Billetera digital,10006.0
+9000000588,Cliente Demo 0588,Sintético,84.0,Femenino,Miami,Alto,3.0,80.5,Sí,No,Vegetariano,Sí,+1-202-555-0188,cliente-demo-0588@example.invalid,Tarjeta,6545.0
+9000000589,Cliente Demo 0589,Sintético,31.0,Femenino,Miami,Alto,3.0,77.25,Sí,Sí,Vegetariano,No,+1-202-555-0189,cliente-demo-0589@example.invalid,Billetera digital,5904.0
+9000000590,Cliente Demo 0590,Sintético,21.0,No binario,Fort Lauderdale,Alto,2.0,61.93,Sí,No,Vegano,Sí,+1-202-555-0190,cliente-demo-0590@example.invalid,Efectivo,5600.0
+9000000591,Cliente Demo 0591,Sintético,18.0,Masculino,Miami,Medio,9.0,39.94,No,No,Vegetariano,Sí,+1-202-555-0191,cliente-demo-0591@example.invalid,Billetera digital,2543.0
+9000000592,Cliente Demo 0592,Sintético,31.0,No binario,Miami,Alto,12.0,52.4,Sí,No,Otro,No,+1-202-555-0192,cliente-demo-0592@example.invalid,Tarjeta,6108.0
+9000000593,Cliente Demo 0593,Sintético,43.0,Femenino,Miami,Alto,6.0,65.41,Sí,No,Vegetariano,Sí,+1-202-555-0193,cliente-demo-0593@example.invalid,Efectivo,7120.0
+9000000594,Cliente Demo 0594,Sintético,19.0,No binario,Miami,Bajo,11.0,18.38,No,No,Otro,No,+1-202-555-0194,cliente-demo-0594@example.invalid,Tarjeta,2470.0
+9000000595,Cliente Demo 0595,Sintético,85.0,Masculino,Miami,Alto,8.0,53.07,Sí,Sí,Mariscos,Sí,+1-202-555-0195,cliente-demo-0595@example.invalid,Efectivo,6091.0
+9000000596,Cliente Demo 0596,Sintético,26.0,Femenino,Miami,Medio,-1.0,,Sí,No,Otro,No,+1-202-555-0196,cliente-demo-0596@example.invalid,Tarjeta,4460.0
+9000000597,Cliente Demo 0597,Sintético,64.0,Femenino,Miami,Alto,6.0,74.61,No,No,Otro,No,+1-202-555-0197,cliente-demo-0597@example.invalid,Tarjeta,7544.0
+9000000598,Cliente Demo 0598,Sintético,68.0,Femenino,Miami,Medio,1.0,40.51,Sí,Sí,Vegetariano,No,+1-202-555-0198,cliente-demo-0598@example.invalid,Tarjeta,4507.0
+9000000599,Cliente Demo 0599,Sintético,27.0,Masculino,Orlando,Alto,9.0,78.68,Sí,Sí,Carnes,Sí,+1-202-555-0199,cliente-demo-0599@example.invalid,Tarjeta,5991.0
+9000000600,Cliente Demo 0600,Sintético,68.0,Masculino,Miami,Alto,5.0,66.06,No,Sí,Mariscos,Sí,+1-202-555-0100,cliente-demo-0600@example.invalid,Billetera digital,6268.0
+9000000601,Cliente Demo 0601,Sintético,67.0,Masculino,Miami,Medio,3.0,36.66,Sí,No,Mariscos,No,+1-202-555-0101,cliente-demo-0601@example.invalid,Tarjeta,2237.0
+9000000602,Cliente Demo 0602,Sintético,37.0,No binario,Miami,Alto,4.0,62.8,No,Sí,Vegano,Sí,+1-202-555-0102,cliente-demo-0602@example.invalid,Billetera digital,6239.0
+9000000603,Cliente Demo 0603,Sintético,18.0,Masculino,Miami,Bajo,7.0,17.32,No,Sí,Carnes,No,+1-202-555-0103,cliente-demo-0603@example.invalid,Efectivo,3226.0
+9000000604,Cliente Demo 0604,Sintético,63.0,Femenino,Tampa,Alto,10.0,74.25,No,No,Vegetariano,No,+1-202-555-0104,cliente-demo-0604@example.invalid,Tarjeta,6174.0
+9000000605,Cliente Demo 0605,Sintético,53.0,Femenino,Miami,Medio,7.0,32.43,Sí,No,Mariscos,Sí,+1-202-555-0105,cliente-demo-0605@example.invalid,Efectivo,3424.0
+9000000606,Cliente Demo 0606,Sintético,75.0,Masculino,Miami,Alto,2.0,74.32,Sí,Sí,Vegano,Sí,+1-202-555-0106,cliente-demo-0606@example.invalid,Tarjeta,6186.0
+9000000607,Cliente Demo 0607,Sintético,15.0,Femenino,Miami,Medio,0.0,0.0,Sí,No,Mariscos,Sí,+1-202-555-0107,cliente-demo-0607@example.invalid,Tarjeta,2494.0
+9000000608,Cliente Demo 0608,Sintético,47.0,Masculino,Orlando,Bajo,11.0,10.13,No,No,Carnes,No,+1-202-555-0108,cliente-demo-0608@example.invalid,Tarjeta,2551.0
+9000000609,Cliente Demo 0609,Sintético,67.0,Femenino,Miami,Alto,2.0,70.66,No,Sí,Mariscos,Sí,+1-202-555-0109,cliente-demo-0609@example.invalid,Efectivo,5833.0
+9000000610,Cliente Demo 0610,Sintético,37.0,Masculino,Fort Lauderdale,Medio,3.0,59.19,No,No,Carnes,No,+1-202-555-0110,cliente-demo-0610@example.invalid,Tarjeta,2644.0
+9000000611,Cliente Demo 0611,Sintético,84.0,Femenino,Miami,Medio,3.0,29.71,Sí,No,Otro,No,+1-202-555-0111,cliente-demo-0611@example.invalid,Billetera digital,2574.0
+9000000612,Cliente Demo 0612,Sintético,65.0,Masculino,Miami,Medio,8.0,49.56,Sí,No,Pescado,No,+1-202-555-0112,cliente-demo-0612@example.invalid,Tarjeta,3704.0
+9000000613,Cliente Demo 0613,Sintético,21.0,Femenino,Fort Lauderdale,Alto,9.0,73.11,Sí,Sí,Mariscos,Sí,+1-202-555-0113,cliente-demo-0613@example.invalid,Tarjeta,6625.0
+9000000614,Cliente Demo 0614,Sintético,80.0,Femenino,Miami,Bajo,3.0,10.31,Sí,Sí,Pescado,No,+1-202-555-0114,cliente-demo-0614@example.invalid,Billetera digital,1655.0
+9000000615,Cliente Demo 0615,Sintético,36.0,Femenino,Orlando,Medio,5.0,39.1,Sí,Sí,Otro,No,+1-202-555-0115,cliente-demo-0615@example.invalid,Billetera digital,2828.0
+9000000616,Cliente Demo 0616,Sintético,64.0,Masculino,Miami,Alto,6.0,68.54,No,Sí,Vegano,Sí,+1-202-555-0116,cliente-demo-0616@example.invalid,Tarjeta,5632.0
+9000000617,Cliente Demo 0617,Sintético,84.0,Masculino,Miami,Bajo,9.0,15.46,Sí,Sí,Carnes,Sí,+1-202-555-0117,cliente-demo-0617@example.invalid,Tarjeta,1422.0
+9000000618,Cliente Demo 0618,Sintético,40.0,Femenino,Miami,Medio,1.0,30.64,Sí,Sí,Otro,No,+1-202-555-0118,cliente-demo-0618@example.invalid,Billetera digital,4327.0
+9000000619,Cliente Demo 0619,Sintético,54.0,Femenino,Miami,Medio,3.0,39.96,Sí,No,Carnes,Sí,+1-202-555-0119,cliente-demo-0619@example.invalid,Tarjeta,3905.0
+9000000620,Cliente Demo 0620,Sintético,23.0,Femenino,Miami,Medio,11.0,43.54,Sí,No,Carnes,No,+1-202-555-0120,cliente-demo-0620@example.invalid,Efectivo,3707.0
+9000000621,Cliente Demo 0621,Sintético,60.0,Masculino,Miami,Bajo,11.0,14.22,Sí,Sí,Otro,No,+1-202-555-0121,cliente-demo-0621@example.invalid,Tarjeta,1127.0
+9000000622,Cliente Demo 0622,Sintético,18.0,Masculino,Miami,Medio,4.0,45.83,Sí,No,Otro,No,+1-202-555-0122,cliente-demo-0622@example.invalid,Tarjeta,3733.0
+9000000623,Cliente Demo 0623,Sintético,85.0,Femenino,Orlando,Muy Alto,8.0,,Sí,No,Vegetariano,Sí,+1-202-555-0123,cliente-demo-0623@example.invalid,Tarjeta,10922.0
+9000000624,Cliente Demo 0624,Sintético,27.0,Femenino,Miami,Medio,8.0,31.42,Sí,Sí,Carnes,Sí,+1-202-555-0124,cliente-demo-0624@example.invalid,Billetera digital,2482.0
+9000000625,Cliente Demo 0625,Sintético,65.0,Femenino,Orlando,Muy Alto,4.0,107.01,Sí,No,Otro,Sí,+1-202-555-0125,cliente-demo-0625@example.invalid,Tarjeta,9612.0
+9000000626,Cliente Demo 0626,Sintético,20.0,Femenino,Miami,Muy Alto,12.0,94.16,Sí,No,,Sí,+1-202-555-0126,cliente-demo-0626@example.invalid,Tarjeta,8585.0
+9000000627,Cliente Demo 0627,Sintético,38.0,Masculino,Miami,Bajo,6.0,21.37,No,Sí,Otro,No,+1-202-555-0127,cliente-demo-0627@example.invalid,Tarjeta,1657.0
+9000000628,Cliente Demo 0628,Sintético,73.0,Masculino,Miami,Alto,4.0,62.05,Sí,Sí,Mariscos,Sí,+1-202-555-0128,cliente-demo-0628@example.invalid,Efectivo,5571.0
+9000000629,Cliente Demo 0629,Sintético,63.0,Femenino,Miami,Alto,9.0,71.79,Sí,No,Carnes,No,+1-202-555-0129,cliente-demo-0629@example.invalid,Billetera digital,5457.0
+9000000630,Cliente Demo 0630,Sintético,41.0,Femenino,Miami,Medio,6.0,43.7,No,No,Otro,No,+1-202-555-0130,cliente-demo-0630@example.invalid,Efectivo,4636.0
+9000000631,Cliente Demo 0631,Sintético,83.0,Femenino,Miami,Alto,5.0,69.65,Sí,No,Mariscos,No,+1-202-555-0131,cliente-demo-0631@example.invalid,Tarjeta,5301.0
+9000000632,Cliente Demo 0632,Sintético,46.0,Masculino,Miami,Medio,2.0,54.9,Sí,No,Vegano,No,+1-202-555-0132,cliente-demo-0632@example.invalid,Tarjeta,3777.0
+9000000633,Cliente Demo 0633,Sintético,81.0,Femenino,Miami,Alto,5.0,55.81,Sí,No,Mariscos,Sí,+1-202-555-0133,cliente-demo-0633@example.invalid,Billetera digital,6145.0
+9000000634,Cliente Demo 0634,Sintético,105.0,Femenino,Miami,Alto,2.0,74.73,Sí,Sí,Vegetariano,Sí,+1-202-555-0134,cliente-demo-0634@example.invalid,Billetera digital,6044.0
+9000000635,Cliente Demo 0635,Sintético,23.0,Masculino,Orlando,Medio,7.0,32.14,Sí,Sí,Vegetariano,No,+1-202-555-0135,cliente-demo-0635@example.invalid,Billetera digital,4249.0
+9000000636,Cliente Demo 0636,Sintético,33.0,Femenino,Orlando,Bajo,12.0,16.18,Sí,Sí,Vegano,No,+1-202-555-0136,cliente-demo-0636@example.invalid,Efectivo,1795.0
+9000000637,Cliente Demo 0637,Sintético,71.0,Masculino,Miami,Bajo,3.0,29.5,Sí,Sí,Otro,No,+1-202-555-0137,cliente-demo-0637@example.invalid,Billetera digital,1182.0
+9000000638,Cliente Demo 0638,Sintético,38.0,Femenino,Miami,Bajo,5.0,37.74,Sí,Sí,Otro,No,+1-202-555-0138,cliente-demo-0638@example.invalid,Efectivo,1703.0
+9000000639,Cliente Demo 0639,Sintético,35.0,Masculino,Miami,Alto,9.0,55.52,Sí,No,Mariscos,Sí,+1-202-555-0139,cliente-demo-0639@example.invalid,Tarjeta,6203.0
+9000000640,Cliente Demo 0640,Sintético,69.0,Femenino,Miami,Alto,7.0,71.23,Sí,Sí,Vegetariano,Sí,+1-202-555-0140,cliente-demo-0640@example.invalid,Tarjeta,4217.0
+9000000641,Cliente Demo 0641,Sintético,45.0,Masculino,Fort Lauderdale,Medio,7.0,28.01,No,Sí,Mariscos,No,+1-202-555-0141,cliente-demo-0641@example.invalid,Tarjeta,3005.0
+9000000642,Cliente Demo 0642,Sintético,60.0,Femenino,Orlando,Alto,7.0,71.72,No,Sí,Vegetariano,Sí,+1-202-555-0142,cliente-demo-0642@example.invalid,Billetera digital,7295.0
+9000000643,Cliente Demo 0643,Sintético,41.0,Masculino,Fort Lauderdale,Bajo,6.0,30.22,No,No,Vegetariano,No,+1-202-555-0143,cliente-demo-0643@example.invalid,Tarjeta,1560.0
+9000000644,Cliente Demo 0644,Sintético,69.0,Femenino,Miami,Medio,8.0,44.35,Sí,No,Carnes,No,+1-202-555-0144,cliente-demo-0644@example.invalid,Efectivo,5840.0
+9000000645,Cliente Demo 0645,Sintético,57.0,Masculino,Miami,Muy Alto,11.0,114.71,Sí,No,Vegetariano,No,+1-202-555-0145,cliente-demo-0645@example.invalid,Tarjeta,9524.0
+9000000646,Cliente Demo 0646,Sintético,52.0,Masculino,Miami,Medio,1.0,43.21,Sí,No,Pescado,No,+1-202-555-0146,cliente-demo-0646@example.invalid,Efectivo,4207.0
+9000000647,Cliente Demo 0647,Sintético,26.0,Femenino,Miami,Medio,4.0,47.42,Sí,Sí,Mariscos,No,+1-202-555-0147,cliente-demo-0647@example.invalid,Tarjeta,3473.0
+9000000648,Cliente Demo 0648,Sintético,58.0,Femenino,Miami,Medio,12.0,34.29,Sí,Sí,Pescado,No,+1-202-555-0148,cliente-demo-0648@example.invalid,Billetera digital,3367.0
+9000000649,Cliente Demo 0649,Sintético,76.0,Masculino,Fort Lauderdale,Bajo,11.0,15.16,No,No,Mariscos,No,+1-202-555-0149,cliente-demo-0649@example.invalid,Billetera digital,3667.0
+9000000650,Cliente Demo 0650,Sintético,84.0,Femenino,Miami,Muy Alto,10.0,99.36,Sí,No,Vegano,Sí,+1-202-555-0150,cliente-demo-0650@example.invalid,Tarjeta,10726.0
+9000000651,Cliente Demo 0651,Sintético,71.0,Masculino,Miami,Bajo,5.0,30.26,Sí,No,Mariscos,No,+1-202-555-0151,cliente-demo-0651@example.invalid,Tarjeta,2895.0
+9000000652,Cliente Demo 0652,Sintético,36.0,Masculino,Orlando,Muy Alto,8.0,116.94,No,Sí,Vegano,Sí,+1-202-555-0152,cliente-demo-0652@example.invalid,Tarjeta,10513.0
+9000000653,Cliente Demo 0653,Sintético,83.0,Femenino,Miami,Medio,6.0,34.4,Sí,Sí,Carnes,No,+1-202-555-0153,cliente-demo-0653@example.invalid,Efectivo,3239.0
+9000000654,Cliente Demo 0654,Sintético,47.0,Femenino,Miami,Medio,10.0,39.91,Sí,Sí,Otro,Sí,+1-202-555-0154,cliente-demo-0654@example.invalid,Tarjeta,3716.0
+9000000655,Cliente Demo 0655,Sintético,70.0,Femenino,Miami,Alto,10.0,74.89,Sí,No,Vegetariano,Sí,+1-202-555-0155,cliente-demo-0655@example.invalid,Tarjeta,7190.0
+9000000656,Cliente Demo 0656,Sintético,21.0,Masculino,Miami,Medio,12.0,44.48,No,Sí,Mariscos,No,+1-202-555-0156,cliente-demo-0656@example.invalid,Billetera digital,2774.0
+9000000657,Cliente Demo 0657,Sintético,82.0,Femenino,Tampa,Muy Alto,4.0,86.45,No,Sí,Mariscos,No,+1-202-555-0157,cliente-demo-0657@example.invalid,Tarjeta,9824.0
+9000000658,Cliente Demo 0658,Sintético,55.0,Femenino,Orlando,Alto,3.0,58.55,Sí,Sí,Carnes,Sí,+1-202-555-0158,cliente-demo-0658@example.invalid,Tarjeta,6563.0
+9000000659,Cliente Demo 0659,Sintético,77.0,Femenino,Miami,Alto,6.0,56.98,No,Sí,Mariscos,Sí,+1-202-555-0159,cliente-demo-0659@example.invalid,Billetera digital,5397.0
+9000000660,Cliente Demo 0660,Sintético,35.0,Femenino,Miami,Medio,4.0,34.13,Sí,No,Vegetariano,No,+1-202-555-0160,cliente-demo-0660@example.invalid,Efectivo,3567.0
+9000000661,Cliente Demo 0661,Sintético,60.0,Femenino,Miami,Bajo,9.0,29.61,Sí,Sí,Vegetariano,No,+1-202-555-0161,cliente-demo-0661@example.invalid,Tarjeta,1388.0
+9000000662,Cliente Demo 0662,Sintético,38.0,Femenino,Orlando,Bajo,7.0,24.59,No,No,Otro,No,+1-202-555-0162,cliente-demo-0662@example.invalid,Efectivo,1995.0
+9000000663,Cliente Demo 0663,Sintético,41.0,Femenino,Orlando,Bajo,1.0,37.49,Sí,No,Vegano,No,+1-202-555-0163,cliente-demo-0663@example.invalid,Efectivo,1926.0
+9000000664,Cliente Demo 0664,Sintético,73.0,No binario,Miami,Alto,5.0,57.52,No,Sí,Mariscos,No,+1-202-555-0164,cliente-demo-0664@example.invalid,Tarjeta,5167.0
+9000000665,Cliente Demo 0665,Sintético,52.0,Femenino,Miami,Alto,12.0,64.58,No,Sí,Vegano,Sí,+1-202-555-0165,cliente-demo-0665@example.invalid,Tarjeta,5751.0
+9000000666,Cliente Demo 0666,Sintético,73.0,Masculino,Miami,Medio,4.0,43.63,Sí,Sí,Carnes,No,+1-202-555-0166,cliente-demo-0666@example.invalid,Tarjeta,2192.0
+9000000667,Cliente Demo 0667,Sintético,61.0,Masculino,Orlando,Medio,12.0,30.13,Sí,Sí,Otro,No,+1-202-555-0167,cliente-demo-0667@example.invalid,Billetera digital,4898.0
+9000000668,Cliente Demo 0668,Sintético,79.0,Masculino,Miami,Medio,4.0,45.16,Sí,No,Vegano,Sí,+1-202-555-0168,cliente-demo-0668@example.invalid,Tarjeta,3179.0
+9000000669,Cliente Demo 0669,Sintético,32.0,Masculino,Orlando,Medio,6.0,41.6,Sí,Sí,Vegetariano,Sí,+1-202-555-0169,cliente-demo-0669@example.invalid,Tarjeta,2477.0
+9000000670,Cliente Demo 0670,Sintético,44.0,Femenino,Tampa,Bajo,12.0,35.84,Sí,Sí,Otro,No,+1-202-555-0170,cliente-demo-0670@example.invalid,Tarjeta,2593.0
+9000000671,Cliente Demo 0671,Sintético,50.0,Masculino,Miami,Muy Alto,6.0,100.13,No,Sí,Carnes,Sí,+1-202-555-0171,cliente-demo-0671@example.invalid,Billetera digital,9681.0
+9000000672,Cliente Demo 0672,Sintético,78.0,Femenino,Miami,Alto,5.0,71.68,Sí,No,Mariscos,No,+1-202-555-0172,cliente-demo-0672@example.invalid,Billetera digital,7668.0
+9000000673,Cliente Demo 0673,Sintético,53.0,Femenino,Fort Lauderdale,Medio,2.0,36.98,No,Sí,Otro,Sí,+1-202-555-0173,cliente-demo-0673@example.invalid,Tarjeta,3029.0
+9000000674,Cliente Demo 0674,Sintético,62.0,Masculino,Miami,Bajo,6.0,26.72,Sí,Sí,Vegano,Sí,+1-202-555-0174,cliente-demo-0674@example.invalid,Tarjeta,3128.0
+9000000675,Cliente Demo 0675,Sintético,54.0,Femenino,Miami,Muy Alto,9.0,99.35,Sí,Sí,Mariscos,No,+1-202-555-0175,cliente-demo-0675@example.invalid,Tarjeta,9414.0
+9000000676,Cliente Demo 0676,Sintético,80.0,Femenino,Miami,Alto,4.0,68.13,No,Sí,Pescado,Sí,+1-202-555-0176,cliente-demo-0676@example.invalid,Efectivo,6228.0
+9000000677,Cliente Demo 0677,Sintético,81.0,Femenino,Miami,Medio,2.0,35.41,No,No,Mariscos,No,+1-202-555-0177,cliente-demo-0677@example.invalid,Tarjeta,2616.0
+9000000678,Cliente Demo 0678,Sintético,64.0,Femenino,Miami,Bajo,,0.0,Sí,Sí,Carnes,No,+1-202-555-0178,cliente-demo-0678@example.invalid,Efectivo,2666.0
+9000000679,Cliente Demo 0679,Sintético,27.0,Femenino,Tampa,Medio,-1.0,29.41,No,Sí,Carnes,No,+1-202-555-0179,cliente-demo-0679@example.invalid,Tarjeta,3243.0
+9000000680,Cliente Demo 0680,Sintético,36.0,Femenino,Miami,Bajo,4.0,14.57,Sí,Sí,Mariscos,Sí,+1-202-555-0180,cliente-demo-0680@example.invalid,Efectivo,1700.0
+9000000681,Cliente Demo 0681,Sintético,77.0,Femenino,Miami,Medio,11.0,45.16,No,Sí,Mariscos,No,+1-202-555-0181,cliente-demo-0681@example.invalid,Tarjeta,4443.0
+9000000682,Cliente Demo 0682,Sintético,39.0,Masculino,Orlando,Medio,12.0,25.7,No,Sí,Carnes,Sí,+1-202-555-0182,cliente-demo-0682@example.invalid,Tarjeta,4761.0
+9000000683,Cliente Demo 0683,Sintético,74.0,Masculino,Tampa,Medio,5.0,43.56,No,Sí,Mariscos,No,+1-202-555-0183,cliente-demo-0683@example.invalid,Efectivo,3047.0
+9000000684,Cliente Demo 0684,Sintético,33.0,Femenino,Miami,Alto,1.0,85.3,Sí,Sí,Vegetariano,Sí,+1-202-555-0184,cliente-demo-0684@example.invalid,Efectivo,6270.0
+9000000685,Cliente Demo 0685,Sintético,58.0,Masculino,Orlando,Alto,7.0,65.44,Sí,Sí,Mariscos,Sí,+1-202-555-0185,cliente-demo-0685@example.invalid,Tarjeta,7227.0
+9000000686,Cliente Demo 0686,Sintético,40.0,Femenino,Fort Lauderdale,Medio,8.0,49.14,Sí,Sí,Mariscos,No,+1-202-555-0186,cliente-demo-0686@example.invalid,Billetera digital,3311.0
+9000000687,Cliente Demo 0687,Sintético,68.0,Masculino,Miami,Muy Alto,11.0,111.18,No,Sí,Carnes,Sí,+1-202-555-0187,cliente-demo-0687@example.invalid,Tarjeta,11121.0
+9000000688,Cliente Demo 0688,Sintético,68.0,Masculino,Orlando,Alto,8.0,72.77,Sí,No,Mariscos,Sí,+1-202-555-0188,cliente-demo-0688@example.invalid,Tarjeta,6043.0
+9000000689,Cliente Demo 0689,Sintético,39.0,Masculino,Miami,Alto,2.0,70.05,Sí,Sí,Carnes,Sí,+1-202-555-0189,cliente-demo-0689@example.invalid,Tarjeta,5571.0
+9000000690,Cliente Demo 0690,Sintético,83.0,Masculino,Tampa,Bajo,8.0,34.93,Sí,No,Carnes,Sí,+1-202-555-0190,cliente-demo-0690@example.invalid,Tarjeta,2852.0
+9000000691,Cliente Demo 0691,Sintético,85.0,Femenino,Miami,Alto,11.0,68.15,Sí,No,Vegetariano,No,+1-202-555-0191,cliente-demo-0691@example.invalid,Tarjeta,4890.0
+9000000692,Cliente Demo 0692,Sintético,23.0,Femenino,Orlando,Alto,11.0,83.73,No,No,Vegano,Sí,+1-202-555-0192,cliente-demo-0692@example.invalid,Tarjeta,5579.0
+9000000693,Cliente Demo 0693,Sintético,26.0,Femenino,Fort Lauderdale,Muy Alto,3.0,96.52,No,Sí,,Sí,+1-202-555-0193,cliente-demo-0693@example.invalid,Billetera digital,9698.0
+9000000694,Cliente Demo 0694,Sintético,74.0,Femenino,Miami,Medio,3.0,49.63,Sí,No,Vegetariano,No,+1-202-555-0194,cliente-demo-0694@example.invalid,Tarjeta,3421.0
+9000000695,Cliente Demo 0695,Sintético,78.0,Masculino,Miami,Medio,4.0,35.06,Sí,Sí,Vegetariano,No,+1-202-555-0195,cliente-demo-0695@example.invalid,Tarjeta,4858.0
+9000000696,Cliente Demo 0696,Sintético,41.0,Femenino,Miami,Alto,2.0,73.5,Sí,Sí,Vegetariano,No,+1-202-555-0196,cliente-demo-0696@example.invalid,Tarjeta,6391.0
+9000000697,Cliente Demo 0697,Sintético,60.0,Masculino,Miami,Medio,1.0,46.92,Sí,Sí,Carnes,Sí,+1-202-555-0197,cliente-demo-0697@example.invalid,Tarjeta,3264.0
+9000000698,Cliente Demo 0698,Sintético,78.0,Masculino,Miami,Medio,5.0,28.96,Sí,No,Carnes,Sí,+1-202-555-0198,cliente-demo-0698@example.invalid,Tarjeta,2667.0
+9000000699,Cliente Demo 0699,Sintético,77.0,Masculino,Miami,Muy Alto,7.0,95.45,Sí,Sí,Vegetariano,Sí,+1-202-555-0199,cliente-demo-0699@example.invalid,Tarjeta,9000.0
+9000000700,Cliente Demo 0700,Sintético,64.0,Femenino,Miami,Bajo,3.0,9.66,Sí,Sí,Mariscos,No,+1-202-555-0100,cliente-demo-0700@example.invalid,Tarjeta,2431.0
+9000000701,Cliente Demo 0701,Sintético,69.0,Femenino,Miami,Bajo,3.0,23.35,Sí,No,Vegano,No,+1-202-555-0101,cliente-demo-0701@example.invalid,Tarjeta,1135.0
+9000000702,Cliente Demo 0702,Sintético,26.0,Masculino,Tampa,Bajo,2.0,24.32,Sí,No,Vegano,No,+1-202-555-0102,cliente-demo-0702@example.invalid,Tarjeta,1545.0
+9000000703,Cliente Demo 0703,Sintético,81.0,Masculino,Miami,Bajo,9.0,11.86,Sí,No,Carnes,No,+1-202-555-0103,cliente-demo-0703@example.invalid,Billetera digital,1145.0
+9000000704,Cliente Demo 0704,Sintético,68.0,Masculino,Fort Lauderdale,Alto,2.0,75.24,Sí,Sí,Otro,Sí,+1-202-555-0104,cliente-demo-0704@example.invalid,Efectivo,5757.0
+9000000705,Cliente Demo 0705,Sintético,34.0,Masculino,Miami,Alto,8.0,67.57,Sí,Sí,Otro,Sí,+1-202-555-0105,cliente-demo-0705@example.invalid,Efectivo,5854.0
+9000000706,Cliente Demo 0706,Sintético,45.0,Masculino,Miami,Medio,5.0,29.13,No,Sí,Otro,Sí,+1-202-555-0106,cliente-demo-0706@example.invalid,Tarjeta,2915.0
+9000000707,Cliente Demo 0707,Sintético,31.0,Femenino,Tampa,Bajo,8.0,24.33,Sí,Sí,Vegetariano,No,+1-202-555-0107,cliente-demo-0707@example.invalid,Tarjeta,2235.0
+9000000708,Cliente Demo 0708,Sintético,51.0,Masculino,Miami,Alto,4.0,66.26,No,No,Carnes,Sí,+1-202-555-0108,cliente-demo-0708@example.invalid,Tarjeta,5401.0
+9000000709,Cliente Demo 0709,Sintético,70.0,Femenino,Fort Lauderdale,Alto,-1.0,,Sí,No,Vegetariano,No,+1-202-555-0109,cliente-demo-0709@example.invalid,Billetera digital,5745.0
+9000000710,Cliente Demo 0710,Sintético,40.0,Femenino,Miami,Medio,3.0,30.76,Sí,No,Vegetariano,No,+1-202-555-0110,cliente-demo-0710@example.invalid,Billetera digital,4121.0
+9000000711,Cliente Demo 0711,Sintético,35.0,Masculino,Orlando,Medio,2.0,26.92,No,No,Carnes,Sí,+1-202-555-0111,cliente-demo-0711@example.invalid,Efectivo,4674.0
+9000000712,Cliente Demo 0712,Sintético,83.0,Masculino,Miami,Medio,12.0,34.4,Sí,Sí,Carnes,No,+1-202-555-0112,cliente-demo-0712@example.invalid,Tarjeta,3379.0
+9000000713,Cliente Demo 0713,Sintético,52.0,Masculino,Miami,Medio,2.0,43.14,No,No,Mariscos,No,+1-202-555-0113,cliente-demo-0713@example.invalid,Tarjeta,4796.0
+9000000714,Cliente Demo 0714,Sintético,70.0,Masculino,Miami,Alto,1.0,67.74,Sí,Sí,Vegano,Sí,+1-202-555-0114,cliente-demo-0714@example.invalid,Efectivo,7422.0
+9000000715,Cliente Demo 0715,Sintético,72.0,Masculino,Miami,Alto,1.0,87.54,Sí,No,Mariscos,Sí,+1-202-555-0115,cliente-demo-0715@example.invalid,Tarjeta,5382.0
+9000000716,Cliente Demo 0716,Sintético,22.0,Masculino,Orlando,Alto,8.0,60.5,Sí,Sí,Mariscos,Sí,+1-202-555-0116,cliente-demo-0716@example.invalid,Efectivo,6340.0
+9000000717,Cliente Demo 0717,Sintético,54.0,Femenino,Miami,Alto,11.0,71.41,No,Sí,Pescado,Sí,+1-202-555-0117,cliente-demo-0717@example.invalid,Billetera digital,6198.0
+9000000718,Cliente Demo 0718,Sintético,81.0,Femenino,Miami,Bajo,11.0,28.97,Sí,No,Carnes,No,+1-202-555-0118,cliente-demo-0718@example.invalid,Tarjeta,1600.0
+9000000719,Cliente Demo 0719,Sintético,82.0,Masculino,Miami,Bajo,4.0,22.5,Sí,No,Pescado,No,+1-202-555-0119,cliente-demo-0719@example.invalid,Tarjeta,1856.0
+9000000720,Cliente Demo 0720,Sintético,78.0,Masculino,Miami,Bajo,11.0,20.08,Sí,No,Pescado,No,+1-202-555-0120,cliente-demo-0720@example.invalid,Tarjeta,3865.0
+9000000721,Cliente Demo 0721,Sintético,83.0,Masculino,Tampa,Medio,12.0,53.29,Sí,Sí,Vegano,Sí,+1-202-555-0121,cliente-demo-0721@example.invalid,Tarjeta,4715.0
+9000000722,Cliente Demo 0722,Sintético,27.0,No binario,Miami,Bajo,11.0,35.35,Sí,Sí,Vegano,No,+1-202-555-0122,cliente-demo-0722@example.invalid,Tarjeta,900.0
+9000000723,Cliente Demo 0723,Sintético,105.0,Femenino,Miami,Bajo,9.0,20.07,Sí,Sí,Vegano,No,+1-202-555-0123,cliente-demo-0723@example.invalid,Billetera digital,2491.0
+9000000724,Cliente Demo 0724,Sintético,55.0,Femenino,Miami,Muy Alto,5.0,,Sí,No,Otro,Sí,+1-202-555-0124,cliente-demo-0724@example.invalid,Tarjeta,9948.0
+9000000725,Cliente Demo 0725,Sintético,80.0,Masculino,Miami,Medio,3.0,26.69,Sí,Sí,Mariscos,No,+1-202-555-0125,cliente-demo-0725@example.invalid,Billetera digital,2586.0
+9000000726,Cliente Demo 0726,Sintético,84.0,Masculino,Miami,Muy Alto,1.0,113.89,Sí,No,Vegetariano,Sí,+1-202-555-0126,cliente-demo-0726@example.invalid,Tarjeta,9406.0
+9000000727,Cliente Demo 0727,Sintético,68.0,Femenino,Miami,Bajo,4.0,16.9,Sí,No,Mariscos,No,+1-202-555-0127,cliente-demo-0727@example.invalid,Efectivo,2354.0
+9000000728,Cliente Demo 0728,Sintético,84.0,Femenino,Miami,Bajo,12.0,17.02,Sí,No,Carnes,Sí,+1-202-555-0128,cliente-demo-0728@example.invalid,Efectivo,2155.0
+9000000729,Cliente Demo 0729,Sintético,69.0,Masculino,Miami,Alto,5.0,79.62,Sí,Sí,Vegano,Sí,+1-202-555-0129,cliente-demo-0729@example.invalid,Tarjeta,5775.0
+9000000730,Cliente Demo 0730,Sintético,35.0,Masculino,Tampa,Bajo,9.0,28.48,Sí,Sí,Mariscos,No,+1-202-555-0130,cliente-demo-0730@example.invalid,Tarjeta,1253.0
+9000000731,Cliente Demo 0731,Sintético,27.0,Femenino,Fort Lauderdale,Medio,10.0,50.04,No,Sí,Vegetariano,No,+1-202-555-0131,cliente-demo-0731@example.invalid,Tarjeta,4577.0
+9000000732,Cliente Demo 0732,Sintético,66.0,Femenino,Miami,Muy Alto,12.0,109.76,Sí,No,Vegetariano,Sí,+1-202-555-0132,cliente-demo-0732@example.invalid,Tarjeta,10836.0
+9000000733,Cliente Demo 0733,Sintético,18.0,Masculino,Miami,Medio,7.0,58.92,No,Sí,Mariscos,No,+1-202-555-0133,cliente-demo-0733@example.invalid,Tarjeta,3232.0
+9000000734,Cliente Demo 0734,Sintético,29.0,Masculino,Miami,Bajo,9.0,22.65,Sí,No,Carnes,No,+1-202-555-0134,cliente-demo-0734@example.invalid,Tarjeta,1952.0
+9000000735,Cliente Demo 0735,Sintético,34.0,Femenino,Orlando,Bajo,8.0,14.33,Sí,No,Carnes,Sí,+1-202-555-0135,cliente-demo-0735@example.invalid,Tarjeta,2784.0
+9000000736,Cliente Demo 0736,Sintético,30.0,Femenino,Miami,Alto,6.0,66.29,Sí,No,Carnes,No,+1-202-555-0136,cliente-demo-0736@example.invalid,Billetera digital,5594.0
+9000000737,Cliente Demo 0737,Sintético,29.0,Masculino,Fort Lauderdale,Bajo,9.0,8.0,Sí,Sí,Mariscos,No,+1-202-555-0137,cliente-demo-0737@example.invalid,Billetera digital,3224.0
+9000000738,Cliente Demo 0738,Sintético,46.0,Femenino,Miami,Alto,6.0,74.03,Sí,No,Pescado,Sí,+1-202-555-0138,cliente-demo-0738@example.invalid,Tarjeta,7295.0
+9000000739,Cliente Demo 0739,Sintético,82.0,Femenino,Miami,Alto,6.0,69.06,Sí,No,Carnes,Sí,+1-202-555-0139,cliente-demo-0739@example.invalid,Efectivo,6340.0
+9000000740,Cliente Demo 0740,Sintético,84.0,Masculino,Miami,Muy Alto,2.0,111.47,No,No,Mariscos,Sí,+1-202-555-0140,cliente-demo-0740@example.invalid,Billetera digital,8790.0
+9000000741,Cliente Demo 0741,Sintético,48.0,Femenino,Miami,Alto,5.0,61.73,Sí,No,Pescado,Sí,+1-202-555-0141,cliente-demo-0741@example.invalid,Billetera digital,5272.0
+9000000742,Cliente Demo 0742,Sintético,47.0,Femenino,Miami,Bajo,2.0,21.01,No,Sí,Otro,No,+1-202-555-0142,cliente-demo-0742@example.invalid,Tarjeta,900.0
+9000000743,Cliente Demo 0743,Sintético,46.0,Femenino,Miami,Medio,5.0,23.56,No,No,Carnes,No,+1-202-555-0143,cliente-demo-0743@example.invalid,Billetera digital,3336.0
+9000000744,Cliente Demo 0744,Sintético,15.0,Femenino,Fort Lauderdale,Medio,0.0,0.0,No,No,Mariscos,No,+1-202-555-0144,cliente-demo-0744@example.invalid,Tarjeta,4126.0
+9000000745,Cliente Demo 0745,Sintético,76.0,Femenino,Miami,Medio,3.0,36.32,Sí,Sí,Mariscos,Sí,+1-202-555-0145,cliente-demo-0745@example.invalid,Tarjeta,2421.0
+9000000746,Cliente Demo 0746,Sintético,41.0,Masculino,Miami,Medio,2.0,50.71,Sí,No,Mariscos,No,+1-202-555-0146,cliente-demo-0746@example.invalid,Billetera digital,2946.0
+9000000747,Cliente Demo 0747,Sintético,55.0,Femenino,Miami,Medio,4.0,25.9,No,Sí,Vegano,No,+1-202-555-0147,cliente-demo-0747@example.invalid,Tarjeta,4369.0
+9000000748,Cliente Demo 0748,Sintético,69.0,Femenino,Orlando,Medio,12.0,41.55,Sí,No,Mariscos,No,+1-202-555-0148,cliente-demo-0748@example.invalid,Tarjeta,2699.0
+9000000749,Cliente Demo 0749,Sintético,60.0,Masculino,Miami,Alto,12.0,68.23,Sí,Sí,Pescado,Sí,+1-202-555-0149,cliente-demo-0749@example.invalid,Tarjeta,5328.0

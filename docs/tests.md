@@ -28,6 +28,13 @@ Los tests revisan outputs, contratos, reproducibilidad demo, preparación del re
 - Caso directo que comprueba que una preferencia con mucha imputación se marca como No concluyente.
 - Casos directos para brecha, equilibrio y oferta amplia.
 
+## Ampliación analítica
+
+- Seis preferencias por cinco niveles de precio, sin cruces faltantes.
+- Participaciones e imputación de precio dentro de 0–100%.
+- Tres escenarios de sensibilidad por preferencia.
+- El escenario Base reconcilia exactamente con la señal publicada.
+
 ## Contratos y demo
 
 - Mensajes accionables ante columnas faltantes y rangos inválidos.
@@ -35,6 +42,8 @@ Los tests revisan outputs, contratos, reproducibilidad demo, preparación del re
 - Pipeline demo completo dentro de rutas temporales aisladas.
 - Mismos hashes al repetir la demo con igual semilla.
 - Ausencia de PII en outputs sintéticos.
+- Segunda ejecución sin cambios devuelve `unchanged` y conserva `run_id`.
+- Un fallo simulado durante la publicación restaura todos los archivos previos.
 
 ## Reporte
 
@@ -47,7 +56,7 @@ Los tests revisan outputs, contratos, reproducibilidad demo, preparación del re
 .\.venv\Scripts\python.exe -m pytest -q
 ~~~
 
-La suite actual contiene 19 pruebas.
+La suite actual contiene 24 pruebas.
 
 ## Verificación de publicación
 
@@ -57,6 +66,7 @@ La suite actual contiene 19 pruebas.
 .\.venv\Scripts\python.exe scripts\validate_publication.py --mode full
 .\.venv\Scripts\python.exe -m src.pipeline --mode demo
 .\.venv\Scripts\python.exe scripts\validate_publication.py --mode demo
+.\.venv\Scripts\python.exe scripts\verify_c3_lite.py
 ~~~
 
-El workflow ejecuta Ruff, 19 tests, pipeline demo, control de determinismo/archivos, render del notebook y ambas validaciones en Python 3.12, 3.13 y 3.14. Los outputs demo se publican como artifact temporal por versión.
+El workflow ejecuta Ruff, 24 tests, pipeline demo forzado, control de determinismo/archivos, render del notebook, ambas validaciones y C3-Lite en Python 3.12, 3.13 y 3.14. Los outputs demo se publican como artifact temporal por versión.

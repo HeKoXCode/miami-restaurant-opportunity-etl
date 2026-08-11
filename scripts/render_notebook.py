@@ -49,6 +49,9 @@ def render_notebook():
         resources={"metadata": {"path": str(BASE_DIR)}},
     )
     client.execute()
+    # La microversión del runner no forma parte del resultado analítico y
+    # cambia entre Python 3.12, 3.13 y 3.14. Se normaliza para evitar drift.
+    notebook.metadata.setdefault("language_info", {})["version"] = "3"
     nbformat.write(notebook, NOTEBOOK_PATH)
 
     print(f"Notebook ejecutado y guardado: {NOTEBOOK_PATH}")

@@ -12,6 +12,8 @@ class ReportData:
     customers_miami: pd.DataFrame
     customer_value: pd.DataFrame
     preference_opportunity: pd.DataFrame
+    restaurant_competition: pd.DataFrame
+    preference_sensitivity: pd.DataFrame
     data_quality: pd.DataFrame
 
 
@@ -21,6 +23,8 @@ def load_report_data(paths: PipelinePaths = FULL_PIPELINE_PATHS) -> ReportData:
         customers_miami=pd.read_csv(paths.customers_miami),
         customer_value=pd.read_csv(paths.customer_value_miami),
         preference_opportunity=pd.read_csv(paths.preference_opportunity_miami),
+        restaurant_competition=pd.read_csv(paths.restaurant_competition_miami),
+        preference_sensitivity=pd.read_csv(paths.preference_sensitivity_miami),
         data_quality=pd.read_csv(paths.data_quality_report_csv),
     )
 
@@ -115,3 +119,27 @@ def build_quality_view(data_quality):
     return data_quality[
         ["dataset", "step", "rows", "columns", "missing_total", "duplicate_rows"]
     ].copy()
+
+
+def build_price_competition_view(restaurant_competition):
+    return restaurant_competition.pivot(
+        index="customer_preference",
+        columns="price_level",
+        values="restaurant_count",
+    ).reindex(columns=[0, 1, 2, 3, 4]).rename(
+        columns={
+            0: "Sin precio",
+            1: "Nivel 1",
+            2: "Nivel 2",
+            3: "Nivel 3",
+            4: "Nivel 4",
+        }
+    )
+
+
+def build_sensitivity_view(preference_sensitivity):
+    return preference_sensitivity.pivot(
+        index="customer_preference",
+        columns="scenario",
+        values="coverage_signal",
+    ).reindex(columns=["Conservador", "Base", "Exploratorio"])
