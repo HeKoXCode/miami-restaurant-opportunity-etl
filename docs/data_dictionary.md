@@ -75,3 +75,18 @@ Resume valor por membresía premium y estrato socioeconómico.
 ## data_quality_report.csv
 
 Resume filas, columnas, nulos, duplicados e indicadores específicos en cada etapa del pipeline.
+
+La versión machine-readable vive en `data/final/` para que el notebook consuma únicamente outputs finales. El reporte legible permanece en `docs/data_quality_report.md`.
+
+## data_rejections.csv
+
+- dataset: fuente afectada.
+- step: etapa que descartó las filas.
+- reason: causa estable y auditable.
+- rows_rejected: cantidad descartada por esa causa.
+
+La suma por dataset reconcilia la diferencia entre filas raw y clean.
+
+## data/demo/
+
+Replica las capas `raw`, `clean`, `final` y `docs` para el modo sintético. Conserva los mismos contratos analíticos sin reemplazar los outputs del caso completo.

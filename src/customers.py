@@ -11,17 +11,20 @@ from .config import (
 )
 
 
-def load_customers():
-    customers = pd.read_csv(CUSTOMERS_RAW, encoding="utf-8-sig")
-
-    for column in ["frecuencia_visita", "promedio_gasto_comida", "edad"]:
-        customers[column] = pd.to_numeric(customers[column], errors="coerce")
-
-    return customers
+def load_customers(path=CUSTOMERS_RAW):
+    return pd.read_csv(path, encoding="utf-8-sig")
 
 
-def clean_customers(customers):
+def clean_customers(customers, rejection_audit=None):
     customers = customers.copy()
+
+    for column in [
+        "frecuencia_visita",
+        "promedio_gasto_comida",
+        "edad",
+        "ingresos_mensuales",
+    ]:
+        customers[column] = pd.to_numeric(customers[column], errors="coerce")
 
     customers["frecuencia_imputada"] = False
     customers["gasto_imputado"] = False
@@ -71,6 +74,10 @@ def clean_customers(customers):
         (customers["frecuencia_visita"] < 0)
         & (customers["promedio_gasto_comida"].isna())
     )
+    if rejection_audit is not None:
+        rejection_audit["negative_frequency_without_spend"] = int(
+            bad_frequency_without_spend.sum()
+        )
     # Sin frecuencia ni gasto no hay base razonable para imputar consumo.
     customers = customers.loc[~bad_frequency_without_spend].copy()
 
@@ -78,6 +85,10 @@ def clean_customers(customers):
         customers["frecuencia_visita"].isna()
         & (customers["promedio_gasto_comida"] <= 0)
     )
+    if rejection_audit is not None:
+        rejection_audit["missing_frequency_without_positive_spend"] = int(
+            missing_frequency_without_spend.sum()
+        )
     customers = customers.loc[~missing_frequency_without_spend].copy()
 
     # "Otro" ya existía en la fuente. El flag permite distinguir una respuesta
@@ -103,9 +114,15 @@ def clean_customers(customers):
     customers.loc[age_to_impute, "edad"] = average_valid_age
     customers.loc[age_to_impute, "edad_imputada"] = True
 
-    customers = customers.loc[
-        customers["edad"].between(VALID_AGE_MIN, VALID_AGE_MAX)
-    ].copy()
+    invalid_age_after_imputation = ~customers["edad"].between(
+        VALID_AGE_MIN,
+        VALID_AGE_MAX,
+    )
+    if rejection_audit is not None:
+        rejection_audit["invalid_age_without_activity"] = int(
+            invalid_age_after_imputation.sum()
+        )
+    customers = customers.loc[~invalid_age_after_imputation].copy()
 
     customers["edad"] = customers["edad"].round().astype("Int64")
     customers["frecuencia_visita"] = customers["frecuencia_visita"].round().astype("Int64")

@@ -1,0 +1,7 @@
+dataset,step,reason,rows_rejected
+customers,clean,invalid_age_without_activity,12
+customers,clean,missing_frequency_without_positive_spend,0
+customers,clean,negative_frequency_without_spend,10
+yelp,clean,duplicate_name_address,0
+yelp,clean,duplicate_yelp_id,0
+yelp,clean,outside_allowed_city,54

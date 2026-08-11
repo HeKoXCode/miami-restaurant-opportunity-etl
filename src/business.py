@@ -10,8 +10,8 @@ from .config import (
 )
 
 
-def load_category_mapping():
-    mapping = pd.read_csv(CATEGORY_MAPPING, encoding="utf-8")
+def load_category_mapping(path=CATEGORY_MAPPING):
+    mapping = pd.read_csv(path, encoding="utf-8")
     required_columns = {"customer_preference", "yelp_category"}
     missing_columns = required_columns - set(mapping.columns)
 

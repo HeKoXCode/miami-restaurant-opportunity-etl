@@ -1,6 +1,6 @@
 import pandas as pd
 
-from .config import VALID_AGE_MAX, VALID_AGE_MIN
+from .config import SCHEMA_VERSION, VALID_AGE_MAX, VALID_AGE_MIN
 
 
 def quality_row(dataset, step, df):
@@ -59,6 +59,26 @@ def build_data_quality_report(rows):
     return report[columns]
 
 
+def build_rejection_report(customer_audit, yelp_audit):
+    rows = []
+    for dataset, audit in (
+        ("customers", customer_audit),
+        ("yelp", yelp_audit),
+    ):
+        rows.extend(
+            {
+                "dataset": dataset,
+                "step": "clean",
+                "reason": reason,
+                "rows_rejected": count,
+            }
+            for reason, count in audit.items()
+        )
+    return pd.DataFrame(rows).sort_values(
+        ["dataset", "reason"],
+    ).reset_index(drop=True)
+
+
 def _markdown_table(df):
     safe = df.fillna("")
     headers = list(safe.columns)
@@ -72,7 +92,7 @@ def _markdown_table(df):
     return "\n".join(lines)
 
 
-def data_quality_to_markdown(report):
+def data_quality_to_markdown(report, rejections, mode):
     customers_clean = report.loc[
         (report["dataset"] == "customers") & (report["step"] == "clean")
     ]
@@ -95,16 +115,28 @@ def data_quality_to_markdown(report):
         "# Reporte de calidad\n\n"
         "Control operativo generado por el pipeline. Resume el volumen de cada etapa "
         "y los problemas de calidad que deben quedar resueltos antes del analisis.\n\n"
+        f"- Modo: `{mode}`.\n"
+        f"- Versión de contratos: `{SCHEMA_VERSION}`.\n"
         f"{notes_text}\n\n"
         + _markdown_table(report)
+        + "\n\n## Filas rechazadas\n\n"
+        + "Los conteos explican la diferencia entre raw y clean por causa.\n\n"
+        + _markdown_table(rejections)
         + "\n"
     )
 
 
 def save_data_quality_reports(
     report: pd.DataFrame,
+    rejections: pd.DataFrame,
     csv_path,
+    rejections_path,
     markdown_path,
+    mode,
 ) -> None:
     report.to_csv(csv_path, index=False, encoding="utf-8")
-    markdown_path.write_text(data_quality_to_markdown(report), encoding="utf-8")
+    rejections.to_csv(rejections_path, index=False, encoding="utf-8")
+    markdown_path.write_text(
+        data_quality_to_markdown(report, rejections, mode),
+        encoding="utf-8",
+    )

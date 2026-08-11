@@ -1,15 +1,14 @@
 import argparse
-from datetime import datetime, timezone
 import json
 import os
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
 import requests
 
 from .config import RAW_DIR, YELP_EXTRACTION_METADATA, ensure_dirs
-
 
 API_URL = "https://api.yelp.com/v3/businesses/search"
 

@@ -10,6 +10,7 @@ Este documento registra transformaciones que afectan la interpretación de los d
 - Los gastos faltantes con frecuencia positiva se imputan con la mediana del estrato.
 - Las filas sin información suficiente de frecuencia y gasto se eliminan.
 - Cada corrección conserva un flag de trazabilidad.
+- Las filas que no pueden recuperarse se cuentan por causa en `data_rejections.csv`; la suma reconcilia raw menos clean para evitar descartes silenciosos.
 
 La métrica derivada es:
 

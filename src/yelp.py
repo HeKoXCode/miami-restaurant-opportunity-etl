@@ -82,13 +82,15 @@ def location_value(location_obj, key):
     return pd.NA
 
 
-def load_yelp():
-    yelp = pd.read_csv(YELP_RAW, encoding="utf-8-sig")
+def load_yelp(path=YELP_RAW):
+    yelp = pd.read_csv(path, encoding="utf-8-sig")
     return yelp.drop(columns=["Unnamed: 0"], errors="ignore")
 
 
-def clean_yelp(yelp_raw):
+def clean_yelp(yelp_raw, rejection_audit=None):
     yelp_work = yelp_raw.drop_duplicates(subset=["id"]).copy()
+    if rejection_audit is not None:
+        rejection_audit["duplicate_yelp_id"] = len(yelp_raw) - len(yelp_work)
     yelp_clean = pd.DataFrame()
 
     # Construimos el output desde cero. Así queda claro qué campos de la API
@@ -174,8 +176,15 @@ def clean_yelp(yelp_raw):
         fallback = mode_value.iloc[0] if not mode_value.empty else MISSING_TEXT_VALUE
         yelp_clean[column] = yelp_clean[column].fillna(fallback)
 
-    yelp_clean = yelp_clean.loc[yelp_clean["city"].isin(YELP_ALLOWED_CITIES)].copy()
-    yelp_clean = yelp_clean.drop_duplicates(subset=["name", "address"]).reset_index(drop=True)
+    allowed_city = yelp_clean["city"].isin(YELP_ALLOWED_CITIES)
+    if rejection_audit is not None:
+        rejection_audit["outside_allowed_city"] = int((~allowed_city).sum())
+    yelp_clean = yelp_clean.loc[allowed_city].copy()
+
+    duplicate_location = yelp_clean.duplicated(subset=["name", "address"])
+    if rejection_audit is not None:
+        rejection_audit["duplicate_name_address"] = int(duplicate_location.sum())
+    yelp_clean = yelp_clean.loc[~duplicate_location].reset_index(drop=True)
     yelp_clean["restaurant_id"] = range(1, len(yelp_clean) + 1)
 
     observed_price = yelp_clean["price"].ne(MISSING_TEXT_VALUE)

@@ -6,6 +6,7 @@ requests>=2.31
 matplotlib>=3.8
 seaborn>=0.13
 pytest>=8.0
+ruff>=0.16
 ipykernel>=6.0
 jupyterlab>=4.0
 nbclient>=0.10

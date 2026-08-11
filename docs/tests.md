@@ -1,6 +1,6 @@
 # Estrategia de pruebas
 
-Los tests revisan dos cosas: que los archivos generados sean válidos y que las reglas de negocio respondan como se espera.
+Los tests revisan outputs, contratos, reproducibilidad demo, preparación del reporte y reglas de negocio.
 
 ## Clientes
 
@@ -28,18 +28,35 @@ Los tests revisan dos cosas: que los archivos generados sean válidos y que las 
 - Caso directo que comprueba que una preferencia con mucha imputación se marca como No concluyente.
 - Casos directos para brecha, equilibrio y oferta amplia.
 
+## Contratos y demo
+
+- Mensajes accionables ante columnas faltantes y rangos inválidos.
+- Cumplimiento de la versión de esquema publicada.
+- Pipeline demo completo dentro de rutas temporales aisladas.
+- Mismos hashes al repetir la demo con igual semilla.
+- Ausencia de PII en outputs sintéticos.
+
+## Reporte
+
+- Métricas ejecutivas calculadas desde outputs finales.
+- Preparación reusable de segmentos, preferencias, prioridades y calidad fuera del notebook.
+
 ## Ejecución
 
 ~~~powershell
 .\.venv\Scripts\python.exe -m pytest -q
 ~~~
 
-La suite actual contiene 12 pruebas.
+La suite actual contiene 19 pruebas.
 
 ## Verificación de publicación
 
-`scripts/validate_publication.py` reconcilia las métricas ejecutivas del README con los CSV finales y comprueba el notebook ejecutado, la ausencia de columnas de contacto y los enlaces locales. El workflow `Public verification` ejecuta la suite, vuelve a renderizar el notebook y aplica esta validación en Python 3.12, 3.13 y 3.14 sobre Windows.
+`scripts/validate_publication.py` tiene dos modos. `full` reconcilia las métricas del README y comprueba el notebook. `demo` verifica origen sintético, archivos esperados y datos de contacto reservados. Ambos revisan privacidad y enlaces.
 
 ~~~powershell
-.\.venv\Scripts\python.exe scripts\validate_publication.py
+.\.venv\Scripts\python.exe scripts\validate_publication.py --mode full
+.\.venv\Scripts\python.exe -m src.pipeline --mode demo
+.\.venv\Scripts\python.exe scripts\validate_publication.py --mode demo
 ~~~
+
+El workflow ejecuta Ruff, 19 tests, pipeline demo, control de determinismo/archivos, render del notebook y ambas validaciones en Python 3.12, 3.13 y 3.14. Los outputs demo se publican como artifact temporal por versión.
