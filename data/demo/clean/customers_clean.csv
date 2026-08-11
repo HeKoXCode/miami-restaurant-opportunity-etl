@@ -1,0 +1,732 @@
+id_persona,edad,genero,ciudad_residencia,estrato_socioeconomico,frecuencia_visita,promedio_gasto_comida,ocio,consume_licor,preferencias_alimenticias,membresia_premium,tipo_de_pago_mas_usado,ingresos_mensuales,frecuencia_imputada,gasto_imputado,edad_imputada,preferencia_original_nula,gasto_periodo_estimado
+9000000000,53,Femenino,Orlando,Bajo,7,33.02,Sí,Sí,Mariscos,No,Tarjeta,2251.0,True,False,False,False,231.14
+9000000001,29,Masculino,Miami,Muy Alto,7,92.26,Sí,Sí,Pescado,Sí,Tarjeta,10553.0,False,False,False,False,645.82
+9000000002,19,Femenino,Miami,Bajo,2,29.29,Sí,Sí,Carnes,No,Tarjeta,1840.0,False,False,False,False,58.58
+9000000003,43,Masculino,Miami,Bajo,7,23.77,No,Sí,Vegetariano,No,Tarjeta,2077.0,False,False,False,False,166.39
+9000000004,60,Masculino,Miami,Bajo,10,26.64,Sí,Sí,Vegano,No,Tarjeta,3333.0,False,False,False,False,266.4
+9000000005,71,Femenino,Miami,Medio,7,41.48,No,Sí,Otro,No,Billetera digital,2927.0,False,False,False,False,290.36
+9000000006,40,Femenino,Miami,Medio,11,38.37,Sí,Sí,Vegano,No,Billetera digital,2691.0,False,False,False,False,422.07
+9000000007,44,No binario,Miami,Bajo,2,22.95,Sí,No,Vegetariano,No,Efectivo,2239.0,False,False,False,False,45.9
+9000000008,31,Masculino,Orlando,Muy Alto,12,89.59,Sí,Sí,Vegano,Sí,Tarjeta,10017.0,False,False,False,False,1075.08
+9000000009,77,Masculino,Orlando,Alto,5,64.67,Sí,No,Vegetariano,Sí,Billetera digital,6201.0,False,False,False,False,323.35
+9000000010,21,Femenino,Fort Lauderdale,Medio,8,11.01,No,Sí,Mariscos,Sí,Billetera digital,2825.0,False,False,False,False,88.08
+9000000011,53,Femenino,Miami,Bajo,9,20.69,Sí,No,Mariscos,No,Tarjeta,1545.0,False,False,True,False,186.21
+9000000012,73,Masculino,Miami,Medio,5,47.04,No,No,Vegetariano,Sí,Tarjeta,1623.0,False,False,False,False,235.2
+9000000013,72,Femenino,Miami,Muy Alto,1,106.58,No,Sí,Mariscos,Sí,Efectivo,10942.0,False,False,False,False,106.58
+9000000014,39,Femenino,Miami,Muy Alto,5,101.27,Sí,Sí,Mariscos,Sí,Tarjeta,9868.0,False,False,False,False,506.35
+9000000015,79,Masculino,Fort Lauderdale,Bajo,7,39.52,No,Sí,Vegetariano,No,Efectivo,2450.0,False,False,False,False,276.64
+9000000016,28,Masculino,Miami,Medio,8,22.7,Sí,No,Vegano,No,Tarjeta,3114.0,False,False,False,False,181.6
+9000000017,78,Masculino,Miami,Medio,7,38.345,Sí,Sí,Vegetariano,No,Tarjeta,2301.0,False,True,False,False,268.41
+9000000018,18,Femenino,Miami,Alto,5,76.29,No,No,Mariscos,Sí,Efectivo,6591.0,False,False,False,False,381.45
+9000000019,64,Masculino,Miami,Medio,11,46.59,No,Sí,Carnes,Sí,Efectivo,3607.0,False,False,False,False,512.49
+9000000020,48,Masculino,Fort Lauderdale,Bajo,10,42.63,No,Sí,Vegano,No,Tarjeta,1811.0,False,False,False,False,426.3
+9000000021,23,Masculino,Miami,Medio,6,48.14,Sí,Sí,Otro,No,Tarjeta,3847.0,False,False,False,False,288.84
+9000000022,26,Masculino,Miami,Bajo,1,38.67,No,No,Vegetariano,No,Tarjeta,1348.0,False,False,False,False,38.67
+9000000023,36,Masculino,Miami,Muy Alto,4,113.51,Sí,Sí,Otro,No,Tarjeta,10667.0,False,False,False,True,454.04
+9000000024,36,Femenino,Miami,Alto,2,77.91,Sí,Sí,Vegetariano,No,Tarjeta,5213.0,False,False,False,False,155.82
+9000000025,82,Femenino,Miami,Bajo,11,23.91,No,Sí,Vegetariano,No,Billetera digital,2579.0,False,False,False,False,263.01
+9000000026,56,Femenino,Orlando,Alto,11,78.65,No,Sí,Vegetariano,Sí,Tarjeta,6751.0,False,False,False,False,865.15
+9000000027,45,Masculino,Miami,Muy Alto,12,95.72,Sí,No,Carnes,Sí,Tarjeta,11186.0,False,False,False,False,1148.64
+9000000028,22,Masculino,Miami,Medio,8,27.77,No,Sí,Vegetariano,No,Efectivo,5165.0,False,False,False,False,222.16
+9000000029,56,Masculino,Miami,Alto,9,67.15,Sí,No,Otro,Sí,Tarjeta,5489.0,False,False,False,False,604.35
+9000000030,40,Masculino,Miami,Medio,6,37.28,No,Sí,Carnes,No,Billetera digital,5085.0,False,False,False,False,223.68
+9000000032,29,Femenino,Tampa,Alto,3,55.12,Sí,Sí,Mariscos,Sí,Billetera digital,6595.0,False,False,False,False,165.36
+9000000033,66,Femenino,Miami,Medio,1,41.67,Sí,Sí,Mariscos,No,Tarjeta,4267.0,False,False,False,False,41.67
+9000000034,33,Femenino,Miami,Alto,11,63.03,No,Sí,Vegano,Sí,Tarjeta,4320.0,False,False,False,False,693.33
+9000000035,78,Femenino,Miami,Medio,10,27.39,Sí,No,Vegano,No,Tarjeta,2864.0,False,False,False,False,273.9
+9000000036,33,Masculino,Miami,Medio,9,32.17,Sí,Sí,Mariscos,No,Tarjeta,3758.0,False,False,False,False,289.53
+9000000037,42,Masculino,Miami,Muy Alto,5,118.74,No,Sí,Mariscos,Sí,Tarjeta,10681.0,False,False,False,False,593.7
+9000000038,44,Masculino,Miami,Bajo,6,33.85,Sí,No,Otro,No,Tarjeta,3101.0,False,False,False,False,203.1
+9000000039,41,Masculino,Miami,Bajo,12,10.87,No,Sí,Carnes,Sí,Tarjeta,1227.0,False,False,False,False,130.44
+9000000040,53,Masculino,Miami,Medio,3,41.21,Sí,No,Pescado,No,Efectivo,3950.0,False,False,False,False,123.63
+9000000041,79,Femenino,Miami,Medio,10,45.68,No,Sí,Carnes,Sí,Tarjeta,4551.0,False,False,False,False,456.8
+9000000042,85,Masculino,Miami,Bajo,3,22.03,Sí,No,Pescado,No,Efectivo,3276.0,False,False,False,False,66.09
+9000000044,85,Femenino,Miami,Bajo,5,20.17,Sí,Sí,Vegano,Sí,Efectivo,3645.0,False,False,False,False,100.85
+9000000045,43,Femenino,Miami,Alto,11,76.34,Sí,Sí,Pescado,No,Efectivo,6785.0,False,False,False,False,839.74
+9000000046,48,Masculino,Miami,Bajo,7,26.84,Sí,Sí,Vegetariano,No,Billetera digital,2767.0,False,False,False,False,187.88
+9000000047,36,Masculino,Miami,Medio,7,49.65,Sí,Sí,Vegetariano,No,Tarjeta,3703.0,False,False,False,False,347.55
+9000000048,23,Masculino,Miami,Medio,1,35.0,Sí,Sí,Mariscos,Sí,Efectivo,4106.0,False,False,False,False,35.0
+9000000049,39,Femenino,Fort Lauderdale,Alto,12,66.87,Sí,Sí,Mariscos,No,Tarjeta,6520.0,False,False,False,False,802.44
+9000000050,72,Masculino,Fort Lauderdale,Medio,11,47.05,No,Sí,Otro,No,Tarjeta,5195.0,False,False,False,False,517.55
+9000000051,20,Masculino,Miami,Alto,12,70.49,Sí,No,Pescado,Sí,Tarjeta,5362.0,False,False,False,False,845.88
+9000000052,73,Masculino,Miami,Medio,10,36.16,Sí,Sí,Vegetariano,Sí,Tarjeta,5181.0,False,False,False,False,361.6
+9000000053,41,Masculino,Miami,Bajo,2,20.99,Sí,No,Mariscos,No,Tarjeta,2277.0,False,False,False,False,41.98
+9000000054,77,Femenino,Miami,Alto,2,73.27,No,Sí,Carnes,Sí,Tarjeta,5570.0,False,False,False,False,146.54
+9000000055,20,Femenino,Fort Lauderdale,Muy Alto,6,97.62,Sí,Sí,Mariscos,Sí,Tarjeta,10231.0,False,False,False,False,585.72
+9000000056,33,Femenino,Miami,Bajo,3,22.94,Sí,Sí,Vegetariano,No,Billetera digital,3333.0,False,False,False,False,68.82
+9000000057,38,Femenino,Miami,Bajo,7,17.78,No,No,Carnes,No,Tarjeta,3395.0,False,False,False,False,124.46
+9000000058,71,Femenino,Miami,Alto,3,69.9,Sí,No,Mariscos,Sí,Billetera digital,7231.0,False,False,False,False,209.7
+9000000060,73,Femenino,Orlando,Muy Alto,10,98.7,No,No,Pescado,No,Tarjeta,10437.0,False,False,False,False,987.0
+9000000061,83,Femenino,Fort Lauderdale,Muy Alto,8,107.42,Sí,Sí,Mariscos,Sí,Efectivo,8801.0,False,False,False,False,859.36
+9000000062,65,Femenino,Tampa,Alto,12,77.62,Sí,No,Vegetariano,No,Efectivo,5358.0,False,False,False,False,931.44
+9000000063,24,Masculino,Miami,Medio,8,53.7,Sí,No,Mariscos,No,Billetera digital,3083.0,False,False,False,False,429.6
+9000000064,48,Masculino,Miami,Bajo,4,8.0,No,Sí,Vegetariano,No,Billetera digital,2150.0,False,False,False,False,32.0
+9000000065,79,Masculino,Fort Lauderdale,Bajo,3,22.86,Sí,Sí,Vegetariano,No,Tarjeta,1424.0,False,False,False,False,68.58
+9000000066,18,Masculino,Fort Lauderdale,Bajo,7,21.46,Sí,No,Otro,No,Tarjeta,2794.0,False,False,False,False,150.22
+9000000067,66,Masculino,Fort Lauderdale,Medio,5,43.7,Sí,No,Otro,No,Tarjeta,2748.0,False,False,False,False,218.5
+9000000068,20,Masculino,Fort Lauderdale,Muy Alto,10,102.34,Sí,Sí,Vegetariano,Sí,Efectivo,9737.0,False,False,False,False,1023.4
+9000000069,33,Femenino,Miami,Muy Alto,8,106.75,Sí,Sí,Vegetariano,Sí,Tarjeta,8028.0,False,False,False,False,854.0
+9000000070,29,Masculino,Miami,Medio,6,36.44,No,Sí,Vegetariano,No,Tarjeta,2558.0,False,False,False,False,218.64
+9000000071,40,Masculino,Orlando,Medio,11,41.38,Sí,Sí,Vegetariano,Sí,Tarjeta,3352.0,False,False,False,False,455.18
+9000000072,49,Masculino,Miami,Alto,4,73.58,Sí,No,Otro,No,Billetera digital,5074.0,False,False,False,False,294.32
+9000000073,20,Masculino,Miami,Alto,2,61.51,Sí,No,Mariscos,No,Efectivo,6342.0,False,False,False,False,123.02
+9000000074,43,Femenino,Miami,Alto,1,65.66,No,Sí,Vegano,No,Tarjeta,5681.0,False,False,False,False,65.66
+9000000075,18,Femenino,Tampa,Bajo,12,27.06,Sí,Sí,Otro,No,Tarjeta,900.0,False,False,False,False,324.72
+9000000076,75,Femenino,Miami,Bajo,3,20.56,No,No,Vegetariano,No,Billetera digital,2230.0,False,False,False,False,61.68
+9000000077,39,Femenino,Orlando,Alto,10,74.55,No,Sí,Carnes,Sí,Efectivo,6151.0,False,False,False,False,745.5
+9000000078,33,Femenino,Miami,Muy Alto,11,108.72,No,Sí,Pescado,Sí,Billetera digital,9885.0,False,False,False,False,1195.92
+9000000079,29,Masculino,Miami,Medio,1,27.22,No,Sí,Mariscos,Sí,Tarjeta,2564.0,False,False,False,False,27.22
+9000000080,68,Masculino,Miami,Bajo,10,8.0,Sí,No,Otro,No,Tarjeta,2205.0,False,False,False,False,80.0
+9000000081,71,Masculino,Miami,Medio,12,42.85,No,Sí,Vegetariano,No,Tarjeta,3949.0,False,False,False,False,514.2
+9000000082,39,Femenino,Orlando,Muy Alto,8,119.62,Sí,No,Vegano,Sí,Tarjeta,9882.0,False,False,False,False,956.96
+9000000083,80,Femenino,Miami,Medio,12,46.18,No,No,Mariscos,No,Efectivo,4030.0,False,False,False,False,554.16
+9000000084,22,No binario,Fort Lauderdale,Medio,5,38.32,Sí,No,Mariscos,No,Tarjeta,3637.0,False,False,False,False,191.6
+9000000085,75,Masculino,Miami,Muy Alto,5,104.64,No,Sí,Vegetariano,No,Tarjeta,10084.0,False,False,False,False,523.2
+9000000086,50,Femenino,Orlando,Medio,1,31.67,Sí,Sí,Otro,Sí,Billetera digital,2916.0,False,False,False,False,31.67
+9000000087,79,Masculino,Fort Lauderdale,Bajo,4,22.38,No,No,Otro,No,Tarjeta,2829.0,False,False,False,False,89.52
+9000000088,71,Masculino,Orlando,Alto,3,88.72,Sí,Sí,Carnes,No,Billetera digital,8549.0,False,False,False,False,266.16
+9000000089,48,Masculino,Miami,Muy Alto,4,89.36,Sí,Sí,Vegano,Sí,Billetera digital,9046.0,False,False,False,False,357.44
+9000000090,19,Masculino,Orlando,Medio,9,35.12,No,No,Otro,Sí,Tarjeta,4052.0,False,False,False,True,316.08
+9000000091,29,No binario,Fort Lauderdale,Medio,10,49.34,Sí,Sí,Vegano,No,Tarjeta,3270.0,False,False,False,False,493.4
+9000000092,36,Femenino,Orlando,Alto,10,76.27,No,No,Carnes,No,Tarjeta,5469.0,False,False,False,False,762.7
+9000000093,38,Masculino,Miami,Muy Alto,9,93.63,No,Sí,Vegano,Sí,Tarjeta,8850.0,False,False,False,False,842.67
+9000000094,46,Femenino,Miami,Muy Alto,12,108.38,Sí,No,Mariscos,Sí,Billetera digital,9568.0,False,False,False,False,1300.56
+9000000095,75,Femenino,Fort Lauderdale,Bajo,7,31.25,No,Sí,Otro,No,Tarjeta,2252.0,False,False,False,False,218.75
+9000000096,66,Masculino,Miami,Bajo,4,26.56,Sí,Sí,Otro,Sí,Tarjeta,1753.0,False,False,False,False,106.24
+9000000097,67,Femenino,Miami,Bajo,7,32.8,No,No,Vegetariano,No,Billetera digital,1564.0,True,False,False,False,229.6
+9000000098,43,Masculino,Orlando,Alto,12,61.36,Sí,No,Carnes,Sí,Tarjeta,5336.0,False,False,False,False,736.32
+9000000099,80,Femenino,Tampa,Bajo,11,26.69,Sí,Sí,Carnes,No,Efectivo,2497.0,False,False,False,False,293.59
+9000000100,53,Femenino,Miami,Alto,7,76.2,Sí,Sí,Otro,Sí,Tarjeta,5298.0,False,False,True,False,533.4
+9000000101,58,Femenino,Miami,Alto,8,65.48,Sí,Sí,Vegetariano,Sí,Efectivo,6746.0,False,False,False,False,523.84
+9000000102,24,Femenino,Fort Lauderdale,Muy Alto,6,117.74,Sí,Sí,Mariscos,Sí,Tarjeta,11721.0,False,False,False,False,706.44
+9000000103,53,Masculino,Miami,Medio,12,43.8,No,Sí,Pescado,No,Efectivo,3770.0,False,False,False,False,525.6
+9000000104,83,Masculino,Orlando,Bajo,12,31.0,Sí,Sí,Vegetariano,No,Tarjeta,900.0,False,False,False,False,372.0
+9000000105,27,Femenino,Fort Lauderdale,Alto,8,63.25,Sí,No,Mariscos,Sí,Tarjeta,6802.0,False,False,False,False,506.0
+9000000106,64,Masculino,Miami,Medio,11,27.69,Sí,Sí,Vegetariano,No,Efectivo,4019.0,False,False,False,False,304.59
+9000000107,45,Femenino,Miami,Medio,2,33.62,Sí,Sí,Otro,No,Efectivo,3159.0,False,False,False,False,67.24
+9000000108,83,Masculino,Miami,Muy Alto,1,102.38,Sí,No,Vegetariano,Sí,Tarjeta,10599.0,False,False,False,False,102.38
+9000000109,79,Femenino,Miami,Medio,11,50.83,Sí,No,Vegetariano,No,Efectivo,4167.0,False,False,False,False,559.13
+9000000110,70,Masculino,Miami,Muy Alto,8,98.92,Sí,No,Vegano,Sí,Tarjeta,10411.0,False,False,False,False,791.36
+9000000111,50,Femenino,Miami,Medio,5,35.53,Sí,Sí,Vegetariano,No,Tarjeta,3594.0,False,False,False,False,177.65
+9000000112,18,Femenino,Miami,Medio,1,38.89,Sí,No,Mariscos,Sí,Efectivo,3832.0,False,False,False,False,38.89
+9000000113,83,Femenino,Tampa,Alto,3,83.82,No,Sí,Otro,No,Tarjeta,4985.0,False,False,False,False,251.46
+9000000114,27,Femenino,Fort Lauderdale,Muy Alto,8,109.31,Sí,No,Vegano,Sí,Tarjeta,11003.0,False,False,False,False,874.48
+9000000115,81,Femenino,Miami,Bajo,4,21.87,No,Sí,Mariscos,No,Tarjeta,3004.0,False,False,False,False,87.48
+9000000116,64,Femenino,Miami,Medio,4,23.64,Sí,Sí,Carnes,No,Tarjeta,2526.0,False,False,False,False,94.56
+9000000117,38,Femenino,Orlando,Medio,10,28.34,Sí,No,Carnes,Sí,Tarjeta,2614.0,False,False,False,False,283.4
+9000000118,36,Masculino,Miami,Alto,8,68.18,Sí,Sí,Otro,No,Efectivo,6905.0,False,True,False,False,545.44
+9000000119,82,Masculino,Miami,Alto,11,48.16,Sí,No,Vegano,Sí,Billetera digital,6692.0,False,False,False,False,529.76
+9000000120,51,Masculino,Miami,Alto,8,69.96,Sí,No,Vegetariano,Sí,Tarjeta,5648.0,False,False,False,False,559.68
+9000000121,69,Femenino,Miami,Alto,4,66.33,Sí,Sí,Mariscos,No,Tarjeta,6663.0,False,False,False,False,265.32
+9000000122,50,Femenino,Miami,Medio,11,43.25,Sí,Sí,Otro,No,Billetera digital,2760.0,False,False,False,False,475.75
+9000000123,79,Femenino,Miami,Alto,3,74.73,No,Sí,Vegano,Sí,Tarjeta,4589.0,False,False,False,False,224.19
+9000000124,82,Femenino,Fort Lauderdale,Alto,11,62.34,Sí,No,Mariscos,No,Efectivo,6857.0,False,False,False,False,685.74
+9000000125,40,Masculino,Miami,Medio,12,50.58,Sí,Sí,Vegano,No,Billetera digital,2261.0,False,False,False,False,606.96
+9000000126,43,Masculino,Miami,Medio,12,45.94,No,Sí,Mariscos,No,Tarjeta,2866.0,False,False,False,False,551.28
+9000000127,75,Masculino,Orlando,Bajo,6,26.13,Sí,No,Vegetariano,No,Tarjeta,2569.0,False,False,False,False,156.78
+9000000128,62,Femenino,Tampa,Alto,9,56.48,Sí,No,Carnes,Sí,Billetera digital,6264.0,False,False,False,False,508.32
+9000000129,57,Femenino,Orlando,Alto,1,76.08,Sí,No,Mariscos,Sí,Tarjeta,6382.0,False,False,False,False,76.08
+9000000130,45,Masculino,Tampa,Medio,5,45.62,Sí,Sí,Vegetariano,No,Efectivo,4014.0,False,False,False,False,228.1
+9000000131,32,Femenino,Fort Lauderdale,Muy Alto,2,95.06,No,Sí,Carnes,Sí,Billetera digital,9110.0,False,False,False,False,190.12
+9000000132,35,Masculino,Orlando,Alto,4,80.77,Sí,Sí,Mariscos,No,Efectivo,5602.0,False,False,False,False,323.08
+9000000133,25,Femenino,Orlando,Muy Alto,11,124.2,Sí,Sí,Vegano,Sí,Tarjeta,10511.0,False,False,False,False,1366.2
+9000000134,68,Masculino,Miami,Alto,3,56.27,Sí,No,Vegano,Sí,Tarjeta,6990.0,False,False,False,False,168.81
+9000000135,61,Femenino,Miami,Medio,12,33.99,No,No,Vegetariano,Sí,Tarjeta,3182.0,False,False,False,False,407.88
+9000000136,50,Femenino,Miami,Medio,11,43.2,No,Sí,Otro,No,Billetera digital,3203.0,False,False,False,False,475.2
+9000000137,85,Masculino,Miami,Bajo,1,30.71,Sí,Sí,Vegano,No,Tarjeta,2133.0,False,False,False,False,30.71
+9000000138,34,Masculino,Miami,Medio,6,40.4,No,Sí,Vegano,No,Tarjeta,4378.0,False,False,False,False,242.4
+9000000139,37,Masculino,Miami,Alto,7,59.13,No,No,Pescado,No,Efectivo,6733.0,False,False,False,False,413.91
+9000000140,76,Femenino,Tampa,Medio,2,39.83,No,Sí,Mariscos,Sí,Tarjeta,3502.0,False,False,False,False,79.66
+9000000141,70,Femenino,Tampa,Bajo,12,22.75,No,No,Pescado,No,Efectivo,2859.0,False,False,False,False,273.0
+9000000142,27,Femenino,Miami,Medio,10,45.85,Sí,No,Vegetariano,Sí,Tarjeta,2403.0,False,False,False,False,458.5
+9000000143,30,Femenino,Orlando,Bajo,3,26.98,Sí,Sí,Vegetariano,Sí,Tarjeta,3787.0,False,False,False,False,80.94
+9000000145,81,Masculino,Miami,Medio,11,46.5,No,No,Carnes,Sí,Tarjeta,4375.0,False,False,False,False,511.5
+9000000146,50,Femenino,Miami,Muy Alto,3,110.65,Sí,No,Vegetariano,Sí,Tarjeta,10107.0,False,False,False,False,331.95
+9000000147,85,Femenino,Orlando,Alto,10,76.52,Sí,Sí,Vegano,Sí,Efectivo,5224.0,False,False,False,False,765.2
+9000000148,61,Femenino,Miami,Alto,1,60.39,No,Sí,Carnes,Sí,Efectivo,6183.0,False,False,False,False,60.39
+9000000149,31,Masculino,Miami,Alto,10,77.25,Sí,No,Vegano,No,Billetera digital,5576.0,False,False,False,False,772.5
+9000000150,40,Masculino,Miami,Alto,3,60.56,No,No,Otro,Sí,Tarjeta,7743.0,False,False,False,False,181.68
+9000000151,71,Masculino,Miami,Muy Alto,12,117.17,No,Sí,Otro,Sí,Efectivo,11482.0,False,False,False,False,1406.04
+9000000152,70,Masculino,Fort Lauderdale,Alto,12,72.26,Sí,No,Vegetariano,No,Tarjeta,5017.0,False,False,False,False,867.12
+9000000153,22,Femenino,Miami,Medio,3,59.92,Sí,Sí,Otro,Sí,Billetera digital,3581.0,False,False,False,False,179.76
+9000000154,43,Masculino,Miami,Bajo,4,24.5,No,No,Mariscos,No,Tarjeta,1376.0,False,False,False,False,98.0
+9000000155,56,Femenino,Orlando,Bajo,3,15.81,Sí,No,Mariscos,No,Tarjeta,3235.0,False,False,False,False,47.43
+9000000156,80,Femenino,Miami,Bajo,3,25.32,Sí,Sí,Mariscos,No,Efectivo,1886.0,False,False,False,False,75.96
+9000000157,65,Femenino,Miami,Medio,4,38.23,Sí,No,Otro,No,Tarjeta,4373.0,False,False,False,True,152.92
+9000000158,22,Femenino,Tampa,Alto,10,46.14,Sí,Sí,Otro,Sí,Tarjeta,5785.0,False,False,False,False,461.4
+9000000159,73,Femenino,Miami,Alto,9,70.56,Sí,Sí,Mariscos,Sí,Billetera digital,5738.0,False,False,False,False,635.04
+9000000160,76,Femenino,Miami,Medio,3,27.92,Sí,No,Carnes,Sí,Billetera digital,3464.0,False,False,False,False,83.76
+9000000161,41,Masculino,Fort Lauderdale,Bajo,10,19.56,Sí,Sí,Otro,Sí,Tarjeta,1546.0,False,False,False,False,195.6
+9000000162,38,Femenino,Miami,Muy Alto,7,119.79,Sí,Sí,Mariscos,Sí,Tarjeta,9588.0,False,False,False,False,838.53
+9000000163,46,Masculino,Miami,Bajo,8,38.94,No,No,Carnes,Sí,Tarjeta,3504.0,False,False,False,False,311.52
+9000000164,55,Masculino,Miami,Bajo,10,22.35,Sí,Sí,Carnes,No,Tarjeta,1922.0,False,False,False,False,223.5
+9000000165,70,Femenino,Miami,Medio,3,52.03,Sí,Sí,Vegetariano,No,Tarjeta,3548.0,False,False,False,False,156.09
+9000000166,73,Femenino,Miami,Muy Alto,6,97.96,Sí,Sí,Vegano,Sí,Tarjeta,8602.0,False,False,False,False,587.76
+9000000167,22,Masculino,Miami,Medio,10,31.05,Sí,Sí,Mariscos,No,Billetera digital,4227.0,False,False,False,False,310.5
+9000000168,54,Masculino,Miami,Muy Alto,5,112.86,Sí,Sí,Mariscos,Sí,Tarjeta,10046.0,False,False,False,False,564.3
+9000000169,64,Masculino,Tampa,Muy Alto,3,110.25,Sí,Sí,Carnes,Sí,Billetera digital,11232.0,False,False,False,False,330.75
+9000000171,37,Masculino,Miami,Alto,4,69.71,Sí,Sí,Mariscos,Sí,Tarjeta,7120.0,False,False,False,False,278.84
+9000000172,78,Masculino,Tampa,Muy Alto,4,101.92,No,No,Otro,Sí,Efectivo,11712.0,False,False,False,False,407.68
+9000000173,29,Masculino,Miami,Alto,1,60.2,Sí,Sí,Vegetariano,No,Tarjeta,6242.0,False,False,False,False,60.2
+9000000174,68,Femenino,Miami,Muy Alto,11,111.84,No,Sí,Mariscos,Sí,Tarjeta,9714.0,False,False,False,False,1230.24
+9000000175,83,Femenino,Miami,Bajo,8,18.16,No,Sí,Carnes,No,Efectivo,1994.0,False,False,False,False,145.28
+9000000176,73,Femenino,Fort Lauderdale,Alto,4,52.63,Sí,No,Mariscos,Sí,Tarjeta,6334.0,False,False,False,False,210.52
+9000000177,47,Masculino,Miami,Medio,7,33.47,No,Sí,Carnes,Sí,Tarjeta,2806.0,False,False,False,False,234.29
+9000000178,37,Masculino,Miami,Muy Alto,7,117.12,No,No,Carnes,Sí,Tarjeta,10774.0,False,False,False,False,819.84
+9000000179,56,Femenino,Orlando,Medio,2,56.56,Sí,No,Pescado,No,Efectivo,3068.0,False,False,False,False,113.12
+9000000180,82,Masculino,Fort Lauderdale,Medio,12,35.68,Sí,Sí,Otro,No,Billetera digital,2796.0,False,False,False,False,428.16
+9000000181,43,Femenino,Orlando,Alto,1,66.04,Sí,No,Mariscos,Sí,Tarjeta,5723.0,False,False,False,False,66.04
+9000000182,74,Femenino,Miami,Alto,10,68.91,Sí,Sí,Mariscos,Sí,Tarjeta,7632.0,False,False,False,False,689.1
+9000000183,44,Masculino,Miami,Muy Alto,1,104.77,No,Sí,Vegano,Sí,Efectivo,11151.0,False,False,False,False,104.77
+9000000184,81,Femenino,Miami,Alto,11,69.59,Sí,Sí,Carnes,Sí,Tarjeta,6754.0,False,False,False,False,765.49
+9000000185,64,Femenino,Orlando,Alto,2,72.63,Sí,No,Vegetariano,Sí,Tarjeta,6030.0,False,False,False,False,145.26
+9000000186,54,Femenino,Miami,Alto,7,52.44,Sí,No,Otro,Sí,Tarjeta,5366.0,False,False,False,False,367.08
+9000000187,64,Femenino,Tampa,Alto,5,79.64,No,No,Otro,Sí,Efectivo,7409.0,False,False,False,False,398.2
+9000000188,54,Femenino,Miami,Bajo,4,28.68,Sí,No,Mariscos,No,Efectivo,2002.0,False,False,False,False,114.72
+9000000189,53,Femenino,Miami,Medio,9,39.29,Sí,No,Vegetariano,Sí,Tarjeta,2950.0,False,False,True,False,353.61
+9000000190,72,Femenino,Tampa,Muy Alto,11,115.25,Sí,No,Mariscos,Sí,Tarjeta,9912.0,False,False,False,False,1267.75
+9000000191,33,Femenino,Miami,Medio,12,41.5,Sí,No,Mariscos,Sí,Tarjeta,5078.0,False,False,False,False,498.0
+9000000192,53,Masculino,Miami,Bajo,9,28.81,Sí,No,Vegetariano,No,Tarjeta,1677.0,False,False,False,False,259.29
+9000000193,66,Femenino,Tampa,Medio,7,33.1,Sí,Sí,Vegetariano,No,Billetera digital,3458.0,False,False,False,False,231.7
+9000000194,64,Masculino,Tampa,Muy Alto,7,110.62,Sí,Sí,Pescado,Sí,Tarjeta,8818.0,True,False,False,False,774.34
+9000000195,27,Masculino,Tampa,Bajo,2,33.49,Sí,Sí,Pescado,No,Billetera digital,1787.0,False,False,False,False,66.98
+9000000197,59,Masculino,Miami,Alto,12,67.33,Sí,No,Vegano,Sí,Tarjeta,4663.0,False,False,False,False,807.96
+9000000198,60,Femenino,Tampa,Alto,12,67.14,No,No,Mariscos,Sí,Tarjeta,7163.0,False,False,False,False,805.68
+9000000199,46,Masculino,Fort Lauderdale,Alto,10,57.59,Sí,No,Otro,No,Tarjeta,5944.0,False,False,False,False,575.9
+9000000200,77,Masculino,Miami,Medio,10,33.75,No,Sí,Vegano,Sí,Efectivo,5193.0,False,False,False,False,337.5
+9000000201,57,Masculino,Fort Lauderdale,Bajo,12,28.77,No,Sí,Carnes,No,Billetera digital,2687.0,False,False,False,False,345.24
+9000000202,81,Femenino,Tampa,Medio,5,42.15,No,No,Carnes,No,Tarjeta,5893.0,False,False,False,False,210.75
+9000000203,78,Femenino,Orlando,Medio,4,30.65,Sí,Sí,Otro,No,Billetera digital,3739.0,False,False,False,False,122.6
+9000000204,71,Femenino,Fort Lauderdale,Medio,3,27.1,Sí,No,Mariscos,No,Billetera digital,2704.0,False,False,False,False,81.3
+9000000205,73,Femenino,Miami,Bajo,9,39.43,Sí,No,Vegetariano,No,Tarjeta,2142.0,False,False,False,False,354.87
+9000000206,69,Femenino,Miami,Medio,2,33.44,Sí,Sí,Vegetariano,No,Tarjeta,3282.0,False,False,False,False,66.88
+9000000207,66,Masculino,Orlando,Alto,9,69.99,Sí,Sí,Mariscos,No,Tarjeta,6894.0,False,False,False,False,629.91
+9000000208,68,Femenino,Fort Lauderdale,Alto,1,56.15,Sí,Sí,Carnes,Sí,Billetera digital,5938.0,False,False,False,False,56.15
+9000000209,59,Masculino,Orlando,Alto,1,65.92,No,Sí,Vegetariano,No,Efectivo,6815.0,False,False,False,False,65.92
+9000000210,71,Masculino,Miami,Medio,10,20.03,Sí,Sí,Mariscos,No,Efectivo,4659.0,False,False,False,False,200.3
+9000000211,52,Masculino,Miami,Bajo,7,25.14,Sí,Sí,Vegetariano,No,Tarjeta,2304.0,False,False,False,False,175.98
+9000000212,39,Masculino,Miami,Medio,6,25.43,Sí,Sí,Vegano,Sí,Billetera digital,2275.0,False,False,False,False,152.58
+9000000213,39,No binario,Miami,Medio,1,42.67,Sí,Sí,Carnes,No,Billetera digital,4064.0,False,False,False,False,42.67
+9000000214,28,Masculino,Fort Lauderdale,Muy Alto,1,100.7,No,Sí,Pescado,Sí,Tarjeta,8915.0,False,False,False,False,100.7
+9000000215,44,Femenino,Orlando,Muy Alto,1,115.77,Sí,Sí,Mariscos,Sí,Tarjeta,10703.0,False,False,False,False,115.77
+9000000216,82,Femenino,Miami,Alto,5,55.42,Sí,No,Pescado,Sí,Billetera digital,7125.0,False,False,False,False,277.1
+9000000217,70,Femenino,Tampa,Bajo,7,31.37,Sí,No,Vegetariano,No,Efectivo,1569.0,False,False,False,False,219.59
+9000000218,23,Femenino,Miami,Medio,3,51.91,Sí,Sí,Vegetariano,Sí,Tarjeta,5125.0,False,False,False,False,155.73
+9000000219,47,Femenino,Tampa,Medio,10,38.345,No,Sí,Vegano,No,Tarjeta,5177.0,False,True,False,False,383.45
+9000000220,43,Masculino,Orlando,Alto,12,70.39,Sí,Sí,Vegetariano,Sí,Billetera digital,6044.0,False,False,False,False,844.68
+9000000221,69,Femenino,Fort Lauderdale,Bajo,4,41.73,No,No,Carnes,No,Billetera digital,1501.0,False,False,False,False,166.92
+9000000222,25,Femenino,Miami,Medio,9,30.37,Sí,Sí,Vegano,No,Billetera digital,4082.0,False,False,False,False,273.33
+9000000223,73,Masculino,Miami,Alto,2,60.83,Sí,Sí,Mariscos,Sí,Billetera digital,5821.0,False,False,False,False,121.66
+9000000224,50,Femenino,Miami,Bajo,9,25.95,No,Sí,Otro,No,Tarjeta,1994.0,False,False,False,True,233.55
+9000000225,85,No binario,Orlando,Alto,12,73.69,Sí,No,Otro,Sí,Efectivo,5163.0,False,False,False,False,884.28
+9000000226,40,Femenino,Miami,Medio,4,30.98,Sí,No,Carnes,No,Tarjeta,2392.0,False,False,False,False,123.92
+9000000227,48,Femenino,Miami,Medio,4,38.15,Sí,Sí,Pescado,No,Tarjeta,4093.0,False,False,False,False,152.6
+9000000228,50,Masculino,Miami,Alto,9,70.21,No,Sí,Carnes,Sí,Tarjeta,7355.0,False,False,False,False,631.89
+9000000229,83,Masculino,Miami,Medio,5,26.32,No,No,Mariscos,No,Billetera digital,3754.0,False,False,False,False,131.6
+9000000230,20,Femenino,Fort Lauderdale,Alto,3,68.87,Sí,No,Vegano,Sí,Efectivo,5484.0,False,False,False,False,206.61
+9000000231,85,Masculino,Tampa,Bajo,10,37.95,Sí,Sí,Vegano,No,Billetera digital,2432.0,False,False,False,False,379.5
+9000000232,66,Masculino,Miami,Medio,11,35.97,No,Sí,Otro,No,Tarjeta,3159.0,False,False,False,False,395.67
+9000000233,22,Masculino,Fort Lauderdale,Medio,5,39.55,No,Sí,Vegetariano,Sí,Tarjeta,3028.0,False,False,False,False,197.75
+9000000234,34,Masculino,Miami,Alto,7,68.38,No,No,Otro,No,Billetera digital,5816.0,False,False,False,False,478.66
+9000000235,74,No binario,Tampa,Alto,3,63.58,Sí,No,Carnes,No,Billetera digital,6873.0,False,False,False,False,190.74
+9000000236,38,Femenino,Miami,Medio,8,30.2,No,No,Carnes,No,Tarjeta,6142.0,False,False,False,False,241.6
+9000000237,44,Femenino,Orlando,Alto,1,74.22,Sí,Sí,Mariscos,No,Tarjeta,6146.0,False,False,False,False,74.22
+9000000238,47,Femenino,Miami,Alto,7,67.25,No,Sí,Vegano,Sí,Tarjeta,6690.0,False,False,False,False,470.75
+9000000239,31,Femenino,Miami,Bajo,5,21.81,No,Sí,Mariscos,No,Billetera digital,3553.0,False,False,False,False,109.05
+9000000240,32,Femenino,Orlando,Medio,10,32.26,Sí,Sí,Otro,Sí,Tarjeta,4043.0,False,False,False,False,322.6
+9000000241,75,Femenino,Orlando,Alto,1,57.05,Sí,No,Pescado,Sí,Tarjeta,4574.0,False,False,False,False,57.05
+9000000242,58,Masculino,Miami,Bajo,3,16.68,No,No,Vegetariano,No,Tarjeta,2412.0,False,False,False,False,50.04
+9000000243,18,Femenino,Miami,Muy Alto,10,95.95,Sí,Sí,Vegano,Sí,Billetera digital,7809.0,False,False,False,False,959.5
+9000000244,42,Masculino,Miami,Alto,6,68.18,Sí,Sí,Pescado,No,Tarjeta,5281.0,False,False,False,False,409.08
+9000000245,26,Femenino,Miami,Muy Alto,12,89.31,Sí,Sí,Carnes,Sí,Billetera digital,9836.0,False,False,False,False,1071.72
+9000000246,29,Femenino,Miami,Alto,8,80.46,Sí,No,Otro,Sí,Billetera digital,5569.0,False,False,False,False,643.68
+9000000247,74,Masculino,Miami,Alto,9,74.9,No,Sí,Pescado,Sí,Tarjeta,6481.0,False,False,False,False,674.1
+9000000248,80,Femenino,Miami,Alto,6,52.38,No,No,Carnes,Sí,Tarjeta,6826.0,False,False,False,False,314.28
+9000000249,85,No binario,Miami,Alto,5,74.39,Sí,No,Vegano,Sí,Tarjeta,6463.0,False,False,False,False,371.95
+9000000250,47,Masculino,Miami,Bajo,7,23.35,Sí,Sí,Pescado,Sí,Efectivo,1918.0,False,False,False,False,163.45
+9000000251,79,Femenino,Miami,Alto,1,54.73,No,No,Otro,Sí,Tarjeta,4894.0,False,False,False,False,54.73
+9000000252,25,Masculino,Miami,Alto,1,54.94,Sí,No,Vegetariano,No,Billetera digital,6378.0,False,False,False,False,54.94
+9000000253,79,Femenino,Orlando,Medio,2,27.26,Sí,No,Otro,No,Billetera digital,3360.0,False,False,False,False,54.52
+9000000254,83,Femenino,Tampa,Medio,2,23.81,Sí,No,Pescado,No,Efectivo,4127.0,False,False,False,False,47.62
+9000000255,85,Femenino,Orlando,Medio,8,29.98,Sí,No,Vegetariano,No,Billetera digital,4213.0,False,False,False,False,239.84
+9000000256,27,Masculino,Miami,Medio,10,28.93,Sí,Sí,Vegano,No,Efectivo,4078.0,False,False,False,False,289.3
+9000000258,36,Femenino,Orlando,Bajo,12,19.92,Sí,No,Mariscos,No,Tarjeta,3111.0,False,False,False,False,239.04
+9000000259,30,Masculino,Miami,Bajo,6,34.92,Sí,Sí,Vegetariano,No,Billetera digital,2580.0,False,False,False,False,209.52
+9000000260,62,Masculino,Miami,Alto,7,81.77,Sí,No,Mariscos,Sí,Tarjeta,7597.0,False,False,False,False,572.39
+9000000261,68,Masculino,Miami,Alto,11,62.28,Sí,No,Vegano,Sí,Tarjeta,5769.0,False,False,False,False,685.08
+9000000262,67,Femenino,Miami,Medio,12,36.74,Sí,No,Carnes,No,Efectivo,4222.0,False,False,False,False,440.88
+9000000263,62,Masculino,Fort Lauderdale,Medio,4,47.46,Sí,No,Otro,No,Tarjeta,4702.0,False,False,False,False,189.84
+9000000264,64,Masculino,Miami,Alto,7,59.89,Sí,Sí,Mariscos,No,Billetera digital,6070.0,False,False,False,False,419.23
+9000000265,68,Femenino,Miami,Bajo,8,9.74,Sí,No,Pescado,No,Tarjeta,1751.0,False,False,False,False,77.92
+9000000266,44,Masculino,Miami,Medio,9,32.78,Sí,Sí,Vegano,No,Tarjeta,5625.0,False,False,False,False,295.02
+9000000267,70,Femenino,Orlando,Muy Alto,8,100.45,Sí,No,Mariscos,Sí,Billetera digital,11154.0,False,False,False,False,803.6
+9000000268,63,Masculino,Tampa,Alto,6,75.83,Sí,Sí,Pescado,Sí,Tarjeta,7125.0,False,False,False,False,454.98
+9000000269,34,Masculino,Fort Lauderdale,Muy Alto,8,105.82,Sí,No,Vegetariano,Sí,Tarjeta,10074.0,False,False,False,False,846.56
+9000000270,80,Masculino,Miami,Bajo,6,10.31,Sí,Sí,Vegetariano,No,Billetera digital,2285.0,False,False,False,False,61.86
+9000000271,49,Femenino,Miami,Medio,8,37.11,Sí,No,Mariscos,Sí,Billetera digital,3332.0,False,False,False,False,296.88
+9000000272,79,Femenino,Miami,Medio,3,31.01,Sí,Sí,Pescado,No,Tarjeta,2806.0,False,False,False,False,93.03
+9000000273,46,Masculino,Miami,Alto,4,76.46,No,Sí,Vegetariano,Sí,Tarjeta,7033.0,False,False,False,False,305.84
+9000000274,82,Femenino,Fort Lauderdale,Alto,8,74.32,Sí,Sí,Otro,Sí,Tarjeta,7334.0,False,False,False,False,594.56
+9000000275,48,Masculino,Miami,Muy Alto,7,94.6,Sí,Sí,Otro,Sí,Tarjeta,9947.0,False,False,False,False,662.2
+9000000276,22,Masculino,Fort Lauderdale,Medio,6,34.48,Sí,Sí,Vegetariano,Sí,Tarjeta,2966.0,False,False,False,False,206.88
+9000000277,72,Masculino,Miami,Muy Alto,3,124.04,Sí,Sí,Carnes,Sí,Tarjeta,10548.0,False,False,False,False,372.12
+9000000278,53,Masculino,Fort Lauderdale,Bajo,9,31.32,Sí,Sí,Vegano,No,Tarjeta,2837.0,False,False,True,False,281.88
+9000000279,25,Masculino,Miami,Medio,11,54.98,Sí,Sí,Vegetariano,Sí,Tarjeta,4468.0,False,False,False,False,604.78
+9000000280,20,Femenino,Miami,Alto,6,62.01,Sí,Sí,Vegetariano,Sí,Tarjeta,3694.0,False,False,False,False,372.06
+9000000281,33,Masculino,Tampa,Bajo,9,22.37,Sí,Sí,Otro,Sí,Tarjeta,1377.0,False,False,False,False,201.33
+9000000282,59,Femenino,Miami,Alto,5,64.29,Sí,Sí,Carnes,Sí,Tarjeta,6227.0,False,False,False,False,321.45
+9000000283,32,Masculino,Fort Lauderdale,Medio,3,49.05,No,No,Otro,Sí,Tarjeta,3843.0,False,False,False,False,147.15
+9000000284,63,Masculino,Miami,Medio,4,48.79,No,Sí,Otro,No,Billetera digital,4221.0,False,False,False,False,195.16
+9000000285,42,Femenino,Tampa,Alto,1,48.94,Sí,No,Pescado,No,Tarjeta,6031.0,False,False,False,False,48.94
+9000000286,35,Femenino,Miami,Bajo,1,23.44,Sí,No,Carnes,No,Tarjeta,2913.0,False,False,False,False,23.44
+9000000287,46,Femenino,Miami,Alto,11,73.13,Sí,Sí,Mariscos,No,Tarjeta,5083.0,False,False,False,False,804.43
+9000000288,47,Femenino,Miami,Bajo,1,32.27,Sí,Sí,Carnes,No,Tarjeta,2981.0,False,False,False,False,32.27
+9000000289,78,Masculino,Miami,Bajo,10,25.97,No,No,Otro,Sí,Billetera digital,2558.0,False,False,False,False,259.7
+9000000290,70,Masculino,Orlando,Alto,8,68.66,Sí,Sí,Vegetariano,No,Efectivo,6935.0,False,False,False,False,549.28
+9000000291,31,Femenino,Miami,Bajo,7,28.37,No,No,Otro,No,Billetera digital,1320.0,True,False,False,True,198.59
+9000000292,51,Femenino,Orlando,Muy Alto,11,95.62,No,No,Mariscos,Sí,Tarjeta,10322.0,False,False,False,False,1051.82
+9000000293,65,Masculino,Miami,Alto,3,69.26,Sí,Sí,Vegetariano,Sí,Billetera digital,6256.0,False,False,False,False,207.78
+9000000294,68,Masculino,Orlando,Bajo,8,20.86,Sí,No,Otro,No,Tarjeta,2706.0,False,False,False,False,166.88
+9000000295,48,Femenino,Tampa,Bajo,9,23.83,Sí,No,Mariscos,No,Tarjeta,1939.0,False,False,False,False,214.47
+9000000296,37,Masculino,Miami,Medio,4,38.6,Sí,Sí,Carnes,No,Tarjeta,3381.0,False,False,False,False,154.4
+9000000298,26,Masculino,Miami,Muy Alto,7,115.49,No,Sí,Otro,No,Billetera digital,10714.0,False,False,False,False,808.43
+9000000299,59,No binario,Fort Lauderdale,Muy Alto,11,119.41,No,No,Vegetariano,Sí,Tarjeta,8983.0,False,False,False,False,1313.51
+9000000300,27,Femenino,Fort Lauderdale,Muy Alto,10,102.34,Sí,No,Mariscos,Sí,Tarjeta,10321.0,False,False,False,False,1023.4
+9000000301,36,Femenino,Miami,Muy Alto,4,96.63,No,Sí,Mariscos,No,Efectivo,10772.0,False,False,False,False,386.52
+9000000302,34,Masculino,Miami,Medio,3,50.21,Sí,Sí,Pescado,No,Billetera digital,3114.0,False,False,False,False,150.63
+9000000303,59,Femenino,Miami,Bajo,2,23.09,Sí,No,Vegetariano,No,Billetera digital,1428.0,False,False,False,False,46.18
+9000000304,50,Femenino,Orlando,Medio,11,30.85,Sí,No,Mariscos,Sí,Billetera digital,3059.0,False,False,False,False,339.35
+9000000305,53,Femenino,Miami,Bajo,11,25.87,Sí,Sí,Carnes,No,Tarjeta,1740.0,False,False,False,False,284.57
+9000000306,78,Masculino,Miami,Medio,5,34.47,Sí,Sí,Pescado,No,Billetera digital,4285.0,False,False,False,False,172.35
+9000000307,45,Masculino,Miami,Medio,11,36.63,No,Sí,Pescado,No,Tarjeta,4379.0,False,False,False,False,402.93
+9000000308,41,Masculino,Miami,Bajo,7,15.06,Sí,Sí,Carnes,No,Efectivo,2706.0,False,False,False,False,105.42
+9000000309,62,Masculino,Miami,Bajo,1,28.22,Sí,No,Mariscos,No,Billetera digital,2596.0,False,False,False,False,28.22
+9000000310,18,Femenino,Tampa,Medio,11,49.86,Sí,Sí,Vegano,No,Efectivo,2300.0,False,False,False,False,548.46
+9000000311,74,Femenino,Miami,Bajo,5,25.19,Sí,No,Otro,No,Efectivo,3121.0,False,False,False,False,125.95
+9000000312,63,Masculino,Miami,Medio,8,56.81,No,Sí,Otro,Sí,Efectivo,4710.0,False,False,False,False,454.48
+9000000313,69,Femenino,Miami,Medio,1,53.0,Sí,No,Vegetariano,No,Efectivo,4912.0,False,False,False,False,53.0
+9000000314,34,Femenino,Miami,Muy Alto,11,103.52,Sí,No,Vegetariano,Sí,Billetera digital,10994.0,False,False,False,False,1138.72
+9000000315,25,Masculino,Tampa,Bajo,12,33.77,Sí,Sí,Otro,No,Efectivo,2445.0,False,False,False,False,405.24
+9000000316,59,Femenino,Miami,Medio,9,44.02,Sí,Sí,Pescado,Sí,Tarjeta,4103.0,False,False,False,False,396.18
+9000000317,42,Femenino,Miami,Bajo,10,8.0,Sí,Sí,Pescado,No,Tarjeta,900.0,False,False,False,False,80.0
+9000000318,65,Masculino,Orlando,Bajo,2,11.6,No,No,Vegetariano,No,Efectivo,2548.0,False,False,False,False,23.2
+9000000319,79,Masculino,Miami,Muy Alto,12,117.05,Sí,No,Vegano,Sí,Tarjeta,9391.0,False,False,False,False,1404.6
+9000000320,62,Femenino,Miami,Medio,2,38.345,Sí,Sí,Otro,No,Tarjeta,4390.0,False,True,False,False,76.69
+9000000321,79,Femenino,Miami,Medio,3,43.14,Sí,No,Vegano,No,Billetera digital,4516.0,False,False,False,False,129.42
+9000000322,68,Femenino,Miami,Medio,3,34.75,No,No,Mariscos,No,Tarjeta,2797.0,False,False,False,False,104.25
+9000000323,45,Femenino,Tampa,Medio,8,30.55,Sí,Sí,Pescado,Sí,Efectivo,3595.0,False,False,False,False,244.4
+9000000324,81,Masculino,Miami,Alto,8,59.4,No,Sí,Otro,Sí,Tarjeta,6013.0,False,False,False,False,475.2
+9000000325,53,Femenino,Miami,Bajo,3,23.82,No,Sí,Mariscos,No,Efectivo,3160.0,False,False,False,False,71.46
+9000000326,51,Masculino,Tampa,Medio,8,42.16,Sí,No,Mariscos,Sí,Billetera digital,3006.0,False,False,False,False,337.28
+9000000327,46,Masculino,Orlando,Medio,11,29.75,Sí,Sí,Carnes,Sí,Tarjeta,2994.0,False,False,False,False,327.25
+9000000328,65,Masculino,Miami,Muy Alto,12,98.59,Sí,Sí,Vegetariano,No,Tarjeta,8494.0,False,False,False,False,1183.08
+9000000329,19,Femenino,Miami,Alto,12,63.61,Sí,Sí,Carnes,Sí,Tarjeta,7822.0,False,False,False,False,763.32
+9000000330,43,Masculino,Miami,Medio,3,35.75,Sí,Sí,Vegetariano,No,Tarjeta,3356.0,False,False,False,False,107.25
+9000000331,39,No binario,Miami,Bajo,6,21.96,Sí,Sí,Otro,No,Efectivo,1081.0,False,False,False,False,131.76
+9000000332,78,Masculino,Orlando,Bajo,5,26.9,No,Sí,Otro,No,Tarjeta,2039.0,False,False,False,False,134.5
+9000000334,63,Femenino,Miami,Medio,11,38.91,No,Sí,Pescado,Sí,Tarjeta,1916.0,False,False,False,False,428.01
+9000000335,80,Masculino,Miami,Alto,2,69.56,No,No,Otro,Sí,Billetera digital,5106.0,False,False,False,False,139.12
+9000000336,39,Masculino,Orlando,Medio,4,33.63,No,No,Carnes,Sí,Billetera digital,4279.0,False,False,False,False,134.52
+9000000337,27,Femenino,Miami,Muy Alto,8,99.72,No,No,Mariscos,Sí,Tarjeta,9536.0,False,False,False,False,797.76
+9000000338,34,Masculino,Miami,Alto,10,62.91,Sí,No,Carnes,No,Tarjeta,6262.0,False,False,False,False,629.1
+9000000339,36,Masculino,Miami,Alto,9,66.68,Sí,Sí,Vegetariano,Sí,Tarjeta,6903.0,False,False,False,False,600.12
+9000000340,79,Masculino,Fort Lauderdale,Alto,11,68.33,No,Sí,Vegano,Sí,Tarjeta,6622.0,False,False,False,False,751.63
+9000000341,32,Femenino,Miami,Medio,5,46.03,Sí,Sí,Vegetariano,No,Tarjeta,3371.0,False,False,False,False,230.15
+9000000342,24,Femenino,Miami,Bajo,11,23.19,Sí,Sí,Vegetariano,No,Tarjeta,1002.0,False,False,False,False,255.09
+9000000343,19,Femenino,Tampa,Medio,11,36.76,Sí,No,Vegetariano,Sí,Efectivo,3611.0,False,False,False,False,404.36
+9000000344,84,Femenino,Miami,Bajo,12,24.82,Sí,Sí,Carnes,No,Tarjeta,1153.0,False,False,False,False,297.84
+9000000345,48,Masculino,Orlando,Muy Alto,1,103.2,No,No,Mariscos,Sí,Tarjeta,9146.0,False,False,False,False,103.2
+9000000346,25,Masculino,Miami,Bajo,11,30.03,No,Sí,Vegano,No,Tarjeta,2630.0,False,False,False,False,330.33
+9000000347,78,Femenino,Miami,Bajo,9,10.26,Sí,Sí,Vegano,No,Efectivo,2908.0,False,False,False,False,92.34
+9000000348,75,Femenino,Fort Lauderdale,Alto,2,69.7,Sí,Sí,Mariscos,Sí,Efectivo,6393.0,False,False,False,False,139.4
+9000000349,66,Femenino,Tampa,Bajo,2,33.04,Sí,No,Mariscos,Sí,Tarjeta,2413.0,False,False,False,False,66.08
+9000000350,80,Femenino,Tampa,Medio,8,32.59,Sí,No,Carnes,No,Tarjeta,3801.0,False,False,False,False,260.72
+9000000351,46,Femenino,Orlando,Bajo,1,17.38,Sí,Sí,Otro,No,Billetera digital,2534.0,False,False,False,False,17.38
+9000000352,60,Femenino,Miami,Muy Alto,10,114.56,Sí,Sí,Vegetariano,Sí,Tarjeta,10199.0,False,False,False,False,1145.6
+9000000353,70,Femenino,Miami,Alto,9,64.99,Sí,Sí,Otro,Sí,Billetera digital,7354.0,False,False,False,False,584.91
+9000000354,49,Masculino,Miami,Medio,1,46.11,No,No,Vegetariano,No,Tarjeta,4793.0,False,False,False,False,46.11
+9000000355,75,Masculino,Fort Lauderdale,Medio,3,45.6,Sí,No,Otro,No,Tarjeta,5433.0,False,False,False,False,136.8
+9000000356,82,Femenino,Miami,Muy Alto,1,101.7,Sí,Sí,Otro,Sí,Efectivo,9590.0,False,False,False,False,101.7
+9000000357,26,Masculino,Miami,Muy Alto,9,103.9,Sí,No,Mariscos,Sí,Efectivo,9394.0,False,False,False,False,935.1
+9000000358,84,Masculino,Miami,Alto,4,62.62,Sí,Sí,Otro,Sí,Efectivo,5912.0,False,False,False,True,250.48
+9000000359,69,Femenino,Miami,Alto,5,76.59,Sí,Sí,Mariscos,Sí,Tarjeta,6859.0,False,False,False,False,382.95
+9000000360,68,Femenino,Tampa,Alto,7,66.51,No,No,Vegetariano,Sí,Efectivo,7528.0,False,False,False,False,465.57
+9000000361,78,No binario,Miami,Medio,7,33.16,Sí,Sí,Vegetariano,No,Tarjeta,4872.0,False,False,False,False,232.12
+9000000362,65,Femenino,Fort Lauderdale,Medio,7,37.07,Sí,Sí,Mariscos,No,Efectivo,5491.0,False,False,False,False,259.49
+9000000363,25,Masculino,Miami,Alto,7,64.28,Sí,No,Vegetariano,Sí,Efectivo,7573.0,False,False,False,False,449.96
+9000000364,48,Femenino,Orlando,Medio,9,48.76,Sí,No,Vegano,No,Efectivo,4100.0,False,False,False,False,438.84
+9000000365,77,Femenino,Miami,Alto,9,63.96,Sí,Sí,Otro,Sí,Tarjeta,5143.0,False,False,False,False,575.64
+9000000366,80,Masculino,Miami,Muy Alto,7,109.47,Sí,Sí,Carnes,No,Tarjeta,8552.0,False,False,False,False,766.29
+9000000367,53,Masculino,Orlando,Medio,7,38.3,Sí,Sí,Carnes,No,Tarjeta,3816.0,False,False,True,False,268.1
+9000000368,21,No binario,Miami,Bajo,11,30.41,Sí,No,Carnes,No,Tarjeta,2735.0,False,False,False,False,334.51
+9000000369,65,Masculino,Miami,Muy Alto,9,91.34,Sí,Sí,Vegano,Sí,Tarjeta,9438.0,False,False,False,False,822.06
+9000000371,38,Femenino,Miami,Alto,3,77.96,Sí,Sí,Vegano,Sí,Efectivo,4364.0,False,False,False,False,233.88
+9000000372,30,Masculino,Orlando,Bajo,1,16.91,No,Sí,Vegano,No,Tarjeta,2633.0,False,False,False,False,16.91
+9000000373,35,Masculino,Miami,Medio,6,18.4,No,Sí,Vegetariano,Sí,Tarjeta,2618.0,False,False,False,False,110.4
+9000000374,45,Femenino,Miami,Bajo,9,21.03,No,Sí,Vegano,No,Tarjeta,1622.0,False,False,False,False,189.27
+9000000375,32,Femenino,Miami,Alto,3,79.58,Sí,Sí,Mariscos,No,Tarjeta,5173.0,False,False,False,False,238.74
+9000000376,36,No binario,Tampa,Medio,8,41.98,Sí,Sí,Vegetariano,No,Tarjeta,2944.0,False,False,False,False,335.84
+9000000377,79,Masculino,Miami,Muy Alto,3,105.84,Sí,Sí,Vegano,No,Efectivo,9985.0,False,False,False,False,317.52
+9000000378,28,Femenino,Tampa,Bajo,10,25.69,No,No,Vegano,No,Tarjeta,1976.0,False,False,False,False,256.9
+9000000379,44,Masculino,Miami,Muy Alto,5,109.96,No,Sí,Carnes,Sí,Tarjeta,10446.0,False,False,False,False,549.8
+9000000380,36,Femenino,Miami,Bajo,6,15.07,Sí,Sí,Mariscos,Sí,Efectivo,2434.0,False,False,False,False,90.42
+9000000381,28,Masculino,Miami,Alto,7,75.25,No,No,Mariscos,No,Tarjeta,7078.0,False,False,False,False,526.75
+9000000382,48,Femenino,Miami,Medio,4,38.22,Sí,Sí,Mariscos,No,Tarjeta,5553.0,False,False,False,False,152.88
+9000000383,76,Femenino,Fort Lauderdale,Medio,9,26.56,Sí,Sí,Vegano,No,Tarjeta,4090.0,False,False,False,False,239.04
+9000000384,64,Femenino,Miami,Medio,8,41.29,Sí,No,Carnes,No,Billetera digital,3946.0,False,False,False,False,330.32
+9000000385,54,Masculino,Miami,Muy Alto,4,124.41,Sí,Sí,Vegano,Sí,Efectivo,9253.0,False,False,False,False,497.64
+9000000386,64,Femenino,Miami,Alto,11,56.36,No,No,Vegetariano,Sí,Tarjeta,6625.0,False,False,False,False,619.96
+9000000387,53,Femenino,Miami,Bajo,11,32.4,Sí,Sí,Otro,No,Billetera digital,1550.0,False,False,False,False,356.4
+9000000388,38,Masculino,Tampa,Alto,6,61.88,Sí,Sí,Carnes,Sí,Tarjeta,7009.0,True,False,False,False,371.28
+9000000389,23,Femenino,Orlando,Medio,8,27.69,No,Sí,Vegano,Sí,Billetera digital,4026.0,False,False,False,False,221.52
+9000000390,85,Masculino,Miami,Bajo,8,35.52,Sí,Sí,Vegano,No,Billetera digital,2082.0,False,False,False,False,284.16
+9000000391,57,Masculino,Orlando,Alto,10,83.86,Sí,No,Mariscos,Sí,Tarjeta,5628.0,False,False,False,False,838.6
+9000000392,31,Masculino,Miami,Alto,2,76.0,Sí,Sí,Carnes,Sí,Tarjeta,6070.0,False,False,False,False,152.0
+9000000393,70,Femenino,Tampa,Muy Alto,11,103.62,Sí,Sí,Carnes,Sí,Tarjeta,10437.0,False,False,False,False,1139.82
+9000000394,27,Femenino,Miami,Alto,6,72.23,Sí,No,Vegano,Sí,Tarjeta,5760.0,False,False,False,False,433.38
+9000000395,60,Masculino,Miami,Medio,2,44.55,No,No,Pescado,No,Tarjeta,2137.0,False,False,False,False,89.1
+9000000396,83,Masculino,Miami,Medio,8,44.14,Sí,No,Vegetariano,Sí,Tarjeta,3104.0,False,False,False,False,353.12
+9000000397,19,Femenino,Miami,Medio,2,50.08,No,No,Mariscos,Sí,Efectivo,3714.0,False,False,False,False,100.16
+9000000398,52,Masculino,Miami,Muy Alto,4,98.44,Sí,Sí,Vegetariano,No,Tarjeta,8627.0,False,False,False,False,393.76
+9000000399,76,Masculino,Miami,Muy Alto,8,108.4,No,Sí,Otro,No,Tarjeta,8292.0,False,False,False,False,867.2
+9000000400,76,Femenino,Miami,Muy Alto,12,111.46,Sí,Sí,Vegano,Sí,Tarjeta,10540.0,False,False,False,False,1337.52
+9000000401,34,Femenino,Miami,Muy Alto,8,108.45,Sí,Sí,Pescado,Sí,Efectivo,9817.0,False,False,False,False,867.6
+9000000402,80,No binario,Fort Lauderdale,Alto,6,57.58,Sí,Sí,Vegano,No,Efectivo,5499.0,False,False,False,False,345.48
+9000000403,23,Femenino,Miami,Medio,8,48.99,Sí,Sí,Vegetariano,No,Tarjeta,3391.0,False,False,False,False,391.92
+9000000404,26,Femenino,Orlando,Muy Alto,6,97.89,No,Sí,Otro,Sí,Tarjeta,9798.0,False,False,False,False,587.34
+9000000405,36,Masculino,Tampa,Bajo,5,47.72,Sí,Sí,Vegetariano,No,Tarjeta,1252.0,False,False,False,False,238.6
+9000000406,26,Femenino,Orlando,Alto,10,80.25,Sí,No,Vegetariano,Sí,Tarjeta,5558.0,False,False,False,False,802.5
+9000000407,72,Femenino,Orlando,Alto,5,79.44,No,Sí,Pescado,Sí,Tarjeta,6558.0,False,False,False,False,397.2
+9000000408,84,Masculino,Miami,Muy Alto,11,115.46,Sí,Sí,Carnes,Sí,Tarjeta,9622.0,False,False,False,False,1270.06
+9000000409,62,Femenino,Miami,Muy Alto,5,96.49,Sí,No,Vegetariano,Sí,Billetera digital,9670.0,False,False,False,False,482.45
+9000000410,37,Femenino,Tampa,Medio,7,45.98,No,Sí,Mariscos,No,Billetera digital,3227.0,False,False,False,False,321.86
+9000000411,69,Femenino,Tampa,Medio,5,34.08,Sí,Sí,Mariscos,No,Tarjeta,4125.0,False,False,False,False,170.4
+9000000412,80,Femenino,Miami,Medio,11,37.01,No,No,Carnes,No,Efectivo,2875.0,False,False,False,False,407.11
+9000000413,33,Masculino,Orlando,Medio,2,37.28,No,No,Otro,No,Tarjeta,3597.0,False,False,False,False,74.56
+9000000414,62,Femenino,Orlando,Bajo,11,32.53,Sí,Sí,Carnes,No,Billetera digital,2043.0,False,False,False,False,357.83
+9000000415,62,Masculino,Tampa,Alto,3,65.18,Sí,Sí,Mariscos,Sí,Tarjeta,7537.0,False,False,False,False,195.54
+9000000416,84,Masculino,Miami,Medio,5,36.79,Sí,Sí,Mariscos,No,Efectivo,3441.0,False,False,False,False,183.95
+9000000417,78,Femenino,Orlando,Alto,1,70.29,No,Sí,Vegano,No,Tarjeta,5198.0,False,False,False,False,70.29
+9000000418,59,Femenino,Miami,Medio,4,35.69,No,No,Mariscos,Sí,Tarjeta,2731.0,False,False,False,False,142.76
+9000000419,71,Femenino,Tampa,Alto,6,55.04,Sí,Sí,Mariscos,Sí,Tarjeta,7284.0,False,False,False,False,330.24
+9000000420,33,Masculino,Tampa,Medio,3,47.74,Sí,Sí,Mariscos,No,Efectivo,3292.0,False,False,False,False,143.22
+9000000421,74,Masculino,Miami,Alto,6,68.18,Sí,No,Mariscos,No,Tarjeta,4651.0,False,True,False,False,409.08
+9000000422,35,Masculino,Orlando,Medio,2,35.42,Sí,No,Pescado,No,Tarjeta,3472.0,False,False,False,False,70.84
+9000000423,38,Femenino,Miami,Muy Alto,5,100.3,No,Sí,Vegano,Sí,Tarjeta,10830.0,False,False,False,False,501.5
+9000000425,73,Femenino,Miami,Alto,1,75.56,Sí,No,Otro,Sí,Tarjeta,6083.0,False,False,False,True,75.56
+9000000426,69,Femenino,Miami,Medio,3,31.81,Sí,No,Mariscos,No,Efectivo,4018.0,False,False,False,False,95.43
+9000000427,83,Femenino,Miami,Bajo,7,30.05,Sí,Sí,Vegetariano,Sí,Tarjeta,2593.0,False,False,False,False,210.35
+9000000428,46,Masculino,Miami,Bajo,7,16.02,Sí,No,Vegano,No,Tarjeta,900.0,False,False,False,False,112.14
+9000000429,69,Femenino,Fort Lauderdale,Medio,9,26.23,Sí,Sí,Vegetariano,Sí,Efectivo,2358.0,False,False,False,False,236.07
+9000000430,70,Femenino,Orlando,Alto,3,82.43,Sí,Sí,Vegetariano,Sí,Billetera digital,7790.0,False,False,False,False,247.29
+9000000431,26,Femenino,Fort Lauderdale,Bajo,4,23.03,Sí,Sí,Mariscos,No,Billetera digital,902.0,False,False,False,False,92.12
+9000000432,65,Femenino,Tampa,Muy Alto,3,97.3,Sí,No,Pescado,Sí,Tarjeta,10018.0,False,False,False,False,291.9
+9000000433,43,No binario,Miami,Medio,10,25.79,Sí,Sí,Mariscos,Sí,Tarjeta,2556.0,False,False,False,False,257.9
+9000000434,28,Femenino,Tampa,Medio,6,50.24,Sí,Sí,Carnes,Sí,Tarjeta,4527.0,False,False,False,False,301.44
+9000000435,68,Masculino,Tampa,Medio,6,38.86,Sí,Sí,Vegetariano,No,Tarjeta,2841.0,False,False,False,False,233.16
+9000000436,67,Masculino,Miami,Bajo,10,15.41,No,Sí,Vegano,No,Billetera digital,3217.0,False,False,False,False,154.1
+9000000437,69,Masculino,Miami,Medio,6,30.79,Sí,No,Carnes,Sí,Tarjeta,2599.0,False,False,False,False,184.74
+9000000438,35,No binario,Miami,Bajo,6,17.31,No,Sí,Carnes,No,Billetera digital,1933.0,False,False,False,False,103.86
+9000000439,67,Femenino,Miami,Medio,6,41.66,No,Sí,Pescado,Sí,Tarjeta,3611.0,False,False,False,False,249.96
+9000000440,26,Femenino,Miami,Medio,11,51.9,Sí,Sí,Pescado,Sí,Billetera digital,3609.0,False,False,False,False,570.9
+9000000441,32,Masculino,Orlando,Muy Alto,6,109.23,Sí,No,Pescado,No,Billetera digital,11094.0,False,False,False,False,655.38
+9000000442,44,Masculino,Miami,Bajo,1,19.0,Sí,No,Carnes,No,Tarjeta,3267.0,False,False,False,False,19.0
+9000000443,21,Masculino,Miami,Alto,11,77.99,No,Sí,Carnes,No,Efectivo,6033.0,False,False,False,False,857.89
+9000000444,76,Masculino,Miami,Alto,2,60.9,No,No,Vegetariano,Sí,Tarjeta,6461.0,False,False,False,False,121.8
+9000000445,80,Femenino,Miami,Muy Alto,8,110.69,No,Sí,Vegetariano,Sí,Billetera digital,8760.0,False,False,False,False,885.52
+9000000446,81,Masculino,Miami,Medio,9,50.98,Sí,No,Mariscos,No,Efectivo,3132.0,False,False,False,False,458.82
+9000000447,85,Femenino,Fort Lauderdale,Medio,11,43.27,Sí,No,Mariscos,Sí,Tarjeta,4341.0,False,False,False,False,475.97
+9000000448,70,Femenino,Orlando,Alto,8,82.23,No,No,Otro,Sí,Tarjeta,7054.0,False,False,False,False,657.84
+9000000449,39,Femenino,Miami,Medio,11,34.98,Sí,Sí,Vegano,No,Tarjeta,3423.0,False,False,False,False,384.78
+9000000450,26,Femenino,Miami,Alto,1,68.26,Sí,Sí,Otro,No,Billetera digital,7690.0,False,False,False,False,68.26
+9000000451,57,Femenino,Miami,Muy Alto,6,98.84,No,Sí,Vegano,Sí,Billetera digital,10560.0,False,False,False,False,593.04
+9000000452,58,Masculino,Miami,Bajo,4,14.98,Sí,Sí,Mariscos,No,Efectivo,2602.0,False,False,False,False,59.92
+9000000453,66,Masculino,Miami,Muy Alto,7,105.27,Sí,No,Vegetariano,Sí,Efectivo,9671.0,False,False,False,False,736.89
+9000000454,43,Masculino,Orlando,Alto,3,75.86,Sí,Sí,Pescado,No,Efectivo,7025.0,False,False,False,False,227.58
+9000000455,68,Masculino,Miami,Alto,1,81.02,No,No,Vegetariano,Sí,Efectivo,6467.0,False,False,False,False,81.02
+9000000456,53,Masculino,Fort Lauderdale,Medio,12,38.85,Sí,Sí,Carnes,No,Tarjeta,3190.0,False,False,True,False,466.2
+9000000457,38,Masculino,Miami,Medio,4,48.15,No,Sí,Carnes,No,Billetera digital,3015.0,False,False,False,False,192.6
+9000000458,84,Femenino,Miami,Medio,5,34.82,Sí,Sí,Otro,No,Tarjeta,3848.0,False,False,False,False,174.1
+9000000459,47,Masculino,Orlando,Medio,2,29.39,Sí,No,Otro,No,Tarjeta,4124.0,False,False,False,False,58.78
+9000000460,41,Masculino,Miami,Bajo,3,26.39,No,Sí,Pescado,No,Tarjeta,2153.0,False,False,False,False,79.17
+9000000461,44,Masculino,Miami,Alto,4,58.07,Sí,Sí,Vegano,Sí,Billetera digital,7150.0,False,False,False,False,232.28
+9000000462,78,Femenino,Fort Lauderdale,Medio,11,34.04,Sí,No,Mariscos,No,Tarjeta,2238.0,False,False,False,False,374.44
+9000000463,73,Masculino,Fort Lauderdale,Bajo,7,8.0,Sí,Sí,Carnes,No,Tarjeta,2811.0,False,False,False,False,56.0
+9000000464,70,Masculino,Miami,Bajo,5,9.56,Sí,No,Pescado,No,Tarjeta,1270.0,False,False,False,False,47.8
+9000000465,24,Masculino,Miami,Medio,5,33.01,Sí,Sí,Mariscos,No,Tarjeta,3283.0,False,False,False,False,165.05
+9000000466,56,Masculino,Miami,Alto,3,64.72,Sí,No,Vegetariano,Sí,Tarjeta,6894.0,False,False,False,False,194.16
+9000000467,23,Masculino,Miami,Medio,1,42.31,Sí,Sí,Mariscos,No,Tarjeta,3401.0,False,False,False,False,42.31
+9000000468,30,Masculino,Miami,Medio,4,38.73,Sí,Sí,Carnes,Sí,Tarjeta,3660.0,False,False,False,False,154.92
+9000000469,80,Femenino,Tampa,Alto,9,64.34,Sí,Sí,Mariscos,Sí,Tarjeta,5885.0,False,False,False,False,579.06
+9000000471,55,Femenino,Orlando,Medio,8,31.73,No,No,Vegano,Sí,Billetera digital,2753.0,False,False,False,False,253.84
+9000000472,71,Femenino,Tampa,Alto,12,80.32,Sí,Sí,Mariscos,Sí,Tarjeta,6439.0,False,False,False,False,963.84
+9000000473,78,Femenino,Tampa,Medio,1,43.27,Sí,Sí,Otro,No,Efectivo,3761.0,False,False,False,False,43.27
+9000000474,53,Femenino,Miami,Medio,2,30.79,Sí,No,Mariscos,Sí,Tarjeta,4535.0,False,False,False,False,61.58
+9000000475,31,Masculino,Tampa,Alto,8,58.01,No,Sí,Mariscos,Sí,Billetera digital,6859.0,False,False,False,False,464.08
+9000000476,23,Masculino,Miami,Medio,1,40.4,Sí,No,Mariscos,No,Tarjeta,2296.0,False,False,False,False,40.4
+9000000477,77,Masculino,Orlando,Medio,9,33.07,Sí,No,Pescado,No,Efectivo,3295.0,False,False,False,False,297.63
+9000000478,56,Masculino,Miami,Medio,6,48.83,Sí,Sí,Mariscos,Sí,Tarjeta,4001.0,False,False,False,False,292.98
+9000000479,28,Masculino,Orlando,Medio,5,38.76,Sí,Sí,Mariscos,No,Efectivo,3301.0,False,False,False,False,193.8
+9000000480,20,Masculino,Miami,Medio,5,36.65,Sí,Sí,Vegetariano,No,Billetera digital,3802.0,False,False,False,False,183.25
+9000000481,70,Femenino,Miami,Alto,2,64.83,Sí,No,Otro,No,Tarjeta,5634.0,False,False,False,False,129.66
+9000000482,29,Femenino,Miami,Alto,12,75.06,Sí,Sí,Pescado,Sí,Efectivo,6193.0,False,False,False,False,900.72
+9000000484,26,Femenino,Miami,Medio,5,49.16,No,Sí,Otro,No,Tarjeta,2525.0,False,False,False,False,245.8
+9000000485,74,Femenino,Miami,Alto,6,90.71,Sí,No,Mariscos,No,Tarjeta,5314.0,True,False,False,False,544.26
+9000000486,31,Masculino,Miami,Medio,6,36.24,Sí,No,Mariscos,No,Efectivo,2386.0,False,False,False,False,217.44
+9000000487,47,Masculino,Miami,Medio,8,36.68,Sí,No,Carnes,No,Tarjeta,4188.0,False,False,False,False,293.44
+9000000488,51,Femenino,Orlando,Medio,10,44.77,Sí,No,Vegano,No,Tarjeta,2478.0,False,False,False,False,447.7
+9000000489,44,Masculino,Miami,Muy Alto,10,114.34,No,No,Mariscos,Sí,Tarjeta,10113.0,False,False,False,False,1143.4
+9000000490,77,Masculino,Miami,Medio,9,32.16,Sí,Sí,Mariscos,Sí,Billetera digital,4423.0,False,False,False,False,289.44
+9000000491,31,Femenino,Miami,Medio,7,42.56,Sí,Sí,Vegano,No,Tarjeta,4315.0,False,False,False,False,297.92
+9000000492,71,Femenino,Miami,Muy Alto,2,102.99,Sí,Sí,Otro,Sí,Tarjeta,9498.0,False,False,False,True,205.98
+9000000493,69,Masculino,Tampa,Medio,11,31.02,Sí,No,Mariscos,No,Tarjeta,3750.0,False,False,False,False,341.22
+9000000494,72,Femenino,Miami,Medio,4,22.85,Sí,No,Carnes,No,Billetera digital,4298.0,False,False,False,False,91.4
+9000000495,67,Femenino,Orlando,Alto,3,73.15,Sí,No,Carnes,Sí,Billetera digital,6334.0,False,False,False,False,219.45
+9000000496,49,Masculino,Orlando,Bajo,7,12.83,Sí,No,Vegano,No,Tarjeta,2491.0,False,False,False,False,89.81
+9000000497,56,Femenino,Miami,Alto,8,60.79,Sí,No,Otro,Sí,Tarjeta,7276.0,False,False,False,False,486.32
+9000000498,67,Femenino,Miami,Bajo,5,29.07,No,Sí,Mariscos,No,Billetera digital,2428.0,False,False,False,False,145.35
+9000000499,40,Masculino,Fort Lauderdale,Bajo,4,17.43,No,Sí,Carnes,No,Billetera digital,2751.0,False,False,False,False,69.72
+9000000500,36,Masculino,Miami,Medio,3,46.87,Sí,No,Carnes,Sí,Billetera digital,4640.0,False,False,False,False,140.61
+9000000501,49,Masculino,Fort Lauderdale,Alto,12,61.48,Sí,Sí,Carnes,Sí,Tarjeta,6755.0,False,False,False,False,737.76
+9000000502,29,Femenino,Orlando,Bajo,1,30.83,Sí,No,Otro,No,Tarjeta,3323.0,False,False,False,False,30.83
+9000000503,61,Femenino,Orlando,Medio,7,39.98,Sí,No,Carnes,No,Billetera digital,4211.0,False,False,False,False,279.86
+9000000504,53,Masculino,Miami,Muy Alto,1,111.84,Sí,Sí,Otro,Sí,Efectivo,9800.0,False,False,False,False,111.84
+9000000505,73,Masculino,Orlando,Alto,4,66.71,Sí,Sí,Pescado,Sí,Tarjeta,4307.0,False,False,False,False,266.84
+9000000506,78,Femenino,Miami,Medio,9,32.98,Sí,No,Mariscos,No,Tarjeta,3360.0,False,False,False,False,296.82
+9000000507,53,Femenino,Miami,Alto,12,62.86,Sí,Sí,Mariscos,Sí,Billetera digital,7265.0,False,False,False,False,754.32
+9000000508,47,Masculino,Miami,Bajo,9,30.48,Sí,Sí,Vegetariano,No,Tarjeta,1883.0,False,False,False,False,274.32
+9000000509,76,Masculino,Orlando,Alto,3,59.64,Sí,No,Vegetariano,Sí,Tarjeta,6137.0,False,False,False,False,178.92
+9000000510,60,Femenino,Orlando,Medio,8,37.98,Sí,Sí,Otro,No,Tarjeta,3156.0,False,False,False,False,303.84
+9000000511,61,Masculino,Orlando,Alto,7,66.95,Sí,Sí,Vegano,Sí,Tarjeta,6187.0,False,False,False,False,468.65
+9000000512,72,Femenino,Fort Lauderdale,Muy Alto,12,113.99,Sí,No,Otro,Sí,Tarjeta,8420.0,False,False,False,False,1367.88
+9000000513,23,Femenino,Orlando,Medio,9,54.29,Sí,No,Mariscos,No,Tarjeta,5535.0,False,False,False,False,488.61
+9000000514,43,Masculino,Miami,Bajo,3,24.97,Sí,No,Otro,No,Tarjeta,2453.0,False,False,False,False,74.91
+9000000515,62,Masculino,Miami,Alto,6,54.08,No,No,Pescado,No,Tarjeta,5466.0,False,False,False,False,324.48
+9000000516,50,Femenino,Miami,Bajo,3,31.88,Sí,Sí,Vegetariano,No,Tarjeta,2720.0,False,False,False,False,95.64
+9000000517,76,Femenino,Miami,Alto,8,65.12,Sí,No,Pescado,Sí,Billetera digital,5768.0,False,False,False,False,520.96
+9000000518,27,Femenino,Miami,Alto,6,66.87,Sí,No,Vegano,No,Billetera digital,6282.0,False,False,False,False,401.22
+9000000519,20,Masculino,Miami,Muy Alto,1,102.48,No,No,Vegano,Sí,Billetera digital,7990.0,False,False,False,False,102.48
+9000000520,82,Femenino,Miami,Medio,3,38.11,Sí,No,Vegetariano,No,Tarjeta,3643.0,False,False,False,False,114.33
+9000000521,57,Masculino,Miami,Medio,12,43.69,Sí,No,Vegetariano,No,Tarjeta,2796.0,False,False,False,False,524.28
+9000000522,23,Femenino,Miami,Alto,5,68.18,Sí,No,Mariscos,Sí,Tarjeta,5941.0,False,True,False,False,340.9
+9000000523,40,Masculino,Orlando,Medio,9,38.92,Sí,No,Mariscos,No,Tarjeta,1559.0,False,False,False,False,350.28
+9000000524,54,Masculino,Miami,Alto,6,60.2,Sí,Sí,Otro,Sí,Billetera digital,5582.0,False,False,False,False,361.2
+9000000525,28,Femenino,Miami,Medio,6,34.81,Sí,Sí,Vegetariano,No,Billetera digital,3464.0,False,False,False,False,208.86
+9000000526,40,Femenino,Miami,Medio,12,36.04,Sí,Sí,Vegetariano,Sí,Efectivo,4142.0,False,False,False,False,432.48
+9000000527,49,Masculino,Miami,Bajo,2,31.29,Sí,Sí,Carnes,No,Tarjeta,2170.0,False,False,False,False,62.58
+9000000528,57,Femenino,Miami,Medio,11,42.97,Sí,Sí,Mariscos,No,Tarjeta,3526.0,False,False,False,False,472.67
+9000000529,43,Femenino,Tampa,Medio,5,54.02,No,No,Vegano,No,Tarjeta,3018.0,False,False,False,False,270.1
+9000000530,85,Masculino,Miami,Bajo,1,14.0,Sí,Sí,Vegetariano,No,Efectivo,2021.0,False,False,False,False,14.0
+9000000531,80,Femenino,Miami,Bajo,12,8.0,Sí,No,Mariscos,No,Billetera digital,2191.0,False,False,False,False,96.0
+9000000532,29,Masculino,Miami,Bajo,8,11.7,Sí,No,Carnes,No,Tarjeta,2933.0,False,False,False,False,93.6
+9000000533,33,Femenino,Miami,Muy Alto,11,112.92,Sí,No,Mariscos,Sí,Efectivo,10170.0,False,False,False,False,1242.12
+9000000534,57,Masculino,Miami,Medio,10,42.62,Sí,No,Mariscos,Sí,Tarjeta,4548.0,False,False,False,False,426.2
+9000000535,61,Masculino,Fort Lauderdale,Muy Alto,2,114.39,No,Sí,Pescado,Sí,Tarjeta,10187.0,False,False,False,False,228.78
+9000000536,19,Femenino,Miami,Alto,12,63.17,No,Sí,Vegetariano,No,Tarjeta,6269.0,False,False,False,False,758.04
+9000000537,31,Masculino,Tampa,Bajo,1,19.29,Sí,No,Mariscos,No,Tarjeta,3999.0,False,False,False,False,19.29
+9000000538,73,Masculino,Miami,Alto,10,75.07,Sí,Sí,Carnes,Sí,Tarjeta,6798.0,False,False,False,False,750.7
+9000000539,42,Masculino,Miami,Bajo,6,19.9,Sí,Sí,Carnes,No,Billetera digital,3424.0,False,False,False,False,119.4
+9000000540,27,Masculino,Orlando,Medio,7,40.29,No,Sí,Vegetariano,No,Tarjeta,3217.0,False,False,False,False,282.03
+9000000541,29,Femenino,Miami,Muy Alto,2,106.96,No,Sí,Mariscos,Sí,Tarjeta,10291.0,False,False,False,False,213.92
+9000000542,50,Masculino,Miami,Medio,10,50.72,Sí,No,Mariscos,Sí,Tarjeta,3146.0,False,False,False,False,507.2
+9000000543,67,Masculino,Tampa,Medio,4,41.31,Sí,No,Pescado,No,Tarjeta,3357.0,False,False,False,False,165.24
+9000000544,57,Masculino,Miami,Muy Alto,12,85.24,Sí,Sí,Carnes,Sí,Tarjeta,8606.0,False,False,False,False,1022.88
+9000000545,53,Masculino,Orlando,Bajo,4,18.96,Sí,Sí,Mariscos,No,Efectivo,3183.0,False,False,True,False,75.84
+9000000546,24,Masculino,Orlando,Muy Alto,2,86.27,No,No,Mariscos,Sí,Tarjeta,9281.0,False,False,False,False,172.54
+9000000547,62,Femenino,Tampa,Bajo,10,30.14,Sí,No,Mariscos,No,Efectivo,1826.0,False,False,False,False,301.4
+9000000548,50,Femenino,Fort Lauderdale,Muy Alto,2,102.05,Sí,Sí,Mariscos,Sí,Tarjeta,11325.0,False,False,False,False,204.1
+9000000549,67,Femenino,Miami,Medio,4,53.94,No,Sí,Vegano,No,Tarjeta,3777.0,False,False,False,False,215.76
+9000000550,68,Femenino,Miami,Medio,5,24.24,Sí,No,Mariscos,No,Tarjeta,2989.0,False,False,False,False,121.2
+9000000552,56,Masculino,Miami,Muy Alto,2,95.58,Sí,No,Carnes,No,Tarjeta,10140.0,False,False,False,False,191.16
+9000000553,37,Masculino,Miami,Alto,7,55.45,Sí,Sí,Otro,Sí,Efectivo,5272.0,False,False,False,False,388.15
+9000000554,44,Masculino,Miami,Muy Alto,10,108.91,Sí,Sí,Vegetariano,Sí,Billetera digital,11176.0,False,False,False,False,1089.1
+9000000555,35,Femenino,Fort Lauderdale,Alto,11,66.81,Sí,Sí,Vegetariano,Sí,Tarjeta,7430.0,False,False,False,False,734.91
+9000000556,58,Masculino,Tampa,Muy Alto,12,91.33,No,No,Mariscos,Sí,Billetera digital,9820.0,False,False,False,False,1095.96
+9000000557,75,No binario,Tampa,Medio,6,33.01,Sí,No,Otro,No,Billetera digital,4266.0,False,False,False,False,198.06
+9000000558,79,Masculino,Orlando,Medio,12,43.01,Sí,Sí,Mariscos,No,Tarjeta,4182.0,False,False,False,False,516.12
+9000000559,54,Masculino,Fort Lauderdale,Medio,8,31.61,No,No,Otro,No,Tarjeta,2997.0,False,False,False,True,252.88
+9000000560,56,Masculino,Fort Lauderdale,Bajo,5,8.0,Sí,No,Otro,No,Billetera digital,1534.0,False,False,False,False,40.0
+9000000561,28,Masculino,Orlando,Muy Alto,1,111.44,Sí,Sí,Otro,Sí,Tarjeta,10122.0,False,False,False,False,111.44
+9000000562,48,Masculino,Orlando,Medio,7,26.8,Sí,Sí,Carnes,Sí,Tarjeta,5238.0,False,False,False,False,187.6
+9000000563,46,Masculino,Miami,Muy Alto,2,97.9,No,Sí,Vegetariano,Sí,Tarjeta,9264.0,False,False,False,False,195.8
+9000000564,46,Femenino,Miami,Alto,7,75.4,Sí,Sí,Carnes,Sí,Billetera digital,6734.0,False,False,False,False,527.8
+9000000565,46,Masculino,Miami,Alto,7,57.21,Sí,No,Carnes,Sí,Efectivo,7826.0,False,False,False,False,400.47
+9000000566,23,Masculino,Tampa,Muy Alto,5,106.46,Sí,No,Carnes,Sí,Efectivo,9447.0,False,False,False,False,532.3
+9000000567,73,Femenino,Tampa,Medio,2,42.7,No,Sí,Mariscos,Sí,Tarjeta,3021.0,False,False,False,False,85.4
+9000000568,44,Femenino,Miami,Alto,7,62.14,No,Sí,Mariscos,Sí,Efectivo,5333.0,False,False,False,False,434.98
+9000000569,29,Femenino,Miami,Bajo,2,38.14,Sí,No,Mariscos,No,Tarjeta,1119.0,False,False,False,False,76.28
+9000000570,64,Femenino,Tampa,Muy Alto,10,100.89,No,No,Vegetariano,No,Tarjeta,9557.0,False,False,False,False,1008.9
+9000000571,46,Femenino,Orlando,Alto,12,64.18,Sí,Sí,Vegano,Sí,Tarjeta,5397.0,False,False,False,False,770.16
+9000000572,80,Masculino,Miami,Muy Alto,9,99.94,No,No,Vegetariano,Sí,Tarjeta,9690.0,False,False,False,False,899.46
+9000000573,80,Masculino,Miami,Muy Alto,10,103.22,Sí,No,Vegano,Sí,Billetera digital,8226.0,False,False,False,False,1032.2
+9000000574,65,Masculino,Miami,Bajo,9,22.54,Sí,No,Carnes,No,Billetera digital,1300.0,False,False,False,False,202.86
+9000000575,46,Femenino,Miami,Alto,8,51.57,No,No,Carnes,No,Billetera digital,6112.0,False,False,False,False,412.56
+9000000576,56,Femenino,Fort Lauderdale,Alto,7,70.91,No,No,Pescado,Sí,Tarjeta,5857.0,False,False,False,False,496.37
+9000000577,30,Femenino,Miami,Muy Alto,10,96.94,Sí,Sí,Vegano,Sí,Tarjeta,9942.0,False,False,False,False,969.4
+9000000578,72,Masculino,Miami,Muy Alto,3,97.31,Sí,Sí,Vegetariano,Sí,Tarjeta,11454.0,False,False,False,False,291.93
+9000000579,41,Femenino,Miami,Bajo,12,23.15,Sí,Sí,Pescado,No,Tarjeta,1217.0,False,False,False,False,277.8
+9000000580,29,Masculino,Miami,Medio,4,45.85,Sí,Sí,Mariscos,No,Billetera digital,3631.0,False,False,False,False,183.4
+9000000581,29,Masculino,Miami,Medio,5,34.26,No,Sí,Mariscos,No,Efectivo,2229.0,False,False,False,False,171.3
+9000000582,60,Masculino,Miami,Medio,6,40.96,No,No,Vegano,No,Tarjeta,2716.0,True,False,False,False,245.76
+9000000583,78,Femenino,Tampa,Medio,12,28.12,Sí,Sí,Vegetariano,No,Billetera digital,3374.0,False,False,False,False,337.44
+9000000584,47,No binario,Fort Lauderdale,Muy Alto,6,103.59,Sí,Sí,Pescado,Sí,Billetera digital,9865.0,False,False,False,False,621.54
+9000000585,45,Masculino,Miami,Bajo,5,18.21,Sí,Sí,Carnes,No,Tarjeta,2943.0,False,False,False,False,91.05
+9000000586,56,Masculino,Miami,Alto,11,70.17,Sí,No,Mariscos,No,Efectivo,6974.0,False,False,False,False,771.87
+9000000587,67,Femenino,Miami,Muy Alto,7,114.49,Sí,No,Carnes,Sí,Billetera digital,10006.0,False,False,False,False,801.43
+9000000588,84,Femenino,Miami,Alto,3,80.5,Sí,No,Vegetariano,Sí,Tarjeta,6545.0,False,False,False,False,241.5
+9000000589,31,Femenino,Miami,Alto,3,77.25,Sí,Sí,Vegetariano,No,Billetera digital,5904.0,False,False,False,False,231.75
+9000000590,21,No binario,Fort Lauderdale,Alto,2,61.93,Sí,No,Vegano,Sí,Efectivo,5600.0,False,False,False,False,123.86
+9000000591,18,Masculino,Miami,Medio,9,39.94,No,No,Vegetariano,Sí,Billetera digital,2543.0,False,False,False,False,359.46
+9000000592,31,No binario,Miami,Alto,12,52.4,Sí,No,Otro,No,Tarjeta,6108.0,False,False,False,False,628.8
+9000000593,43,Femenino,Miami,Alto,6,65.41,Sí,No,Vegetariano,Sí,Efectivo,7120.0,False,False,False,False,392.46
+9000000594,19,No binario,Miami,Bajo,11,18.38,No,No,Otro,No,Tarjeta,2470.0,False,False,False,False,202.18
+9000000595,85,Masculino,Miami,Alto,8,53.07,Sí,Sí,Mariscos,Sí,Efectivo,6091.0,False,False,False,False,424.56
+9000000597,64,Femenino,Miami,Alto,6,74.61,No,No,Otro,No,Tarjeta,7544.0,False,False,False,False,447.66
+9000000598,68,Femenino,Miami,Medio,1,40.51,Sí,Sí,Vegetariano,No,Tarjeta,4507.0,False,False,False,False,40.51
+9000000599,27,Masculino,Orlando,Alto,9,78.68,Sí,Sí,Carnes,Sí,Tarjeta,5991.0,False,False,False,False,708.12
+9000000600,68,Masculino,Miami,Alto,5,66.06,No,Sí,Mariscos,Sí,Billetera digital,6268.0,False,False,False,False,330.3
+9000000601,67,Masculino,Miami,Medio,3,36.66,Sí,No,Mariscos,No,Tarjeta,2237.0,False,False,False,False,109.98
+9000000602,37,No binario,Miami,Alto,4,62.8,No,Sí,Vegano,Sí,Billetera digital,6239.0,False,False,False,False,251.2
+9000000603,18,Masculino,Miami,Bajo,7,17.32,No,Sí,Carnes,No,Efectivo,3226.0,False,False,False,False,121.24
+9000000604,63,Femenino,Tampa,Alto,10,74.25,No,No,Vegetariano,No,Tarjeta,6174.0,False,False,False,False,742.5
+9000000605,53,Femenino,Miami,Medio,7,32.43,Sí,No,Mariscos,Sí,Efectivo,3424.0,False,False,False,False,227.01
+9000000606,75,Masculino,Miami,Alto,2,74.32,Sí,Sí,Vegano,Sí,Tarjeta,6186.0,False,False,False,False,148.64
+9000000608,47,Masculino,Orlando,Bajo,11,10.13,No,No,Carnes,No,Tarjeta,2551.0,False,False,False,False,111.43
+9000000609,67,Femenino,Miami,Alto,2,70.66,No,Sí,Mariscos,Sí,Efectivo,5833.0,False,False,False,False,141.32
+9000000610,37,Masculino,Fort Lauderdale,Medio,3,59.19,No,No,Carnes,No,Tarjeta,2644.0,False,False,False,False,177.57
+9000000611,84,Femenino,Miami,Medio,3,29.71,Sí,No,Otro,No,Billetera digital,2574.0,False,False,False,False,89.13
+9000000612,65,Masculino,Miami,Medio,8,49.56,Sí,No,Pescado,No,Tarjeta,3704.0,False,False,False,False,396.48
+9000000613,21,Femenino,Fort Lauderdale,Alto,9,73.11,Sí,Sí,Mariscos,Sí,Tarjeta,6625.0,False,False,False,False,657.99
+9000000614,80,Femenino,Miami,Bajo,3,10.31,Sí,Sí,Pescado,No,Billetera digital,1655.0,False,False,False,False,30.93
+9000000615,36,Femenino,Orlando,Medio,5,39.1,Sí,Sí,Otro,No,Billetera digital,2828.0,False,False,False,False,195.5
+9000000616,64,Masculino,Miami,Alto,6,68.54,No,Sí,Vegano,Sí,Tarjeta,5632.0,False,False,False,False,411.24
+9000000617,84,Masculino,Miami,Bajo,9,15.46,Sí,Sí,Carnes,Sí,Tarjeta,1422.0,False,False,False,False,139.14
+9000000618,40,Femenino,Miami,Medio,1,30.64,Sí,Sí,Otro,No,Billetera digital,4327.0,False,False,False,False,30.64
+9000000619,54,Femenino,Miami,Medio,3,39.96,Sí,No,Carnes,Sí,Tarjeta,3905.0,False,False,False,False,119.88
+9000000620,23,Femenino,Miami,Medio,11,43.54,Sí,No,Carnes,No,Efectivo,3707.0,False,False,False,False,478.94
+9000000621,60,Masculino,Miami,Bajo,11,14.22,Sí,Sí,Otro,No,Tarjeta,1127.0,False,False,False,False,156.42
+9000000622,18,Masculino,Miami,Medio,4,45.83,Sí,No,Otro,No,Tarjeta,3733.0,False,False,False,False,183.32
+9000000623,85,Femenino,Orlando,Muy Alto,8,104.27000000000001,Sí,No,Vegetariano,Sí,Tarjeta,10922.0,False,True,False,False,834.16
+9000000624,27,Femenino,Miami,Medio,8,31.42,Sí,Sí,Carnes,Sí,Billetera digital,2482.0,False,False,False,False,251.36
+9000000625,65,Femenino,Orlando,Muy Alto,4,107.01,Sí,No,Otro,Sí,Tarjeta,9612.0,False,False,False,False,428.04
+9000000626,20,Femenino,Miami,Muy Alto,12,94.16,Sí,No,Otro,Sí,Tarjeta,8585.0,False,False,False,True,1129.92
+9000000627,38,Masculino,Miami,Bajo,6,21.37,No,Sí,Otro,No,Tarjeta,1657.0,False,False,False,False,128.22
+9000000628,73,Masculino,Miami,Alto,4,62.05,Sí,Sí,Mariscos,Sí,Efectivo,5571.0,False,False,False,False,248.2
+9000000629,63,Femenino,Miami,Alto,9,71.79,Sí,No,Carnes,No,Billetera digital,5457.0,False,False,False,False,646.11
+9000000630,41,Femenino,Miami,Medio,6,43.7,No,No,Otro,No,Efectivo,4636.0,False,False,False,False,262.2
+9000000631,83,Femenino,Miami,Alto,5,69.65,Sí,No,Mariscos,No,Tarjeta,5301.0,False,False,False,False,348.25
+9000000632,46,Masculino,Miami,Medio,2,54.9,Sí,No,Vegano,No,Tarjeta,3777.0,False,False,False,False,109.8
+9000000633,81,Femenino,Miami,Alto,5,55.81,Sí,No,Mariscos,Sí,Billetera digital,6145.0,False,False,False,False,279.05
+9000000634,53,Femenino,Miami,Alto,2,74.73,Sí,Sí,Vegetariano,Sí,Billetera digital,6044.0,False,False,True,False,149.46
+9000000635,23,Masculino,Orlando,Medio,7,32.14,Sí,Sí,Vegetariano,No,Billetera digital,4249.0,False,False,False,False,224.98
+9000000636,33,Femenino,Orlando,Bajo,12,16.18,Sí,Sí,Vegano,No,Efectivo,1795.0,False,False,False,False,194.16
+9000000637,71,Masculino,Miami,Bajo,3,29.5,Sí,Sí,Otro,No,Billetera digital,1182.0,False,False,False,False,88.5
+9000000638,38,Femenino,Miami,Bajo,5,37.74,Sí,Sí,Otro,No,Efectivo,1703.0,False,False,False,False,188.7
+9000000639,35,Masculino,Miami,Alto,9,55.52,Sí,No,Mariscos,Sí,Tarjeta,6203.0,False,False,False,False,499.68
+9000000640,69,Femenino,Miami,Alto,7,71.23,Sí,Sí,Vegetariano,Sí,Tarjeta,4217.0,False,False,False,False,498.61
+9000000641,45,Masculino,Fort Lauderdale,Medio,7,28.01,No,Sí,Mariscos,No,Tarjeta,3005.0,False,False,False,False,196.07
+9000000642,60,Femenino,Orlando,Alto,7,71.72,No,Sí,Vegetariano,Sí,Billetera digital,7295.0,False,False,False,False,502.04
+9000000643,41,Masculino,Fort Lauderdale,Bajo,6,30.22,No,No,Vegetariano,No,Tarjeta,1560.0,False,False,False,False,181.32
+9000000644,69,Femenino,Miami,Medio,8,44.35,Sí,No,Carnes,No,Efectivo,5840.0,False,False,False,False,354.8
+9000000645,57,Masculino,Miami,Muy Alto,11,114.71,Sí,No,Vegetariano,No,Tarjeta,9524.0,False,False,False,False,1261.81
+9000000646,52,Masculino,Miami,Medio,1,43.21,Sí,No,Pescado,No,Efectivo,4207.0,False,False,False,False,43.21
+9000000647,26,Femenino,Miami,Medio,4,47.42,Sí,Sí,Mariscos,No,Tarjeta,3473.0,False,False,False,False,189.68
+9000000648,58,Femenino,Miami,Medio,12,34.29,Sí,Sí,Pescado,No,Billetera digital,3367.0,False,False,False,False,411.48
+9000000649,76,Masculino,Fort Lauderdale,Bajo,11,15.16,No,No,Mariscos,No,Billetera digital,3667.0,False,False,False,False,166.76
+9000000650,84,Femenino,Miami,Muy Alto,10,99.36,Sí,No,Vegano,Sí,Tarjeta,10726.0,False,False,False,False,993.6
+9000000651,71,Masculino,Miami,Bajo,5,30.26,Sí,No,Mariscos,No,Tarjeta,2895.0,False,False,False,False,151.3
+9000000652,36,Masculino,Orlando,Muy Alto,8,116.94,No,Sí,Vegano,Sí,Tarjeta,10513.0,False,False,False,False,935.52
+9000000653,83,Femenino,Miami,Medio,6,34.4,Sí,Sí,Carnes,No,Efectivo,3239.0,False,False,False,False,206.4
+9000000654,47,Femenino,Miami,Medio,10,39.91,Sí,Sí,Otro,Sí,Tarjeta,3716.0,False,False,False,False,399.1
+9000000655,70,Femenino,Miami,Alto,10,74.89,Sí,No,Vegetariano,Sí,Tarjeta,7190.0,False,False,False,False,748.9
+9000000656,21,Masculino,Miami,Medio,12,44.48,No,Sí,Mariscos,No,Billetera digital,2774.0,False,False,False,False,533.76
+9000000657,82,Femenino,Tampa,Muy Alto,4,86.45,No,Sí,Mariscos,No,Tarjeta,9824.0,False,False,False,False,345.8
+9000000658,55,Femenino,Orlando,Alto,3,58.55,Sí,Sí,Carnes,Sí,Tarjeta,6563.0,False,False,False,False,175.65
+9000000659,77,Femenino,Miami,Alto,6,56.98,No,Sí,Mariscos,Sí,Billetera digital,5397.0,False,False,False,False,341.88
+9000000660,35,Femenino,Miami,Medio,4,34.13,Sí,No,Vegetariano,No,Efectivo,3567.0,False,False,False,False,136.52
+9000000661,60,Femenino,Miami,Bajo,9,29.61,Sí,Sí,Vegetariano,No,Tarjeta,1388.0,False,False,False,False,266.49
+9000000662,38,Femenino,Orlando,Bajo,7,24.59,No,No,Otro,No,Efectivo,1995.0,False,False,False,False,172.13
+9000000663,41,Femenino,Orlando,Bajo,1,37.49,Sí,No,Vegano,No,Efectivo,1926.0,False,False,False,False,37.49
+9000000664,73,No binario,Miami,Alto,5,57.52,No,Sí,Mariscos,No,Tarjeta,5167.0,False,False,False,False,287.6
+9000000665,52,Femenino,Miami,Alto,12,64.58,No,Sí,Vegano,Sí,Tarjeta,5751.0,False,False,False,False,774.96
+9000000666,73,Masculino,Miami,Medio,4,43.63,Sí,Sí,Carnes,No,Tarjeta,2192.0,False,False,False,False,174.52
+9000000667,61,Masculino,Orlando,Medio,12,30.13,Sí,Sí,Otro,No,Billetera digital,4898.0,False,False,False,False,361.56
+9000000668,79,Masculino,Miami,Medio,4,45.16,Sí,No,Vegano,Sí,Tarjeta,3179.0,False,False,False,False,180.64
+9000000669,32,Masculino,Orlando,Medio,6,41.6,Sí,Sí,Vegetariano,Sí,Tarjeta,2477.0,False,False,False,False,249.6
+9000000670,44,Femenino,Tampa,Bajo,12,35.84,Sí,Sí,Otro,No,Tarjeta,2593.0,False,False,False,False,430.08
+9000000671,50,Masculino,Miami,Muy Alto,6,100.13,No,Sí,Carnes,Sí,Billetera digital,9681.0,False,False,False,False,600.78
+9000000672,78,Femenino,Miami,Alto,5,71.68,Sí,No,Mariscos,No,Billetera digital,7668.0,False,False,False,False,358.4
+9000000673,53,Femenino,Fort Lauderdale,Medio,2,36.98,No,Sí,Otro,Sí,Tarjeta,3029.0,False,False,False,False,73.96
+9000000674,62,Masculino,Miami,Bajo,6,26.72,Sí,Sí,Vegano,Sí,Tarjeta,3128.0,False,False,False,False,160.32
+9000000675,54,Femenino,Miami,Muy Alto,9,99.35,Sí,Sí,Mariscos,No,Tarjeta,9414.0,False,False,False,False,894.15
+9000000676,80,Femenino,Miami,Alto,4,68.13,No,Sí,Pescado,Sí,Efectivo,6228.0,False,False,False,False,272.52
+9000000677,81,Femenino,Miami,Medio,2,35.41,No,No,Mariscos,No,Tarjeta,2616.0,False,False,False,False,70.82
+9000000679,27,Femenino,Tampa,Medio,6,29.41,No,Sí,Carnes,No,Tarjeta,3243.0,True,False,False,False,176.46
+9000000680,36,Femenino,Miami,Bajo,4,14.57,Sí,Sí,Mariscos,Sí,Efectivo,1700.0,False,False,False,False,58.28
+9000000681,77,Femenino,Miami,Medio,11,45.16,No,Sí,Mariscos,No,Tarjeta,4443.0,False,False,False,False,496.76
+9000000682,39,Masculino,Orlando,Medio,12,25.7,No,Sí,Carnes,Sí,Tarjeta,4761.0,False,False,False,False,308.4
+9000000683,74,Masculino,Tampa,Medio,5,43.56,No,Sí,Mariscos,No,Efectivo,3047.0,False,False,False,False,217.8
+9000000684,33,Femenino,Miami,Alto,1,85.3,Sí,Sí,Vegetariano,Sí,Efectivo,6270.0,False,False,False,False,85.3
+9000000685,58,Masculino,Orlando,Alto,7,65.44,Sí,Sí,Mariscos,Sí,Tarjeta,7227.0,False,False,False,False,458.08
+9000000686,40,Femenino,Fort Lauderdale,Medio,8,49.14,Sí,Sí,Mariscos,No,Billetera digital,3311.0,False,False,False,False,393.12
+9000000687,68,Masculino,Miami,Muy Alto,11,111.18,No,Sí,Carnes,Sí,Tarjeta,11121.0,False,False,False,False,1222.98
+9000000688,68,Masculino,Orlando,Alto,8,72.77,Sí,No,Mariscos,Sí,Tarjeta,6043.0,False,False,False,False,582.16
+9000000689,39,Masculino,Miami,Alto,2,70.05,Sí,Sí,Carnes,Sí,Tarjeta,5571.0,False,False,False,False,140.1
+9000000690,83,Masculino,Tampa,Bajo,8,34.93,Sí,No,Carnes,Sí,Tarjeta,2852.0,False,False,False,False,279.44
+9000000691,85,Femenino,Miami,Alto,11,68.15,Sí,No,Vegetariano,No,Tarjeta,4890.0,False,False,False,False,749.65
+9000000692,23,Femenino,Orlando,Alto,11,83.73,No,No,Vegano,Sí,Tarjeta,5579.0,False,False,False,False,921.03
+9000000693,26,Femenino,Fort Lauderdale,Muy Alto,3,96.52,No,Sí,Otro,Sí,Billetera digital,9698.0,False,False,False,True,289.56
+9000000694,74,Femenino,Miami,Medio,3,49.63,Sí,No,Vegetariano,No,Tarjeta,3421.0,False,False,False,False,148.89
+9000000695,78,Masculino,Miami,Medio,4,35.06,Sí,Sí,Vegetariano,No,Tarjeta,4858.0,False,False,False,False,140.24
+9000000696,41,Femenino,Miami,Alto,2,73.5,Sí,Sí,Vegetariano,No,Tarjeta,6391.0,False,False,False,False,147.0
+9000000697,60,Masculino,Miami,Medio,1,46.92,Sí,Sí,Carnes,Sí,Tarjeta,3264.0,False,False,False,False,46.92
+9000000698,78,Masculino,Miami,Medio,5,28.96,Sí,No,Carnes,Sí,Tarjeta,2667.0,False,False,False,False,144.8
+9000000699,77,Masculino,Miami,Muy Alto,7,95.45,Sí,Sí,Vegetariano,Sí,Tarjeta,9000.0,False,False,False,False,668.15
+9000000700,64,Femenino,Miami,Bajo,3,9.66,Sí,Sí,Mariscos,No,Tarjeta,2431.0,False,False,False,False,28.98
+9000000701,69,Femenino,Miami,Bajo,3,23.35,Sí,No,Vegano,No,Tarjeta,1135.0,False,False,False,False,70.05
+9000000702,26,Masculino,Tampa,Bajo,2,24.32,Sí,No,Vegano,No,Tarjeta,1545.0,False,False,False,False,48.64
+9000000703,81,Masculino,Miami,Bajo,9,11.86,Sí,No,Carnes,No,Billetera digital,1145.0,False,False,False,False,106.74
+9000000704,68,Masculino,Fort Lauderdale,Alto,2,75.24,Sí,Sí,Otro,Sí,Efectivo,5757.0,False,False,False,False,150.48
+9000000705,34,Masculino,Miami,Alto,8,67.57,Sí,Sí,Otro,Sí,Efectivo,5854.0,False,False,False,False,540.56
+9000000706,45,Masculino,Miami,Medio,5,29.13,No,Sí,Otro,Sí,Tarjeta,2915.0,False,False,False,False,145.65
+9000000707,31,Femenino,Tampa,Bajo,8,24.33,Sí,Sí,Vegetariano,No,Tarjeta,2235.0,False,False,False,False,194.64
+9000000708,51,Masculino,Miami,Alto,4,66.26,No,No,Carnes,Sí,Tarjeta,5401.0,False,False,False,False,265.04
+9000000710,40,Femenino,Miami,Medio,3,30.76,Sí,No,Vegetariano,No,Billetera digital,4121.0,False,False,False,False,92.28
+9000000711,35,Masculino,Orlando,Medio,2,26.92,No,No,Carnes,Sí,Efectivo,4674.0,False,False,False,False,53.84
+9000000712,83,Masculino,Miami,Medio,12,34.4,Sí,Sí,Carnes,No,Tarjeta,3379.0,False,False,False,False,412.8
+9000000713,52,Masculino,Miami,Medio,2,43.14,No,No,Mariscos,No,Tarjeta,4796.0,False,False,False,False,86.28
+9000000714,70,Masculino,Miami,Alto,1,67.74,Sí,Sí,Vegano,Sí,Efectivo,7422.0,False,False,False,False,67.74
+9000000715,72,Masculino,Miami,Alto,1,87.54,Sí,No,Mariscos,Sí,Tarjeta,5382.0,False,False,False,False,87.54
+9000000716,22,Masculino,Orlando,Alto,8,60.5,Sí,Sí,Mariscos,Sí,Efectivo,6340.0,False,False,False,False,484.0
+9000000717,54,Femenino,Miami,Alto,11,71.41,No,Sí,Pescado,Sí,Billetera digital,6198.0,False,False,False,False,785.51
+9000000718,81,Femenino,Miami,Bajo,11,28.97,Sí,No,Carnes,No,Tarjeta,1600.0,False,False,False,False,318.67
+9000000719,82,Masculino,Miami,Bajo,4,22.5,Sí,No,Pescado,No,Tarjeta,1856.0,False,False,False,False,90.0
+9000000720,78,Masculino,Miami,Bajo,11,20.08,Sí,No,Pescado,No,Tarjeta,3865.0,False,False,False,False,220.88
+9000000721,83,Masculino,Tampa,Medio,12,53.29,Sí,Sí,Vegano,Sí,Tarjeta,4715.0,False,False,False,False,639.48
+9000000722,27,No binario,Miami,Bajo,11,35.35,Sí,Sí,Vegano,No,Tarjeta,900.0,False,False,False,False,388.85
+9000000723,53,Femenino,Miami,Bajo,9,20.07,Sí,Sí,Vegano,No,Billetera digital,2491.0,False,False,True,False,180.63
+9000000724,55,Femenino,Miami,Muy Alto,5,104.27000000000001,Sí,No,Otro,Sí,Tarjeta,9948.0,False,True,False,False,521.35
+9000000725,80,Masculino,Miami,Medio,3,26.69,Sí,Sí,Mariscos,No,Billetera digital,2586.0,False,False,False,False,80.07
+9000000726,84,Masculino,Miami,Muy Alto,1,113.89,Sí,No,Vegetariano,Sí,Tarjeta,9406.0,False,False,False,False,113.89
+9000000727,68,Femenino,Miami,Bajo,4,16.9,Sí,No,Mariscos,No,Efectivo,2354.0,False,False,False,False,67.6
+9000000728,84,Femenino,Miami,Bajo,12,17.02,Sí,No,Carnes,Sí,Efectivo,2155.0,False,False,False,False,204.24
+9000000729,69,Masculino,Miami,Alto,5,79.62,Sí,Sí,Vegano,Sí,Tarjeta,5775.0,False,False,False,False,398.1
+9000000730,35,Masculino,Tampa,Bajo,9,28.48,Sí,Sí,Mariscos,No,Tarjeta,1253.0,False,False,False,False,256.32
+9000000731,27,Femenino,Fort Lauderdale,Medio,10,50.04,No,Sí,Vegetariano,No,Tarjeta,4577.0,False,False,False,False,500.4
+9000000732,66,Femenino,Miami,Muy Alto,12,109.76,Sí,No,Vegetariano,Sí,Tarjeta,10836.0,False,False,False,False,1317.12
+9000000733,18,Masculino,Miami,Medio,7,58.92,No,Sí,Mariscos,No,Tarjeta,3232.0,False,False,False,False,412.44
+9000000734,29,Masculino,Miami,Bajo,9,22.65,Sí,No,Carnes,No,Tarjeta,1952.0,False,False,False,False,203.85
+9000000735,34,Femenino,Orlando,Bajo,8,14.33,Sí,No,Carnes,Sí,Tarjeta,2784.0,False,False,False,False,114.64
+9000000736,30,Femenino,Miami,Alto,6,66.29,Sí,No,Carnes,No,Billetera digital,5594.0,False,False,False,False,397.74
+9000000737,29,Masculino,Fort Lauderdale,Bajo,9,8.0,Sí,Sí,Mariscos,No,Billetera digital,3224.0,False,False,False,False,72.0
+9000000738,46,Femenino,Miami,Alto,6,74.03,Sí,No,Pescado,Sí,Tarjeta,7295.0,False,False,False,False,444.18
+9000000739,82,Femenino,Miami,Alto,6,69.06,Sí,No,Carnes,Sí,Efectivo,6340.0,False,False,False,False,414.36
+9000000740,84,Masculino,Miami,Muy Alto,2,111.47,No,No,Mariscos,Sí,Billetera digital,8790.0,False,False,False,False,222.94
+9000000741,48,Femenino,Miami,Alto,5,61.73,Sí,No,Pescado,Sí,Billetera digital,5272.0,False,False,False,False,308.65
+9000000742,47,Femenino,Miami,Bajo,2,21.01,No,Sí,Otro,No,Tarjeta,900.0,False,False,False,False,42.02
+9000000743,46,Femenino,Miami,Medio,5,23.56,No,No,Carnes,No,Billetera digital,3336.0,False,False,False,False,117.8
+9000000745,76,Femenino,Miami,Medio,3,36.32,Sí,Sí,Mariscos,Sí,Tarjeta,2421.0,False,False,False,False,108.96
+9000000746,41,Masculino,Miami,Medio,2,50.71,Sí,No,Mariscos,No,Billetera digital,2946.0,False,False,False,False,101.42
+9000000747,55,Femenino,Miami,Medio,4,25.9,No,Sí,Vegano,No,Tarjeta,4369.0,False,False,False,False,103.6
+9000000748,69,Femenino,Orlando,Medio,12,41.55,Sí,No,Mariscos,No,Tarjeta,2699.0,False,False,False,False,498.6
+9000000749,60,Masculino,Miami,Alto,12,68.23,Sí,Sí,Pescado,Sí,Tarjeta,5328.0,False,False,False,False,818.76

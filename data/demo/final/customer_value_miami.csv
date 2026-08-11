@@ -1,0 +1,7 @@
+dimension,segment,customer_count,avg_visit_frequency,avg_ticket,avg_estimated_period_spend,estimated_period_spend,customer_share,spend_share
+Estrato socioeconomico,Muy Alto,76,6.97,105.1,731.87,55621.78,0.16,0.3367
+Estrato socioeconomico,Alto,131,6.15,67.56,412.14,53990.97,0.2758,0.3269
+Estrato socioeconomico,Medio,164,6.32,39.17,248.04,40678.07,0.3453,0.2463
+Estrato socioeconomico,Bajo,104,6.39,22.84,143.11,14883.28,0.2189,0.0901
+Membresia premium,Sí,218,6.66,69.72,463.13,100963.17,0.4589,0.6113
+Membresia premium,No,257,6.17,40.62,249.85,64210.93,0.5411,0.3887

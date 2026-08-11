@@ -6,7 +6,6 @@ from pathlib import Path
 import nbformat
 from nbclient import NotebookClient
 
-
 BASE_DIR = Path(__file__).resolve().parents[1]
 NOTEBOOK_PATH = BASE_DIR / "notebooks" / "01_miami_business_case.ipynb"
 

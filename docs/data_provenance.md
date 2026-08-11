@@ -19,6 +19,12 @@ El snapshot incluido tiene 240 filas raw. Después de deduplicación y recorte e
 
 La extracción existente es anterior al registro de metadata y su fecha exacta no está disponible. Las nuevas ejecuciones de src/extract_yelp.py generan docs/yelp_extraction_metadata.json con fecha UTC, ciudad, límite solicitado y filas obtenidas.
 
+## Demo pública
+
+`src/demo_data.py` genera 750 clientes totalmente sintéticos con semilla `20260713`. Los nombres siguen un patrón explícito, los correos usan el dominio reservado `example.invalid` y los teléfonos el rango ficticio 555-01xx.
+
+La demo reutiliza el snapshot público de Yelp y el mapping versionado. Sus inputs, outputs y reportes se guardan bajo `data/demo/`, separados del caso completo. No pretende reproducir la distribución del raw educativo: su función es demostrar el recorrido técnico y las reglas de calidad sin exponer datos privados.
+
 ## Publicación responsable
 
 El código y los resultados agregados pueden mostrarse como ejercicio educativo. Antes de publicar datos de detalle se debe confirmar licencia, privacidad y términos de uso de cada fuente.

@@ -1,17 +1,18 @@
-"""Validate that the published evidence remains consistent with the README."""
+"""Validate full publication evidence or deterministic demo outputs."""
 
-from csv import DictReader
-from decimal import Decimal, ROUND_HALF_UP
+import argparse
 import json
-from pathlib import Path
 import re
-
+from csv import DictReader
+from decimal import ROUND_HALF_UP, Decimal
+from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 
 
 def read_csv(relative_path):
-    with (BASE_DIR / relative_path).open(encoding="utf-8-sig", newline="") as file:
+    path = BASE_DIR / relative_path
+    with path.open(encoding="utf-8-sig", newline="") as file:
         return list(DictReader(file))
 
 
@@ -79,7 +80,7 @@ def validate_notebook():
     code_cells = [cell for cell in notebook["cells"] if cell["cell_type"] == "code"]
     outputs = [output for cell in code_cells for output in cell.get("outputs", [])]
 
-    require(len(notebook["cells"]) == 22, "El notebook debe conservar 22 celdas.")
+    require(len(notebook["cells"]) == 23, "El notebook debe conservar 23 celdas.")
     require(len(code_cells) == 8, "El notebook debe conservar 8 celdas de código.")
     require(
         all(cell.get("execution_count") is not None for cell in code_cells),
@@ -102,13 +103,29 @@ def validate_notebook():
         not re.search(r" at 0x[0-9a-fA-F]+", serialized_outputs),
         "El notebook contiene una dirección de memoria no determinista.",
     )
+    notebook_source = "\n".join(
+        "".join(cell.get("source", [])) for cell in notebook["cells"]
+    )
+    require(
+        "data/clean" not in notebook_source
+        and "docs/data_quality_report.csv" not in notebook_source,
+        "El notebook consume una capa anterior a data/final.",
+    )
 
 
-def validate_privacy():
-    forbidden_columns = {"nombre", "apellido", "telefono", "teléfono", "email", "correo"}
+def validate_privacy(mode):
+    forbidden_columns = {
+        "nombre",
+        "apellido",
+        "telefono_contacto",
+        "teléfono_contacto",
+        "email",
+        "correo_electronico",
+    }
+    prefix = "data" if mode == "full" else "data/demo"
     for relative_path in (
-        "data/clean/customers_clean.csv",
-        "data/final/customers_miami.csv",
+        f"{prefix}/clean/customers_clean.csv",
+        f"{prefix}/final/customers_miami.csv",
     ):
         rows = read_csv(relative_path)
         require(rows, f"El output está vacío: {relative_path}")
@@ -121,6 +138,57 @@ def validate_privacy():
     gitignore = (BASE_DIR / ".gitignore").read_text(encoding="utf-8")
     require("data/raw/customers_raw.csv" in gitignore, "El raw privado no está ignorado.")
     require(".env" in gitignore, "El archivo .env no está ignorado.")
+
+
+def validate_demo_outputs():
+    demo_root = BASE_DIR / "data" / "demo"
+    expected_files = {
+        "README.md",
+        "raw/customers_demo_raw.csv",
+        "clean/customers_clean.csv",
+        "clean/yelp_restaurants_clean.csv",
+        "final/customers_miami.csv",
+        "final/customer_value_miami.csv",
+        "final/preference_opportunity_miami.csv",
+        "final/data_quality_report.csv",
+        "final/data_rejections.csv",
+        "docs/data_quality_report.md",
+        "docs/generation_metadata.json",
+    }
+    actual_files = {
+        str(path.relative_to(demo_root)).replace("\\", "/")
+        for path in demo_root.rglob("*")
+        if path.is_file()
+    }
+    require(
+        actual_files == expected_files,
+        (
+            f"Archivos demo inesperados. Faltan={sorted(expected_files - actual_files)}; "
+            f"sobran={sorted(actual_files - expected_files)}"
+        ),
+    )
+
+    metadata = json.loads(
+        (demo_root / "docs" / "generation_metadata.json").read_text(encoding="utf-8")
+    )
+    require(metadata.get("fully_synthetic") is True, "La demo no declara origen sintético.")
+    require(metadata.get("seed") == 20260713, "La semilla demo no es la documentada.")
+    require(metadata.get("rows") == 750, "La demo versionada no contiene 750 filas raw.")
+
+    raw = read_csv("data/demo/raw/customers_demo_raw.csv")
+    require(len(raw) == 750, "El raw demo debe contener 750 clientes.")
+    require(
+        all(row["nombre"].startswith("Cliente Demo ") for row in raw),
+        "El raw demo contiene nombres que no siguen el patrón sintético.",
+    )
+    require(
+        all(row["correo_electronico"].endswith("@example.invalid") for row in raw),
+        "El raw demo contiene correos fuera del dominio reservado.",
+    )
+    require(
+        all("-555-0" in row["telefono_contacto"] for row in raw),
+        "El raw demo contiene teléfonos fuera del rango reservado 555-01xx.",
+    )
 
 
 def validate_local_links():
@@ -138,12 +206,22 @@ def validate_local_links():
     require(not missing, "Enlaces locales rotos:\n" + "\n".join(missing))
 
 
-def main():
-    validate_readme_metrics()
-    validate_notebook()
-    validate_privacy()
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--mode", choices=["full", "demo"], default="full")
+    args = parser.parse_args(argv)
+
+    if args.mode == "full":
+        validate_readme_metrics()
+        validate_notebook()
+    else:
+        validate_demo_outputs()
+    validate_privacy(args.mode)
     validate_local_links()
-    print("Publicación consistente: métricas, notebook, privacidad y enlaces verificados.")
+    print(
+        f"Validación {args.mode} consistente: "
+        "métricas, outputs, privacidad y enlaces verificados."
+    )
 
 
 if __name__ == "__main__":

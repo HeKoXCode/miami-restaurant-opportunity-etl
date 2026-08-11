@@ -107,6 +107,17 @@ def validate_customer_value(customer_value):
         )
 
 
+def validate_rejection_counts(raw, clean, audit, dataset):
+    rejected_rows = sum(audit.values())
+    require(
+        len(raw) - len(clean) == rejected_rows,
+        (
+            f"Los rechazos de {dataset} no reconcilian: "
+            f"raw={len(raw)}, clean={len(clean)}, causas={rejected_rows}."
+        ),
+    )
+
+
 def validate_all(
     customers,
     miami,

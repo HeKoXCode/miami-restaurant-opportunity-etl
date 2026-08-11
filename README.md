@@ -49,8 +49,11 @@ El análisis **no recomienda abrir un restaurante directamente**. Reduce el espa
 ```mermaid
 flowchart LR
   A[Clientes raw privados] --> B[Limpieza y privacidad]
+  A2[Clientes demo sintéticos] --> B2[Pipeline demo aislado]
   C[Yelp raw] --> D[Limpieza y recorte Miami]
   B --> E[Clientes Miami]
+  B2 --> E2[Outputs demo]
+  D --> E2
   E --> F[Valor por segmento]
   E --> G[Oportunidad por preferencia]
   D --> G
@@ -64,6 +67,7 @@ flowchart LR
 ### Qué resuelve cada capa
 
 - 🧹 **ETL:** transforma las fuentes y deja datos limpios, trazables y sin PII.
+- 🧪 **Demo reproducible:** genera 750 clientes totalmente sintéticos con semilla fija y ejecuta el ETL completo sin depender del raw privado.
 - 📊 **Capa de negocio:** calcula valor del cliente y oportunidad por preferencia.
 - 📓 **Notebook:** convierte las tablas en hallazgos, recomendaciones y próximos pasos.
 - ✅ **Validaciones y tests:** detienen el proceso ante problemas de claves, rangos, privacidad o reglas de negocio.
@@ -78,6 +82,7 @@ ETLGITHUB/
     clean/        datos limpios sin PII
     final/        tablas listas para análisis y decisión
     reference/    mapping auditable de categorías
+    demo/         entrada sintética, outputs y evidencia aislados
 
   notebooks/      caso de negocio ejecutado
   docs/           metodología, calidad, procedencia y gráficos
@@ -86,6 +91,7 @@ ETLGITHUB/
   tests/          controles de datos y lógica de negocio
 
   setup.bat         prepara el entorno de Windows
+  run_demo.bat      ejecuta el ETL reproducible con datos sintéticos
   run_pipeline.bat  regenera las tablas analíticas
   run_report.bat    regenera pipeline, notebook y gráficos
 ```
@@ -98,20 +104,24 @@ ETLGITHUB/
 - **Matplotlib / Seaborn** para visualización
 - **Jupyter / nbclient** para el reporte reproducible
 - **Pytest** para controles automatizados
+- **Ruff** para lint reproducible
+- **Contratos de datos versionados** para esquema, tipos, nulos y rangos
 - **PowerShell / BAT** para una ejecución sencilla en Windows
 
 ## ▶️ Cómo verificar el proyecto
 
-### Opción A — Clon público, sin datos personales
+### Opción A — Demo reproducible desde un clon público
 
-El repositorio publica los outputs analíticos sin PII, el notebook ejecutado, gráficos y tests. Desde un clon nuevo se puede preparar el entorno, revisar los resultados y ejecutar la suite:
+La ruta recomendada genera **750 clientes totalmente sintéticos** con la semilla fija `20260713`, ejecuta todas las transformaciones y guarda la evidencia en `data/demo/`, separada del caso real:
 
 ```powershell
 .\setup.bat
+.\run_demo.bat
 .\.venv\Scripts\python.exe -m pytest -q
-.\.venv\Scripts\python.exe scripts\render_notebook.py
-.\.venv\Scripts\python.exe scripts\validate_publication.py
+.\.venv\Scripts\python.exe scripts\validate_publication.py --mode demo
 ```
+
+El generador usa identidades marcadas como demo, correos `example.invalid` y teléfonos del rango reservado `202-555-01xx`. Una segunda ejecución produce exactamente los mismos archivos para la misma semilla.
 
 ### Opción B — Reconstrucción completa del ETL
 
@@ -139,15 +149,16 @@ En otros sistemas, donde el lock de Windows todavía no fue validado:
 ```bash
 python -m venv .venv
 python -m pip install -r requirements.in
-python -m src.pipeline
+python -m src.pipeline --mode demo
+python scripts/validate_publication.py --mode demo
 python scripts/render_notebook.py
 python -m pytest -q
 ```
 
 ### Dependencias reproducibles
 
-- `requirements.in` declara únicamente las dependencias directas.
-- `requirements.lock` fija todas las versiones transitivas y sus hashes.
+- `requirements.in` declara únicamente las **11 dependencias directas**.
+- `requirements.lock` fija **104 paquetes directos y transitivos** con hashes.
 - `requirements.txt` instala el lock verificado y conserva el comando habitual de setup.
 
 El lock versionado fue generado y probado en **Windows 11 con Python 3.14.3**. El rango aceptado por el setup es Python 3.12–3.14; para declarar otra plataforma como reproducible se debe regenerar y validar allí su propio lock.
@@ -165,7 +176,7 @@ Después de actualizarlo deben repetirse el pipeline, las pruebas y el renderiza
 
 ## ✅ Calidad y pruebas
 
-La suite actual contiene **12 pruebas automatizadas**. El workflow de verificación pública las ejecuta junto con el notebook en **Python 3.12, 3.13 y 3.14 sobre Windows**. Comprueba, entre otras reglas:
+La suite actual contiene **19 pruebas automatizadas**. El workflow de verificación pública ejecuta lint, tests, el pipeline demo completo, validaciones de privacidad y el notebook en **Python 3.12, 3.13 y 3.14 sobre Windows**. Además conserva los outputs demo como artefacto de cada ejecución. Comprueba, entre otras reglas:
 
 - IDs únicos y rangos válidos;
 - frecuencia y gasto no negativos;
@@ -176,23 +187,31 @@ La suite actual contiene **12 pruebas automatizadas**. El workflow de verificaci
 - categorías cubiertas por el mapping;
 - clasificación correcta de brecha, equilibrio y oferta amplia;
 - tratamiento explícito de preferencias imputadas como evidencia no concluyente.
+- contratos de entrada y salida con esquema `1.0.0`;
+- reconciliación de filas rechazadas y causas;
+- determinismo del generador y del pipeline demo;
+- separación entre cálculos reutilizables y narrativa del notebook.
 
 Ejecución validada antes de la publicación:
 
 ```text
-12 passed
-Pipeline completo
-Notebook ejecutado y guardado correctamente
+19 passed
+Pipeline full y demo completos
+Notebook: 23 celdas, 8 de código, 0 errores y 4 gráficos
+Validación de privacidad y consistencia superada
 ```
 
 El reporte operativo está disponible en [docs/data_quality_report.md](docs/data_quality_report.md).
 
-> El workflow verifica desde el clon público los tests, las tablas publicadas y el notebook. La reconstrucción completa del ETL seguirá siendo local hasta incorporar la fuente sintética prevista, porque el raw original de clientes no se publica.
+> El workflow reconstruye el ETL demo desde cero en cada push. El caso completo con la fuente educativa original sigue siendo local porque ese raw no se publica.
 
 ## 📦 Outputs principales
 
 - [`customer_value_miami.csv`](data/final/customer_value_miami.csv): valor por membresía y estrato.
 - [`preference_opportunity_miami.csv`](data/final/preference_opportunity_miami.csv): demanda, gasto, cobertura y acción sugerida.
+- [`data_quality_report.csv`](data/final/data_quality_report.csv): métricas de calidad legibles por máquina.
+- [`data_rejections.csv`](data/final/data_rejections.csv): cantidad de descartes por etapa y causa.
+- [`data/demo/`](data/demo/): pipeline completo con fuente sintética y metadatos de generación.
 - [`01_miami_business_case.ipynb`](notebooks/01_miami_business_case.ipynb): caso completo con outputs guardados.
 - [`docs/assets/`](docs/assets/): gráficos listos para revisar en GitHub.
 - [`data_quality_report.md`](docs/data_quality_report.md): controles generados por el pipeline.
@@ -204,6 +223,7 @@ El reporte operativo está disponible en [docs/data_quality_report.md](docs/data
 | [business_methodology.md](docs/business_methodology.md) | Explica métricas, umbrales y recomendaciones. |
 | [cleaning_decisions.md](docs/cleaning_decisions.md) | Registra qué se corrigió y por qué. |
 | [data_dictionary.md](docs/data_dictionary.md) | Define columnas y archivos finales. |
+| [data_contracts.md](docs/data_contracts.md) | Declara contratos, versión de esquema y política de cambios. |
 | [data_provenance.md](docs/data_provenance.md) | Aclara origen, privacidad y límites de uso. |
 | [data_quality_report.md](docs/data_quality_report.md) | Presenta controles generados por el pipeline. |
 | [tests.md](docs/tests.md) | Resume qué protege la suite de pruebas. |
@@ -217,12 +237,13 @@ El reporte operativo está disponible en [docs/data_quality_report.md](docs/data
 - Yelp aporta una muestra limitada y ordenada, no aleatoria ni censal.
 - Un restaurante puede relacionarse con varias preferencias; la métrica es **cobertura observada**, no cuota de mercado.
 - No hay costos, márgenes, alquileres, elasticidad de precio ni evidencia causal.
+- El demo verifica la reproducibilidad técnica, pero no reemplaza la evidencia del caso educativo ni demuestra representatividad comercial.
 
 La metodología completa está en [business_methodology.md](docs/business_methodology.md) y la procedencia en [data_provenance.md](docs/data_provenance.md).
 
 ## 🔐 Privacidad y publicación responsable
 
-Los outputs `clean` y `final` eliminan nombre, apellido, teléfono y correo de clientes. `data/raw/customers_raw.csv` está ignorado por Git y no debe publicarse hasta confirmar que los datos son sintéticos o que existe permiso de uso.
+Los outputs `clean` y `final` eliminan nombre, apellido, teléfono y correo de clientes. `data/raw/customers_raw.csv` está ignorado por Git y no debe publicarse hasta confirmar que existe permiso de uso. La única entrada de clientes publicada está en `data/demo/raw/` y es totalmente sintética.
 
 Si un raw con PII hubiera sido versionado alguna vez, agregarlo a `.gitignore` no sería suficiente: también tendría que retirarse del historial antes de publicar.
 

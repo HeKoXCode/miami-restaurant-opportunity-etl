@@ -1,0 +1,10 @@
+{
+  "dataset": "customers_demo_raw",
+  "fully_synthetic": true,
+  "generator": "src.demo_data.generate_demo_customers",
+  "rows": 750,
+  "seed": 20260713,
+  "schema_version": "1.0.0",
+  "output_file": "customers_demo_raw.csv",
+  "contact_data_policy": "Reserved 555 numbers and example.invalid emails only"
+}
