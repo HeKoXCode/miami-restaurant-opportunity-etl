@@ -1,5 +1,9 @@
 # 🍽️ Miami Restaurant Opportunity — ETL & Business Analytics
 
+[![Verificación pública](https://github.com/HeKoXCode/miami-restaurant-opportunity-etl/actions/workflows/public-verification.yml/badge.svg)](https://github.com/HeKoXCode/miami-restaurant-opportunity-etl/actions/workflows/public-verification.yml)
+[![Python 3.12–3.14](https://img.shields.io/badge/Python-3.12%E2%80%933.14-3776AB?logo=python&logoColor=white)](https://github.com/HeKoXCode/miami-restaurant-opportunity-etl/actions/workflows/public-verification.yml)
+[![Licencia MIT](https://img.shields.io/github/license/HeKoXCode/miami-restaurant-opportunity-etl)](LICENSE)
+
 Proyecto de **ETL, calidad de datos y análisis de negocio** que integra una base educativa de clientes con una muestra de restaurantes de Yelp para identificar qué preferencias gastronómicas merecen una validación comercial más profunda en Miami.
 
 > 🚀 **Puesta en producción:** 13/07/2026<br>
@@ -106,6 +110,7 @@ El repositorio publica los outputs analíticos sin PII, el notebook ejecutado, g
 .\setup.bat
 .\.venv\Scripts\python.exe -m pytest -q
 .\.venv\Scripts\python.exe scripts\render_notebook.py
+.\.venv\Scripts\python.exe scripts\validate_publication.py
 ```
 
 ### Opción B — Reconstrucción completa del ETL
@@ -160,7 +165,7 @@ Después de actualizarlo deben repetirse el pipeline, las pruebas y el renderiza
 
 ## ✅ Calidad y pruebas
 
-La suite actual contiene **12 pruebas automatizadas**. Comprueba, entre otras reglas:
+La suite actual contiene **12 pruebas automatizadas**. El workflow de verificación pública las ejecuta junto con el notebook en **Python 3.12, 3.13 y 3.14 sobre Windows**. Comprueba, entre otras reglas:
 
 - IDs únicos y rangos válidos;
 - frecuencia y gasto no negativos;
@@ -182,6 +187,8 @@ Notebook ejecutado y guardado correctamente
 
 El reporte operativo está disponible en [docs/data_quality_report.md](docs/data_quality_report.md).
 
+> El workflow verifica desde el clon público los tests, las tablas publicadas y el notebook. La reconstrucción completa del ETL seguirá siendo local hasta incorporar la fuente sintética prevista, porque el raw original de clientes no se publica.
+
 ## 📦 Outputs principales
 
 - [`customer_value_miami.csv`](data/final/customer_value_miami.csv): valor por membresía y estrato.
@@ -200,6 +207,7 @@ El reporte operativo está disponible en [docs/data_quality_report.md](docs/data
 | [data_provenance.md](docs/data_provenance.md) | Aclara origen, privacidad y límites de uso. |
 | [data_quality_report.md](docs/data_quality_report.md) | Presenta controles generados por el pipeline. |
 | [tests.md](docs/tests.md) | Resume qué protege la suite de pruebas. |
+| [consistency_review.md](docs/consistency_review.md) | Registra la revisión final y sus pendientes deliberados. |
 
 ## 🔎 Alcance y limitaciones
 

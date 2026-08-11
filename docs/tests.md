@@ -35,3 +35,11 @@ Los tests revisan dos cosas: que los archivos generados sean válidos y que las 
 ~~~
 
 La suite actual contiene 12 pruebas.
+
+## Verificación de publicación
+
+`scripts/validate_publication.py` reconcilia las métricas ejecutivas del README con los CSV finales y comprueba el notebook ejecutado, la ausencia de columnas de contacto y los enlaces locales. El workflow `Public verification` ejecuta la suite, vuelve a renderizar el notebook y aplica esta validación en Python 3.12, 3.13 y 3.14 sobre Windows.
+
+~~~powershell
+.\.venv\Scripts\python.exe scripts\validate_publication.py
+~~~
