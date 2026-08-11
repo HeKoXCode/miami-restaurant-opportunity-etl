@@ -9,7 +9,9 @@ DATA_DIR = BASE_DIR / "data"
 RAW_DIR = DATA_DIR / "raw"
 CLEAN_DIR = DATA_DIR / "clean"
 FINAL_DIR = DATA_DIR / "final"
+STAGING_DIR = DATA_DIR / "staging"
 REFERENCE_DIR = DATA_DIR / "reference"
+RUNTIME_DIR = BASE_DIR / ".pipeline_state"
 
 DOCS_DIR = BASE_DIR / "docs"
 
@@ -23,6 +25,9 @@ YELP_CLEAN = CLEAN_DIR / "yelp_restaurants_clean.csv"
 
 CATEGORY_MAPPING = REFERENCE_DIR / "category_mapping.csv"
 PREFERENCE_OPPORTUNITY_MIAMI = FINAL_DIR / "preference_opportunity_miami.csv"
+RESTAURANT_COMPETITION_MIAMI = FINAL_DIR / "restaurant_competition_miami.csv"
+PREFERENCE_SENSITIVITY_MIAMI = FINAL_DIR / "preference_sensitivity_miami.csv"
+PIPELINE_MANIFEST = FINAL_DIR / "pipeline_manifest.json"
 
 DATA_QUALITY_REPORT_CSV = FINAL_DIR / "data_quality_report.csv"
 DATA_REJECTIONS_CSV = FINAL_DIR / "data_rejections.csv"
@@ -32,7 +37,8 @@ YELP_EXTRACTION_METADATA = DOCS_DIR / "yelp_extraction_metadata.json"
 DEMO_DIR = DATA_DIR / "demo"
 DEMO_DEFAULT_ROWS = 750
 DEMO_DEFAULT_SEED = 20260713
-SCHEMA_VERSION = "1.0.0"
+SCHEMA_VERSION = "1.1.0"
+PIPELINE_VERSION = "2.0.0"
 
 TARGET_CITY = "Miami"
 YELP_ALLOWED_CITIES = [TARGET_CITY]
@@ -71,57 +77,92 @@ PII_COLUMNS = [
 @dataclass(frozen=True)
 class PipelinePaths:
     mode: str
+    publication_root: Path
     customers_raw: Path
     yelp_raw: Path
     category_mapping: Path
+    customers_staging: Path
+    yelp_staging: Path
     customers_clean: Path
     customers_miami: Path
     customer_value_miami: Path
     yelp_clean: Path
     preference_opportunity_miami: Path
+    restaurant_competition_miami: Path
+    preference_sensitivity_miami: Path
     data_quality_report_csv: Path
     data_rejections_csv: Path
     data_quality_report_md: Path
+    pipeline_manifest: Path
+    runtime_dir: Path
     generation_metadata: Path | None = None
 
-    def output_files(self) -> tuple[Path, ...]:
-        files = (
+    def data_outputs(self) -> tuple[Path, ...]:
+        return (
+            self.customers_staging,
+            self.yelp_staging,
             self.customers_clean,
             self.customers_miami,
             self.customer_value_miami,
             self.yelp_clean,
             self.preference_opportunity_miami,
+            self.restaurant_competition_miami,
+            self.preference_sensitivity_miami,
             self.data_quality_report_csv,
             self.data_rejections_csv,
+        )
+
+    def stable_outputs(self) -> tuple[Path, ...]:
+        files = (
+            *self.data_outputs(),
             self.data_quality_report_md,
+            self.pipeline_manifest,
         )
         if self.generation_metadata is not None:
             return files + (self.generation_metadata,)
         return files
 
+    def output_files(self) -> tuple[Path, ...]:
+        return self.stable_outputs()
+
 
 FULL_PIPELINE_PATHS = PipelinePaths(
     mode="full",
+    publication_root=BASE_DIR,
     customers_raw=CUSTOMERS_RAW,
     yelp_raw=YELP_RAW,
     category_mapping=CATEGORY_MAPPING,
+    customers_staging=STAGING_DIR / "customers_staging.csv",
+    yelp_staging=STAGING_DIR / "yelp_restaurants_staging.csv",
     customers_clean=CUSTOMERS_CLEAN,
     customers_miami=CUSTOMERS_MIAMI,
     customer_value_miami=CUSTOMER_VALUE_MIAMI,
     yelp_clean=YELP_CLEAN,
     preference_opportunity_miami=PREFERENCE_OPPORTUNITY_MIAMI,
+    restaurant_competition_miami=RESTAURANT_COMPETITION_MIAMI,
+    preference_sensitivity_miami=PREFERENCE_SENSITIVITY_MIAMI,
     data_quality_report_csv=DATA_QUALITY_REPORT_CSV,
     data_rejections_csv=DATA_REJECTIONS_CSV,
     data_quality_report_md=DATA_QUALITY_REPORT_MD,
+    pipeline_manifest=PIPELINE_MANIFEST,
+    runtime_dir=RUNTIME_DIR / "full",
 )
 
 
 def build_demo_paths(root: Path = DEMO_DIR) -> PipelinePaths:
+    runtime_dir = (
+        RUNTIME_DIR / "demo"
+        if root == DEMO_DIR
+        else root.parent / ".pipeline_state" / root.name
+    )
     return PipelinePaths(
         mode="demo",
+        publication_root=root,
         customers_raw=root / "raw" / "customers_demo_raw.csv",
         yelp_raw=YELP_RAW,
         category_mapping=CATEGORY_MAPPING,
+        customers_staging=root / "staging" / "customers_staging.csv",
+        yelp_staging=root / "staging" / "yelp_restaurants_staging.csv",
         customers_clean=root / "clean" / "customers_clean.csv",
         customers_miami=root / "final" / "customers_miami.csv",
         customer_value_miami=root / "final" / "customer_value_miami.csv",
@@ -129,9 +170,17 @@ def build_demo_paths(root: Path = DEMO_DIR) -> PipelinePaths:
         preference_opportunity_miami=(
             root / "final" / "preference_opportunity_miami.csv"
         ),
+        restaurant_competition_miami=(
+            root / "final" / "restaurant_competition_miami.csv"
+        ),
+        preference_sensitivity_miami=(
+            root / "final" / "preference_sensitivity_miami.csv"
+        ),
         data_quality_report_csv=root / "final" / "data_quality_report.csv",
         data_rejections_csv=root / "final" / "data_rejections.csv",
         data_quality_report_md=root / "docs" / "data_quality_report.md",
+        pipeline_manifest=root / "final" / "pipeline_manifest.json",
+        runtime_dir=runtime_dir,
         generation_metadata=root / "docs" / "generation_metadata.json",
     )
 
@@ -148,10 +197,12 @@ def get_pipeline_paths(mode: str = "full") -> PipelinePaths:
 def ensure_dirs(paths: PipelinePaths = FULL_PIPELINE_PATHS) -> None:
     directories = {
         paths.customers_raw.parent,
+        paths.customers_staging.parent,
         paths.customers_clean.parent,
         paths.customers_miami.parent,
         paths.yelp_clean.parent,
         paths.data_quality_report_md.parent,
+        paths.runtime_dir,
         REFERENCE_DIR,
     }
     for path in directories:

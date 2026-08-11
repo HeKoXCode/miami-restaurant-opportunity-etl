@@ -90,3 +90,37 @@ La suma por dataset reconcilia la diferencia entre filas raw y clean.
 ## data/demo/
 
 Replica las capas `raw`, `clean`, `final` y `docs` para el modo sintético. Conserva los mismos contratos analíticos sin reemplazar los outputs del caso completo.
+
+## staging
+
+Snapshot validado antes de aplicar reglas de limpieza. Conserva el esquema de entrada para separar ingestión de transformación. `data/staging/` no se publica porque el full contiene campos de contacto; `data/demo/staging/` sólo contiene identidades sintéticas.
+
+## restaurant_competition_miami.csv
+
+- city: ciudad analizada.
+- customer_preference: preferencia relacionada mediante el mapping.
+- price_level / price_segment: nivel Yelp normalizado 1–4.
+- restaurant_count: restaurantes observados en el cruce.
+- restaurant_share_within_preference: proporción de la cobertura de esa preferencia.
+- imputed_price_count / imputed_price_share: cantidad y proporción de precios imputados.
+- avg_rating / median_review_count / avg_quality_score: evidencia observable de Yelp.
+- delivery_share / reservation_share: disponibilidad relativa de servicios.
+
+Un restaurante puede aparecer en más de una preferencia. Los conteos no representan cuota de mercado.
+
+## preference_sensitivity_miami.csv
+
+- scenario: Conservador, Base o Exploratorio.
+- gap_threshold / wide_threshold: umbrales aplicados.
+- demand_coverage_index: índice original sin modificar.
+- coverage_signal: clasificación resultante.
+- stable_across_scenarios: verdadero cuando la preferencia conserva señal en los tres escenarios.
+
+## pipeline_manifest.json
+
+- pipeline_version / schema_version / manifest_version: versiones aplicables.
+- mode: full o demo.
+- run_id: identidad determinista de fuentes, código y versiones.
+- code_sha256: hash del código transformador y lockfile.
+- inputs: archivo, filas y SHA-256 por fuente.
+- outputs: ruta relativa, filas y SHA-256 por producto estable.

@@ -9,7 +9,7 @@ echo No requiere el raw privado de clientes.
 echo Esta ventana queda abierta al finalizar para que puedas revisar el resultado.
 echo.
 
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\run_pipeline_windows.ps1" -Mode demo -PauseOnExit
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\run_pipeline_windows.ps1" -Mode demo -Force -PauseOnExit
 set "DEMO_EXIT_CODE=%ERRORLEVEL%"
 
 if not "%DEMO_EXIT_CODE%"=="0" (

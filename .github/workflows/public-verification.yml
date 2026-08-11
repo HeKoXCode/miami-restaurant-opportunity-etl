@@ -39,7 +39,7 @@ jobs:
         run: python -m pytest -q
 
       - name: Run synthetic pipeline end to end
-        run: python -m src.pipeline --mode demo
+        run: python -m src.pipeline --mode demo --force
 
       - name: Validate deterministic demo and privacy
         run: |
@@ -51,6 +51,9 @@ jobs:
 
       - name: Validate publication consistency
         run: python scripts/validate_publication.py --mode full
+
+      - name: Run C3-Lite final gate
+        run: python scripts/verify_c3_lite.py --enforce-clean-generated
 
       - name: Upload demo evidence
         uses: actions/upload-artifact@v7

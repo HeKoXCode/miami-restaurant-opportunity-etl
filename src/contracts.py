@@ -252,6 +252,35 @@ PREFERENCE_OPPORTUNITY_COLUMNS = [
     "recommended_action",
 ]
 
+RESTAURANT_COMPETITION_COLUMNS = [
+    "city",
+    "customer_preference",
+    "price_level",
+    "price_segment",
+    "restaurant_count",
+    "restaurant_share_within_preference",
+    "imputed_price_count",
+    "imputed_price_share",
+    "avg_rating",
+    "median_review_count",
+    "avg_quality_score",
+    "delivery_share",
+    "reservation_share",
+]
+
+PREFERENCE_SENSITIVITY_COLUMNS = [
+    "city",
+    "customer_preference",
+    "scenario",
+    "gap_threshold",
+    "wide_threshold",
+    "demand_coverage_index",
+    "preference_data_quality",
+    "restaurant_count",
+    "coverage_signal",
+    "stable_across_scenarios",
+]
+
 
 def _rules(columns: list[str], nullable: bool = False) -> dict[str, ColumnRule]:
     return {column: ColumnRule(nullable=nullable) for column in columns}
@@ -514,6 +543,112 @@ PREFERENCE_OPPORTUNITY_CONTRACT = DataContract(
     required_values={"customer_preference": frozenset(CUSTOMER_PREFERENCES)},
 )
 
+competition_rules = _rules(RESTAURANT_COMPETITION_COLUMNS)
+for column in ("city", "customer_preference", "price_segment"):
+    competition_rules[column] = ColumnRule("string", nullable=False)
+competition_rules.update(
+    {
+        "city": ColumnRule(
+            "string", nullable=False, allowed_values=frozenset({TARGET_CITY})
+        ),
+        "customer_preference": ColumnRule(
+            "string",
+            nullable=False,
+            allowed_values=frozenset(CUSTOMER_PREFERENCES),
+        ),
+        "price_level": ColumnRule("integer", nullable=False, minimum=0, maximum=4),
+        "price_segment": ColumnRule(
+            "string",
+            nullable=False,
+            allowed_values=frozenset({"Sin precio", "$", "$$", "$$$", "$$$$"}),
+        ),
+        "restaurant_count": ColumnRule("integer", nullable=False, minimum=0),
+        "restaurant_share_within_preference": ColumnRule(
+            "numeric", nullable=False, minimum=0, maximum=1
+        ),
+        "imputed_price_count": ColumnRule("integer", nullable=False, minimum=0),
+        "imputed_price_share": ColumnRule(
+            "numeric", nullable=False, minimum=0, maximum=1
+        ),
+        "avg_rating": ColumnRule("numeric", nullable=False, minimum=0, maximum=5),
+        "median_review_count": ColumnRule("numeric", nullable=False, minimum=0),
+        "avg_quality_score": ColumnRule(
+            "numeric", nullable=False, minimum=0, maximum=5
+        ),
+        "delivery_share": ColumnRule(
+            "numeric", nullable=False, minimum=0, maximum=1
+        ),
+        "reservation_share": ColumnRule(
+            "numeric", nullable=False, minimum=0, maximum=1
+        ),
+    }
+)
+RESTAURANT_COMPETITION_CONTRACT = DataContract(
+    "restaurant_competition",
+    competition_rules,
+    unique_keys=(("city", "customer_preference", "price_level"),),
+    required_values={
+        "customer_preference": frozenset(CUSTOMER_PREFERENCES),
+        "price_level": frozenset(range(5)),
+    },
+    min_rows=30,
+)
+
+sensitivity_rules = _rules(PREFERENCE_SENSITIVITY_COLUMNS)
+for column in (
+    "city",
+    "customer_preference",
+    "scenario",
+    "preference_data_quality",
+    "coverage_signal",
+):
+    sensitivity_rules[column] = ColumnRule("string", nullable=False)
+sensitivity_rules.update(
+    {
+        "city": ColumnRule(
+            "string", nullable=False, allowed_values=frozenset({TARGET_CITY})
+        ),
+        "customer_preference": ColumnRule(
+            "string",
+            nullable=False,
+            allowed_values=frozenset(CUSTOMER_PREFERENCES),
+        ),
+        "scenario": ColumnRule(
+            "string",
+            nullable=False,
+            allowed_values=frozenset({"Conservador", "Base", "Exploratorio"}),
+        ),
+        "gap_threshold": ColumnRule("numeric", nullable=False, minimum=1),
+        "wide_threshold": ColumnRule(
+            "numeric", nullable=False, minimum=0, maximum=1
+        ),
+        "demand_coverage_index": ColumnRule("numeric", minimum=0),
+        "restaurant_count": ColumnRule("integer", nullable=False, minimum=0),
+        "coverage_signal": ColumnRule(
+            "string",
+            nullable=False,
+            allowed_values=frozenset({
+                "No concluyente",
+                "Sin oferta observada",
+                "Brecha de cobertura observada",
+                "Oferta observada amplia",
+                "Cobertura observada equilibrada",
+            }),
+        ),
+        "stable_across_scenarios": ColumnRule("boolean", nullable=False),
+    }
+)
+PREFERENCE_SENSITIVITY_CONTRACT = DataContract(
+    "preference_sensitivity",
+    sensitivity_rules,
+    unique_keys=(("city", "customer_preference", "scenario"),),
+    required_values={
+        "customer_preference": frozenset(CUSTOMER_PREFERENCES),
+        "scenario": frozenset({"Conservador", "Base", "Exploratorio"}),
+    },
+    min_rows=18,
+)
+
 QUALITY_REPORT_CONTRACT = DataContract(
     "data_quality_report",
     {
@@ -550,6 +685,8 @@ def validate_pipeline_contracts(
     yelp_clean: pd.DataFrame,
     customer_value: pd.DataFrame,
     preference_opportunity: pd.DataFrame,
+    restaurant_competition: pd.DataFrame,
+    preference_sensitivity: pd.DataFrame,
     data_quality: pd.DataFrame,
     rejections: pd.DataFrame,
 ) -> None:
@@ -559,6 +696,8 @@ def validate_pipeline_contracts(
         (yelp_clean, YELP_CLEAN_CONTRACT),
         (customer_value, CUSTOMER_VALUE_CONTRACT),
         (preference_opportunity, PREFERENCE_OPPORTUNITY_CONTRACT),
+        (restaurant_competition, RESTAURANT_COMPETITION_CONTRACT),
+        (preference_sensitivity, PREFERENCE_SENSITIVITY_CONTRACT),
         (data_quality, QUALITY_REPORT_CONTRACT),
         (rejections, REJECTIONS_CONTRACT),
     )

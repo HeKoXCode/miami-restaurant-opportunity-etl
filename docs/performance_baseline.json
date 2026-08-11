@@ -1,0 +1,50 @@
+{
+  "baseline_version": "1.0.0",
+  "recorded_on": "2026-08-10",
+  "mode": "demo_forced",
+  "rows": 750,
+  "seed": 20260713,
+  "environment": {
+    "os": "Windows",
+    "python": "3.14.3",
+    "processor": "AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD"
+  },
+  "budgets": {
+    "max_elapsed_seconds": 10.0,
+    "max_peak_memory_mb": 256.0
+  },
+  "summary": {
+    "runs": 5,
+    "median_elapsed_seconds": 0.8126,
+    "max_elapsed_seconds": 0.8658,
+    "median_peak_memory_mb": 2.96,
+    "max_peak_memory_mb": 2.97
+  },
+  "measurements": [
+    {
+      "run": 1,
+      "elapsed_seconds": 0.8658,
+      "peak_memory_mb": 2.82
+    },
+    {
+      "run": 2,
+      "elapsed_seconds": 0.8336,
+      "peak_memory_mb": 2.97
+    },
+    {
+      "run": 3,
+      "elapsed_seconds": 0.8126,
+      "peak_memory_mb": 2.97
+    },
+    {
+      "run": 4,
+      "elapsed_seconds": 0.8087,
+      "peak_memory_mb": 2.96
+    },
+    {
+      "run": 5,
+      "elapsed_seconds": 0.8005,
+      "peak_memory_mb": 2.96
+    }
+  ]
+}
