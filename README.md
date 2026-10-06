@@ -16,6 +16,10 @@ Cuando leas el gráfico, usa la diagonal como referencia de equilibrio relativo:
 
 ## 🧭 Navegación rápida
 
+📄 [Seis figuras nativas en PDF](docs/media/technical/miami_caso_educativo_figuras_hq.pdf) · [Material editorial](docs/media/linkedin/).
+
+Regeneré las figuras directamente desde las tablas finales, con PNG de 3000×1900 y fuentes SVG. El notebook y los archivos públicos comparten el generador `src/reporting_visuals.py`; para repetir la exportación ejecutá `python scripts/export_report_media.py`. No se necesita la base privada para reconstruir estas figuras desde los outputs agregados publicados. El PDF corresponde al caso educativo, no a la demo sintética.
+
 | Si eres... | Empieza por... |
 |---|---|
 | Dirección de expansión | Resumen ejecutivo, recomendación y notebook |

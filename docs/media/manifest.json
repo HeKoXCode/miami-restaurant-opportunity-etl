@@ -1,0 +1,20 @@
+{
+  "edition": "2026-10-06",
+  "media": [
+    {
+      "path": "docs/media/linkedin/miami_p05_demo_reproducible.pdf",
+      "bytes": 46919,
+      "sha256": "4868141dd87225c242cc8938d36321e1c3dd6b218c84e14265b801a190363655"
+    },
+    {
+      "path": "docs/media/linkedin/miami_p09_validar_antes_de_invertir.pdf",
+      "bytes": 45856,
+      "sha256": "4f660ab3a5e4d7e6341a2677f50c1eb1347fa3a768af88950eed3907f8b66b15"
+    },
+    {
+      "path": "docs/media/technical/miami_caso_educativo_figuras_hq.pdf",
+      "bytes": 52445,
+      "sha256": "e52fb72e3eac40abe64adcdb79e7778ca83328fef60b08d6f1c8d37025c6661b"
+    }
+  ]
+}

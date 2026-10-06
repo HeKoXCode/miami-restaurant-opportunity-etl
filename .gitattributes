@@ -1,0 +1,8 @@
+# Preserve exact media bytes; keep source text portable.
+* text=auto
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg text eol=lf
